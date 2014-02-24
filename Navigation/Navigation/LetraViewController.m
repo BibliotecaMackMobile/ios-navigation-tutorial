@@ -9,6 +9,8 @@
 #import "LetraViewController.h"
 #import "LetraDicionarioModel.h"
 #import "LetraDicionario.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface LetraViewController ()
 
@@ -30,19 +32,27 @@
 }
 
 -(IBAction)next:(id)sender {
-    NSArray *aux = [[[LetraDicionarioModel sharadManager] lista] allKeys];
-    int auxIndex = [self indexTela] % 25;
-    LetraViewController *proximo = [[LetraViewController alloc] initWithLetra:[aux objectAtIndex:auxIndex] andIndex:auxIndex];
+    NSString *auxTitulo = [self title];
+    int auxIndex = ([[self key] indexOfObject:auxTitulo] + 1) % 26;
+    LetraViewController *proximo = [[LetraViewController alloc] initWithLetra:[[self key] objectAtIndex:auxIndex]];
     [[self navigationController] pushViewController:proximo animated:YES];
 }
 
--(id)initWithLetra:(NSString *)valorLetra andIndex:(int)valorIndex{
+-(id)initWithLetra:(NSString *)valorLetra {
     self = [super initWithNibName:Nil bundle:nil];
     if (self) {
         [self setTitle:valorLetra];
-        [self setIndexTela:valorIndex];
+        [self setKey:[[NSArray alloc] initWithObjects:@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I",  @"J",  @"K",  @"L",  @"M",  @"N",  @"O",  @"P",  @"Q",  @"R",  @"S",  @"T",  @"U",  @"V",  @"W",  @"X", @"Y", @"Z", nil]];
     }
     return self;
+}
+
+-(IBAction)efeitoBtnPlayAudio:(id)sender {
+    // SOM
+    AVSpeechSynthesizer *v = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance *u = [AVSpeechUtterance speechUtteranceWithString:[[[self btnPlayAudio] titleLabel] text]];
+    [u setRate:0.1f];
+    [v speakUtterance:u];
 }
 
 #pragma mark - ViewController
@@ -58,7 +68,8 @@
 
 - (void)viewDidLoad
 {
-    LetraDicionario *auxObj = [[[LetraDicionarioModel sharadManager] lista] objectForKey:@"C"];
+    NSString *auxTitulo = [self title];
+    LetraDicionario *auxObj = [[[LetraDicionarioModel sharadManager] lista] objectForKey:auxTitulo];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -75,6 +86,7 @@
     [self setBtnPlayAudio:[[UIButton alloc] initWithFrame:[self makeRectWithX:40 andY:80 andLargura:90 andAltura:10]]];
     [[self btnPlayAudio] setTitle:[auxObj nome] forState:UIControlStateNormal];
     [[self btnPlayAudio] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [[self btnPlayAudio] addTarget:self action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     
     // Adiciona no canvas
     [[self view] addSubview:[self imgViewImagem]];

@@ -10,7 +10,7 @@
 
 @interface LetraViewController : UIViewController
 
-@property (nonatomic) int indexTela;
+@property (nonatomic) NSArray *key;
 
 // ImageView
 @property (nonatomic, strong) UIImageView *imgViewImagem;
@@ -24,6 +24,8 @@
 // Metodo para UIViewNavegationController
 -(IBAction)next:(id)sender;
 
--(id)initWithLetra:(NSString*)valorLetra andIndex:(int)valorIndex;
+-(id)initWithLetra:(NSString*)valorLetra;
+
+-(IBAction)efeitoBtnPlayAudio:(id)sender;
 
 @end

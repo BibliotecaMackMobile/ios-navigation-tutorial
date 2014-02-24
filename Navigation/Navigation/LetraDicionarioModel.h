@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface LetraDicionarioModel : NSObject
 
 // NSArray
-@property (nonatomic, strong) NSMutableDictionary *lista;
+@property (nonatomic, strong) NSDictionary *lista;
 
 //
 +(LetraDicionarioModel*)sharadManager;

@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraViewController *viewController = [[LetraViewController alloc] initWithLetra:@"A" andIndex:0];
+    LetraViewController *viewController = [[LetraViewController alloc] initWithLetra:@"A"];
     
     
     self.navigationController = [[UINavigationController alloc]
