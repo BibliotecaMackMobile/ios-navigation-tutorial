@@ -7,6 +7,7 @@
 //
 
 #import "LetraBViewController.h"
+#import "LetraCViewController.h"
 
 @implementation LetraBViewController
 
@@ -31,8 +32,8 @@
 }
 
 -(void)next:(id)sender {
-  // Continue com as proximas letras
-    
+    LetraCViewController *proximo = [[LetraCViewController alloc] init];
+    [[self navigationController] pushViewController:proximo animated:YES];
 }
 
 
