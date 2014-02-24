@@ -22,14 +22,12 @@
     
     NSString *title =[keys objectAtIndex:_num];
     self.title = title;
-    if(_num == 26)
-        self.navigationItem.rightBarButtonItem =nil;
-    else {
         UIBarButtonItem *next = [[UIBarButtonItem alloc]
                                  initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
         self.navigationItem.rightBarButtonItem=next;
         
-    }
+    if(_num ==25)
+        self.navigationItem.rightBarButtonItem=nil;
     
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao
@@ -45,12 +43,10 @@
 
 -(void)next:(id)sender {
     int var = _num +1;
-    if( var==26) {
-        return;
-    }
     LetraAViewController *proximo = [[LetraAViewController alloc]
-                                              initWithNibName:nil
-                                            bundle:NULL];
+                                     initWithNibName:nil
+                                     bundle:NULL];
+    
     proximo.num = var;
     proximo.palavra = @"Eduardo";
     [self.navigationController pushViewController:proximo
