@@ -23,8 +23,6 @@
 		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 		C894153818BB6BC600251835 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C894153618BB6BC600251835 /* InitialViewController.m */; };
 		C894153918BB6BC600251835 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C894153718BB6BC600251835 /* InitialViewController.xib */; };
-		C894153D18BB6BEB00251835 /* genericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C894153B18BB6BEB00251835 /* genericViewController.m */; };
-		C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C894153C18BB6BEB00251835 /* genericViewController.xib */; };
 		C894154218BB6D7800251835 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154118BB6D7800251835 /* Dicionario.m */; };
 		C894154518BB71DE00251835 /* Letra.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154418BB71DE00251835 /* Letra.m */; };
 		C894154918BBB57F00251835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C894154818BBB57F00251835 /* AVFoundation.framework */; };
@@ -91,9 +89,6 @@
 		C894153518BB6BC600251835 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		C894153618BB6BC600251835 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		C894153718BB6BC600251835 /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
-		C894153A18BB6BEB00251835 /* genericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericViewController.h; sourceTree = "<group>"; };
-		C894153B18BB6BEB00251835 /* genericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = genericViewController.m; sourceTree = "<group>"; };
-		C894153C18BB6BEB00251835 /* genericViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = genericViewController.xib; sourceTree = "<group>"; };
 		C894154018BB6D7800251835 /* Dicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dicionario.h; sourceTree = "<group>"; };
 		C894154118BB6D7800251835 /* Dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicionario.m; sourceTree = "<group>"; };
 		C894154318BB71DE00251835 /* Letra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letra.h; sourceTree = "<group>"; };
@@ -227,9 +222,6 @@
 				C894153518BB6BC600251835 /* InitialViewController.h */,
 				C894153618BB6BC600251835 /* InitialViewController.m */,
 				C894153718BB6BC600251835 /* InitialViewController.xib */,
-				C894153A18BB6BEB00251835 /* genericViewController.h */,
-				C894153B18BB6BEB00251835 /* genericViewController.m */,
-				C894153C18BB6BEB00251835 /* genericViewController.xib */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -372,7 +364,6 @@
 				C894157718BBC53600251835 /* Viewtiful.Joe.full.283279.jpg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 				C894154F18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg in Resources */,
-				C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */,
 				C894155918BBBC7700251835 /* ghoulsn-ghosts-15.gif in Resources */,
 				C894156D18BBC39700251835 /* 43841.jpg in Resources */,
 				C894155118BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg in Resources */,
@@ -399,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C894154218BB6D7800251835 /* Dicionario.m in Sources */,
-				C894153D18BB6BEB00251835 /* genericViewController.m in Sources */,
 				C894154518BB71DE00251835 /* Letra.m in Sources */,
 				C894153818BB6BC600251835 /* InitialViewController.m in Sources */,
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,

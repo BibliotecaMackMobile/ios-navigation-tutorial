@@ -38,6 +38,7 @@ static int cont =0;
         self.navigationItem.leftBarButtonItem=back;
     }
     [_Letter setText:[[[things getletra:cont] letter]uppercaseString]];
+   
     [_word setText:[[things getletra:cont]word]];
    
     UIImage *aux = [UIImage imageNamed:[[things getletra:cont]image]];
