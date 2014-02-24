@@ -29,6 +29,23 @@
     return CGRectMake(valorX, valorY, valorLargura, valorAltura);
 }
 
+-(IBAction)next:(id)sender {
+    NSArray *aux = [[[LetraDicionarioModel sharadManager] lista] allKeys];
+    int auxIndex = [self indexTela] % 25;
+    LetraViewController *proximo = [[LetraViewController alloc] initWithLetra:[aux objectAtIndex:auxIndex] andIndex:auxIndex];
+    [[self navigationController] pushViewController:proximo animated:YES];
+}
+
+-(id)initWithLetra:(NSString *)valorLetra andIndex:(int)valorIndex{
+    self = [super initWithNibName:Nil bundle:nil];
+    if (self) {
+        [self setTitle:valorLetra];
+        [self setIndexTela:valorIndex];
+    }
+    return self;
+}
+
+#pragma mark - ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,6 +62,10 @@
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // BarButtonItem
+    UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
+    [[self navigationItem] setRightBarButtonItem:next];
     
     // Imagem
     [self setImgViewImagem:[[UIImageView alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];

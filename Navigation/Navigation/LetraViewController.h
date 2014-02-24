@@ -10,6 +10,8 @@
 
 @interface LetraViewController : UIViewController
 
+@property (nonatomic) int indexTela;
+
 // ImageView
 @property (nonatomic, strong) UIImageView *imgViewImagem;
 
@@ -21,5 +23,7 @@
 
 // Metodo para UIViewNavegationController
 -(IBAction)next:(id)sender;
+
+-(id)initWithLetra:(NSString*)valorLetra andIndex:(int)valorIndex;
 
 @end
