@@ -13,7 +13,6 @@
 		250D0C9A18BB7B21001B6AB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */; };
 		250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */; };
 		250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */; };
-		250D0CA318BBA8CD001B6AB8 /* LetraBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0CA218BBA8CD001B6AB8 /* LetraBuild.m */; };
 		250D0CA618BBB217001B6AB8 /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0CA518BBB217001B6AB8 /* LetraViewController.m */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
@@ -51,8 +50,6 @@
 		250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionario.m; sourceTree = "<group>"; };
 		250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionarioModel.h; sourceTree = "<group>"; };
 		250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionarioModel.m; sourceTree = "<group>"; };
-		250D0CA118BBA8CD001B6AB8 /* LetraBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBuild.h; sourceTree = "<group>"; };
-		250D0CA218BBA8CD001B6AB8 /* LetraBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBuild.m; sourceTree = "<group>"; };
 		250D0CA418BBB217001B6AB8 /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
 		250D0CA518BBB217001B6AB8 /* LetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraViewController.m; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,12 +111,10 @@
 		250D0C9618BB72C0001B6AB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
 				250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */,
-				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
+				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
 				250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */,
-				250D0CA118BBA8CD001B6AB8 /* LetraBuild.h */,
-				250D0CA218BBA8CD001B6AB8 /* LetraBuild.m */,
+				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -327,7 +322,6 @@
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 				250D0C9218BB6CC4001B6AB8 /* LetraCViewController.m in Sources */,
 				250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */,
-				250D0CA318BBA8CD001B6AB8 /* LetraBuild.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

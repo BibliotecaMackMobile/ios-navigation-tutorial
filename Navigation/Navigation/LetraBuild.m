@@ -7,6 +7,7 @@
 //
 
 #import "LetraBuild.h"
+#import "LetraViewController.h"
 
 @implementation LetraBuild
 
@@ -31,8 +32,9 @@
     return instancia;
 }
 
-+(void)takeView:(UIView *)valorView {
-    [[self sharedManager] setView:valorView];
++(void)takeView {
+    LetraViewController vc = []
+    [self sharedManager];
 }
 
 +(id)allocWithZone:(struct _NSZone *)zone {

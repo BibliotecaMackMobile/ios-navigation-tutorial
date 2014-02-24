@@ -15,6 +15,6 @@
 
 -(CGRect)makeRectWithX:(CGFloat)x andY:(CGFloat)y andLargura:(CGFloat)largura andAltura:(CGFloat)altura;
 +(LetraBuild *)sharedManager;
-+(void)takeView:(UIView*)valorView;
++(void)takeView;
 
 @end

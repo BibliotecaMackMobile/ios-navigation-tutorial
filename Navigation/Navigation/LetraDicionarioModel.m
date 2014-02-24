@@ -27,7 +27,9 @@
 
 -(id)init {
     if (self = [super init]) {
+        LetraDicionario *obj = [[LetraDicionario alloc] initWithNome:@"Cacetete" andImagem:[UIImage imageNamed:@"Cacetete.jpg"]];
         [self setLista:[[NSMutableDictionary alloc] init]];
+        [[self lista] setObject:obj forKey:@"C"];
     }
     return self;
 }

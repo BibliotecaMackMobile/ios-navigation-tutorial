@@ -12,10 +12,7 @@
 @interface LetraDicionario : NSObject
 
 @property (nonatomic, strong) NSString *nome;
-@property (nonatomic, strong) UIImageView *imgView;
 @property (nonatomic, strong) UIImage *img;
-@property (nonatomic, strong) UIButton *btn;
 
--(id)initWithNome:(NSString*)valorNome andImageView:(UIImageView*)valorImgView andBotao:(UIButton*)valorBtn;
-
+-(id)initWithNome:(NSString*)valorNome andImagem:(UIImage*)valorImg;
 @end
