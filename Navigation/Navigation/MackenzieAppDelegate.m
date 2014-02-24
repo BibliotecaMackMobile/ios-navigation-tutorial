@@ -7,7 +7,6 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraBViewController.h"
 #import "LetraAViewController.h"
 @implementation MackenzieAppDelegate
 

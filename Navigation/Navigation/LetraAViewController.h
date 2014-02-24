@@ -10,8 +10,10 @@
 
 @interface LetraAViewController : UIViewController {
     int num ;
+    NSString *letra;
     NSString * palavra;
 }
 @property int num;
-@property (nonatomic,strong) NSString * palavra;
+@property (nonatomic,strong) NSString *palavra;
+@property (nonatomic,strong) NSString *letra;
 @end
