@@ -7,31 +7,40 @@
 //
 
 #import "LetraBViewController.h"
+#import "shared.h"
+#import "dicionario.h"
 
 @implementation LetraBViewController
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"B";
-    UIBarButtonItem *next = [[UIBarButtonItem alloc]
-                             initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
-    self.navigationItem.rightBarButtonItem=next;
+    shared *c = [shared sharedInstance];
+    dicionario *d = [[dicionario alloc]init];
     
-    UIButton *botao = [UIButton
-                       buttonWithType:UIButtonTypeSystem];
-    [botao
-     setTitle:@"Mostre uma palavra, uma figura e leia a palavra ao apertar um botao"
-     forState:UIControlStateNormal];
+    d = [c.listaDicionario objectAtIndex:c.count];
+    self.title = d.letra;
+    UIBarButtonItem *next = [[UIBarButtonItem alloc]
+                                 initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
+    self.navigationItem.rightBarButtonItem=next;
+        
+    UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
+    [botao setTitle:d.palavra forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
-    
+        
     [self.view addSubview:botao];
-    
     
 }
 
 -(void)next:(id)sender {
-  // Continue com as proximas letras
+    shared *c = [shared sharedInstance];
+    c.count = c.count + 1;
+    NSLog(@"%d", c.count);
+    LetraBViewController *proximo = [[LetraBViewController alloc]
+                                     initWithNibName:nil
+                                     bundle:NULL];
+    [self.navigationController pushViewController:proximo
+                                         animated:YES];
     
 }
 
