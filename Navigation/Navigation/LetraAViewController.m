@@ -2,12 +2,13 @@
 //  LetraAViewController.m
 //  Navigation
 //
-//  Created by Vinicius Miana on 2/23/14.
-//  Copyright (c) 2014 Vinicius Miana. All rights reserved.
+//  Created by Rodrigo Soldi on 2/23/14.
+//  Copyright (c) 2014 Rorigo Soldi. All rights reserved.
 //
 
 #import "LetraAViewController.h"
 #import "LetraBViewController.h"
+#import "Dicionario.h"
 
 @implementation LetraAViewController
 
