@@ -26,7 +26,7 @@ static NSArray *words;
         letter = l;
         if (words == nil)
         {
-            words = [NSArray arrayWithObjects:@"Aranha", @"Burro", @"Cachorro", @"Dinossauro", @"Elefante", @"Foca", @"Girafa", @"Hipopotamo", @"Iena", @"Jabuti", @"Koala", @"Lagartixa", @"Macaco", @"Naja", @"Ovelha", @"Pato", @"Quati", @"Raposa", @"Sapo", @"Tartaruga", @"Urso", @"Vaca", @"Wolf", @"Ximango", @"Yorkshire", @"Zebra", nil];
+            words = [NSArray arrayWithObjects:@"Aranha", @"Burro", @"Cachorro", @"Dinossauro", @"Elefante", @"Foca", @"Girafa", @"Hipopotamo", @"Iena", @"Javali", @"Koala", @"Lagartixa", @"Macaco", @"Naja", @"Ovelha", @"Pato", @"Quati", @"Raposa", @"Sapo", @"Tartaruga", @"Urso", @"Vaca", @"Wolf", @"Ximango", @"Yorkshire", @"Zebra", nil];
         }
     }
     return self;
@@ -59,6 +59,7 @@ static NSArray *words;
     NSLog(@"View Controllers: %d", [[[self navigationController] viewControllers] count]);
     
     [lblWord setText:[words objectAtIndex:[letter characterAtIndex:0]-65]];
+    [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letter]]];
 }
 
 - (void)didReceiveMemoryWarning
