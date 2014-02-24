@@ -27,6 +27,7 @@
 		C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C894153C18BB6BEB00251835 /* genericViewController.xib */; };
 		C894154218BB6D7800251835 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154118BB6D7800251835 /* Dicionario.m */; };
 		C894154518BB71DE00251835 /* Letra.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154418BB71DE00251835 /* Letra.m */; };
+		C894154718BB785900251835 /* giraffe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154618BB785900251835 /* giraffe.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		C894154118BB6D7800251835 /* Dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicionario.m; sourceTree = "<group>"; };
 		C894154318BB71DE00251835 /* Letra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letra.h; sourceTree = "<group>"; };
 		C894154418BB71DE00251835 /* Letra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letra.m; sourceTree = "<group>"; };
+		C894154618BB785900251835 /* giraffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giraffe.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				C894154318BB71DE00251835 /* Letra.h */,
 				C894154418BB71DE00251835 /* Letra.m */,
+				C894154618BB785900251835 /* giraffe.jpg */,
 				C894154018BB6D7800251835 /* Dicionario.h */,
 				C894154118BB6D7800251835 /* Dicionario.m */,
 				27156F5218B76AF50053A99C /* Navigation */,
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C894154718BB785900251835 /* giraffe.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 				C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */,

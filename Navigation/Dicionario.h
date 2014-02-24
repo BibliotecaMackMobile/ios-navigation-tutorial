@@ -10,6 +10,6 @@
 
 @interface Dicionario : NSObject
 {
-    NSDictionary *elDicionario;
+    NSMutableArray *elDicionario;
 }
 @end

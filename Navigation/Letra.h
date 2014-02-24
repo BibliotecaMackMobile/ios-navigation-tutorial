@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Letra : NSObject
-@property (nonatomic, weak) NSString *letter;
-@property (nonatomic, weak) NSString *word;
-@property (nonatomic, weak) NSString *image;
+@property (nonatomic, strong) NSString *letter;
+@property (nonatomic, strong) NSString *word;
+@property (nonatomic, strong) NSString *image;
 
 -(id) initWithLetter:(NSString*)newletter andWord:(NSString*)newword andImagename:(NSString*)newImage;
 @end
