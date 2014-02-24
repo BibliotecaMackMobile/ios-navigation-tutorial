@@ -11,6 +11,8 @@
 		250D0C9518BB71CB001B6AB8 /* Cacetete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 250D0C9418BB71CB001B6AB8 /* Cacetete.jpg */; };
 		250D0C9818BB7B19001B6AB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9718BB7B19001B6AB8 /* AVFoundation.framework */; };
 		250D0C9A18BB7B21001B6AB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */; };
+		250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */; };
+		250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -43,6 +45,10 @@
 		250D0C9418BB71CB001B6AB8 /* Cacetete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cacetete.jpg; path = "../../../../../../Pictures/BEPiD Imagens/Imagens Aula/Cacetete.jpg"; sourceTree = "<group>"; };
 		250D0C9718BB7B19001B6AB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionario.h; sourceTree = "<group>"; };
+		250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionario.m; sourceTree = "<group>"; };
+		250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionarioModel.h; sourceTree = "<group>"; };
+		250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionarioModel.m; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +159,8 @@
 				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 				250D0C9018BB6CC4001B6AB8 /* LetraCViewController.h */,
 				250D0C9118BB6CC4001B6AB8 /* LetraCViewController.m */,
+				250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */,
+				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -164,6 +172,8 @@
 				27156F5518B76AF50053A99C /* InfoPlist.strings */,
 				27156F5818B76AF50053A99C /* main.m */,
 				27156F5A18B76AF50053A99C /* Navigation-Prefix.pch */,
+				250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */,
+				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,10 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
+				250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 				250D0C9218BB6CC4001B6AB8 /* LetraCViewController.m in Sources */,
+				250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

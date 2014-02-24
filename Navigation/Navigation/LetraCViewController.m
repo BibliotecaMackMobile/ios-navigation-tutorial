@@ -54,6 +54,9 @@
     [[self btnCacetete] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [[self btnCacetete] addTarget:self action:@selector(descreverImagem:) forControlEvents:UIControlEventTouchUpInside];
     
+    // Audio
+    
+    
     // Adiciona no canvas
     [[self view] addSubview:[self imgViewCacetete]];
     [[self view]addSubview:[self btnCacetete]];

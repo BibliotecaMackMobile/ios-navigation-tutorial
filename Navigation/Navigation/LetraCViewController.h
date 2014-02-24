@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface LetraCViewController : UIViewController
+@interface LetraCViewController : UIViewController <AVAudioPlayerDelegate>
 
 // Button
 @property (nonatomic, strong) UIButton *btnCacetete;
@@ -18,6 +19,9 @@
 
 // Image
 @property (nonatomic, weak) UIImage *imgCacetete;
+
+// AVAudioPlayer
+@property (nonatomic, retain) AVAudioPlayer *audioCacetete;
 
 -(IBAction)next:(id)sender;
 
