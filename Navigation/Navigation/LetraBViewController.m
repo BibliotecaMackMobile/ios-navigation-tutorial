@@ -12,7 +12,7 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"B";
+    self.title = @"Segunda";
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;

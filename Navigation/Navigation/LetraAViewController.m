@@ -12,16 +12,16 @@
 @implementation LetraAViewController
 
 
-
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"A";
+    NSLog(@"%d",_num);
+    NSString *title =[NSString stringWithFormat:@"%d", _num];
+    self.title = title;
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
     
-    UIButton *botao = [UIButton
-                                        buttonWithType:UIButtonTypeSystem];
+    UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao
      setTitle:@"Mostre uma palavra, uma figura e leia a palavra ao apertar um botao"
      forState:UIControlStateNormal];
@@ -34,9 +34,11 @@
 }
 
 -(void)next:(id)sender {
-    LetraBViewController *proximo = [[LetraBViewController alloc]
+    LetraAViewController *proximo = [[LetraAViewController alloc]
                                               initWithNibName:nil
                                             bundle:NULL];
+    int var = _num +1;
+    proximo.num = var;
     [self.navigationController pushViewController:proximo
                                          animated:YES];
     

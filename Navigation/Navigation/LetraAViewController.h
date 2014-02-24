@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LetraAViewController : UIViewController
-
+@interface LetraAViewController : UIViewController {
+    int num ;
+    NSString * palavra;
+}
+@property int num;
+@property (nonatomic,strong) NSString * palavra;
 @end
