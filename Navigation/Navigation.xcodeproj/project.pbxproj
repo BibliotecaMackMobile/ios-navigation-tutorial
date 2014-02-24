@@ -27,12 +27,34 @@
 		C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C894153C18BB6BEB00251835 /* genericViewController.xib */; };
 		C894154218BB6D7800251835 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154118BB6D7800251835 /* Dicionario.m */; };
 		C894154518BB71DE00251835 /* Letra.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154418BB71DE00251835 /* Letra.m */; };
-		C894154718BB785900251835 /* giraffe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154618BB785900251835 /* giraffe.jpg */; };
 		C894154918BBB57F00251835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C894154818BBB57F00251835 /* AVFoundation.framework */; };
 		C894154B18BBB58F00251835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C894154A18BBB58F00251835 /* AudioToolbox.framework */; };
 		C894154D18BBB87500251835 /* 2013-01-30_00002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154C18BBB87500251835 /* 2013-01-30_00002.jpg */; };
 		C894154F18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154E18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg */; };
 		C894155118BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155018BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg */; };
+		C894155318BBBAC700251835 /* Dead-Island-Game-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155218BBBAC700251835 /* Dead-Island-Game-Wallpaper.jpg */; };
+		C894155518BBBB2F00251835 /* the-elder-scrolls-online-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155418BBBB2F00251835 /* the-elder-scrolls-online-screen.jpg */; };
+		C894155718BBBB7C00251835 /* imagens-imagens-final-fantasy-a29404.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155618BBBB7C00251835 /* imagens-imagens-final-fantasy-a29404.jpg */; };
+		C894155918BBBC7700251835 /* ghoulsn-ghosts-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = C894155818BBBC7700251835 /* ghoulsn-ghosts-15.gif */; };
+		C894155B18BBBD0000251835 /* halo-reach-hd-19201080-high-definition.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155A18BBBD0000251835 /* halo-reach-hd-19201080-high-definition.jpg */; };
+		C894155D18BBBE0D00251835 /* injustice-wallpaper-wcv3i5tg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155C18BBBE0D00251835 /* injustice-wallpaper-wcv3i5tg.jpg */; };
+		C894155F18BBBEC800251835 /* James-Bond-007-Blood-Stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155E18BBBEC800251835 /* James-Bond-007-Blood-Stone.jpg */; };
+		C894156118BBC00A00251835 /* King.of.Fighters.full.713180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156018BBC00A00251835 /* King.of.Fighters.full.713180.jpg */; };
+		C894156318BBC06B00251835 /* The-Legend-of-Zelda-Wallpaper (5).jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156218BBC06B00251835 /* The-Legend-of-Zelda-Wallpaper (5).jpg */; };
+		C894156518BBC13D00251835 /* 1640108.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156418BBC13D00251835 /* 1640108.jpg */; };
+		C894156718BBC1CF00251835 /* Ninja_Gaiden_Black_Desktop_by_Ninja_Gaiden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156618BBC1CF00251835 /* Ninja_Gaiden_Black_Desktop_by_Ninja_Gaiden.jpg */; };
+		C894156918BBC25700251835 /* onimusha1_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156818BBC25700251835 /* onimusha1_2.jpg */; };
+		C894156B18BBC2A400251835 /* pokemon-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156A18BBC2A400251835 /* pokemon-5.jpg */; };
+		C894156D18BBC39700251835 /* 43841.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156C18BBC39700251835 /* 43841.jpg */; };
+		C894156F18BBC3F400251835 /* resident_evil_revelations_jill_and_chris-wallpaper-1024x768.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894156E18BBC3F400251835 /* resident_evil_revelations_jill_and_chris-wallpaper-1024x768.jpg */; };
+		C894157118BBC46300251835 /* foto-super-mario-.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157018BBC46300251835 /* foto-super-mario-.jpg */; };
+		C894157318BBC4B300251835 /* tekken5_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157218BBC4B300251835 /* tekken5_12.jpg */; };
+		C894157518BBC4EE00251835 /* Epic-Games-Isn-t-Working-on-Unreal-After-Gears-of-War-3-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157418BBC4EE00251835 /* Epic-Games-Isn-t-Working-on-Unreal-After-Gears-of-War-3-2.jpg */; };
+		C894157718BBC53600251835 /* Viewtiful.Joe.full.283279.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157618BBC53600251835 /* Viewtiful.Joe.full.283279.jpg */; };
+		C894157918BBC59500251835 /* XCOM-Enemy-Unknown-Windows-screenshot-001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157818BBC59500251835 /* XCOM-Enemy-Unknown-Windows-screenshot-001.jpg */; };
+		C894157B18BBC61200251835 /* dfds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157A18BBC61200251835 /* dfds.jpg */; };
+		C894157D18BBC67700251835 /* yu-gi-oh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157C18BBC67700251835 /* yu-gi-oh.jpg */; };
+		C894157F18BBC6CB00251835 /* 268-image-Zoo-Tycoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894157E18BBC6CB00251835 /* 268-image-Zoo-Tycoon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,12 +98,34 @@
 		C894154118BB6D7800251835 /* Dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicionario.m; sourceTree = "<group>"; };
 		C894154318BB71DE00251835 /* Letra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letra.h; sourceTree = "<group>"; };
 		C894154418BB71DE00251835 /* Letra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letra.m; sourceTree = "<group>"; };
-		C894154618BB785900251835 /* giraffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giraffe.jpg; sourceTree = "<group>"; };
 		C894154818BBB57F00251835 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C894154A18BBB58F00251835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C894154C18BBB87500251835 /* 2013-01-30_00002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2013-01-30_00002.jpg"; sourceTree = "<group>"; };
 		C894154E18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bomberman-2-wallpaper-19737.jpg"; sourceTree = "<group>"; };
 		C894155018BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = call_of_duty_modern_warfare_3.jpg; sourceTree = "<group>"; };
+		C894155218BBBAC700251835 /* Dead-Island-Game-Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dead-Island-Game-Wallpaper.jpg"; sourceTree = "<group>"; };
+		C894155418BBBB2F00251835 /* the-elder-scrolls-online-screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "the-elder-scrolls-online-screen.jpg"; sourceTree = "<group>"; };
+		C894155618BBBB7C00251835 /* imagens-imagens-final-fantasy-a29404.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imagens-imagens-final-fantasy-a29404.jpg"; sourceTree = "<group>"; };
+		C894155818BBBC7700251835 /* ghoulsn-ghosts-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ghoulsn-ghosts-15.gif"; sourceTree = "<group>"; };
+		C894155A18BBBD0000251835 /* halo-reach-hd-19201080-high-definition.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "halo-reach-hd-19201080-high-definition.jpg"; sourceTree = "<group>"; };
+		C894155C18BBBE0D00251835 /* injustice-wallpaper-wcv3i5tg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "injustice-wallpaper-wcv3i5tg.jpg"; sourceTree = "<group>"; };
+		C894155E18BBBEC800251835 /* James-Bond-007-Blood-Stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "James-Bond-007-Blood-Stone.jpg"; sourceTree = "<group>"; };
+		C894156018BBC00A00251835 /* King.of.Fighters.full.713180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = King.of.Fighters.full.713180.jpg; sourceTree = "<group>"; };
+		C894156218BBC06B00251835 /* The-Legend-of-Zelda-Wallpaper (5).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Legend-of-Zelda-Wallpaper (5).jpg"; sourceTree = "<group>"; };
+		C894156418BBC13D00251835 /* 1640108.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1640108.jpg; sourceTree = "<group>"; };
+		C894156618BBC1CF00251835 /* Ninja_Gaiden_Black_Desktop_by_Ninja_Gaiden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ninja_Gaiden_Black_Desktop_by_Ninja_Gaiden.jpg; sourceTree = "<group>"; };
+		C894156818BBC25700251835 /* onimusha1_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onimusha1_2.jpg; sourceTree = "<group>"; };
+		C894156A18BBC2A400251835 /* pokemon-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pokemon-5.jpg"; sourceTree = "<group>"; };
+		C894156C18BBC39700251835 /* 43841.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 43841.jpg; sourceTree = "<group>"; };
+		C894156E18BBC3F400251835 /* resident_evil_revelations_jill_and_chris-wallpaper-1024x768.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "resident_evil_revelations_jill_and_chris-wallpaper-1024x768.jpg"; sourceTree = "<group>"; };
+		C894157018BBC46300251835 /* foto-super-mario-.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "foto-super-mario-.jpg"; sourceTree = "<group>"; };
+		C894157218BBC4B300251835 /* tekken5_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tekken5_12.jpg; sourceTree = "<group>"; };
+		C894157418BBC4EE00251835 /* Epic-Games-Isn-t-Working-on-Unreal-After-Gears-of-War-3-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Epic-Games-Isn-t-Working-on-Unreal-After-Gears-of-War-3-2.jpg"; sourceTree = "<group>"; };
+		C894157618BBC53600251835 /* Viewtiful.Joe.full.283279.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Viewtiful.Joe.full.283279.jpg; sourceTree = "<group>"; };
+		C894157818BBC59500251835 /* XCOM-Enemy-Unknown-Windows-screenshot-001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "XCOM-Enemy-Unknown-Windows-screenshot-001.jpg"; sourceTree = "<group>"; };
+		C894157A18BBC61200251835 /* dfds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dfds.jpg; sourceTree = "<group>"; };
+		C894157C18BBC67700251835 /* yu-gi-oh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yu-gi-oh.jpg"; sourceTree = "<group>"; };
+		C894157E18BBC6CB00251835 /* 268-image-Zoo-Tycoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "268-image-Zoo-Tycoon.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +159,32 @@
 			children = (
 				C894154318BB71DE00251835 /* Letra.h */,
 				C894154418BB71DE00251835 /* Letra.m */,
-				C894154618BB785900251835 /* giraffe.jpg */,
 				C894154C18BBB87500251835 /* 2013-01-30_00002.jpg */,
 				C894154E18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg */,
 				C894155018BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg */,
+				C894155218BBBAC700251835 /* Dead-Island-Game-Wallpaper.jpg */,
+				C894155418BBBB2F00251835 /* the-elder-scrolls-online-screen.jpg */,
+				C894155618BBBB7C00251835 /* imagens-imagens-final-fantasy-a29404.jpg */,
+				C894155818BBBC7700251835 /* ghoulsn-ghosts-15.gif */,
+				C894155A18BBBD0000251835 /* halo-reach-hd-19201080-high-definition.jpg */,
+				C894155C18BBBE0D00251835 /* injustice-wallpaper-wcv3i5tg.jpg */,
+				C894155E18BBBEC800251835 /* James-Bond-007-Blood-Stone.jpg */,
+				C894156018BBC00A00251835 /* King.of.Fighters.full.713180.jpg */,
+				C894156218BBC06B00251835 /* The-Legend-of-Zelda-Wallpaper (5).jpg */,
+				C894156418BBC13D00251835 /* 1640108.jpg */,
+				C894156618BBC1CF00251835 /* Ninja_Gaiden_Black_Desktop_by_Ninja_Gaiden.jpg */,
+				C894156818BBC25700251835 /* onimusha1_2.jpg */,
+				C894156A18BBC2A400251835 /* pokemon-5.jpg */,
+				C894156C18BBC39700251835 /* 43841.jpg */,
+				C894156E18BBC3F400251835 /* resident_evil_revelations_jill_and_chris-wallpaper-1024x768.jpg */,
+				C894157018BBC46300251835 /* foto-super-mario-.jpg */,
+				C894157218BBC4B300251835 /* tekken5_12.jpg */,
+				C894157418BBC4EE00251835 /* Epic-Games-Isn-t-Working-on-Unreal-After-Gears-of-War-3-2.jpg */,
+				C894157618BBC53600251835 /* Viewtiful.Joe.full.283279.jpg */,
+				C894157818BBC59500251835 /* XCOM-Enemy-Unknown-Windows-screenshot-001.jpg */,
+				C894157A18BBC61200251835 /* dfds.jpg */,
+				C894157C18BBC67700251835 /* yu-gi-oh.jpg */,
+				C894157E18BBC6CB00251835 /* 268-image-Zoo-Tycoon.jpg */,
 				C894154018BB6D7800251835 /* Dicionario.h */,
 				C894154118BB6D7800251835 /* Dicionario.m */,
 				27156F5218B76AF50053A99C /* Navigation */,
@@ -284,13 +350,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C894154718BB785900251835 /* giraffe.jpg in Resources */,
+				C894156518BBC13D00251835 /* 1640108.jpg in Resources */,
+				C894156118BBC00A00251835 /* King.of.Fighters.full.713180.jpg in Resources */,
+				C894157118BBC46300251835 /* foto-super-mario-.jpg in Resources */,
+				C894155518BBBB2F00251835 /* the-elder-scrolls-online-screen.jpg in Resources */,
+				C894157D18BBC67700251835 /* yu-gi-oh.jpg in Resources */,
+				C894155F18BBBEC800251835 /* James-Bond-007-Blood-Stone.jpg in Resources */,
+				C894157B18BBC61200251835 /* dfds.jpg in Resources */,
+				C894157518BBC4EE00251835 /* Epic-Games-Isn-t-Working-on-Unreal-After-Gears-of-War-3-2.jpg in Resources */,
+				C894156718BBC1CF00251835 /* Ninja_Gaiden_Black_Desktop_by_Ninja_Gaiden.jpg in Resources */,
+				C894156B18BBC2A400251835 /* pokemon-5.jpg in Resources */,
+				C894156F18BBC3F400251835 /* resident_evil_revelations_jill_and_chris-wallpaper-1024x768.jpg in Resources */,
+				C894155B18BBBD0000251835 /* halo-reach-hd-19201080-high-definition.jpg in Resources */,
+				C894157F18BBC6CB00251835 /* 268-image-Zoo-Tycoon.jpg in Resources */,
+				C894156318BBC06B00251835 /* The-Legend-of-Zelda-Wallpaper (5).jpg in Resources */,
+				C894156918BBC25700251835 /* onimusha1_2.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				C894155D18BBBE0D00251835 /* injustice-wallpaper-wcv3i5tg.jpg in Resources */,
 				C894154D18BBB87500251835 /* 2013-01-30_00002.jpg in Resources */,
+				C894155318BBBAC700251835 /* Dead-Island-Game-Wallpaper.jpg in Resources */,
+				C894157718BBC53600251835 /* Viewtiful.Joe.full.283279.jpg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 				C894154F18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg in Resources */,
 				C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */,
+				C894155918BBBC7700251835 /* ghoulsn-ghosts-15.gif in Resources */,
+				C894156D18BBC39700251835 /* 43841.jpg in Resources */,
 				C894155118BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg in Resources */,
+				C894157918BBC59500251835 /* XCOM-Enemy-Unknown-Windows-screenshot-001.jpg in Resources */,
+				C894155718BBBB7C00251835 /* imagens-imagens-final-fantasy-a29404.jpg in Resources */,
+				C894157318BBC4B300251835 /* tekken5_12.jpg in Resources */,
 				C894153918BB6BC600251835 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
