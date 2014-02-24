@@ -16,6 +16,7 @@
     LetraAViewController *viewController = [[LetraAViewController alloc]
                                            initWithNibName:nil
                                            bundle:nil];
+    viewController.lether = @"A";
     
     
     self.navigationController = [[UINavigationController alloc]

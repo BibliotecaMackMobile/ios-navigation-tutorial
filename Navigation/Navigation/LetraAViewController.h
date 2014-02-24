@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Singleton.h"
 
 @interface LetraAViewController : UIViewController
+
+@property (strong, nonatomic) NSString *lether;
+@property (strong, nonatomic) Singleton *singleton;
 
 @end

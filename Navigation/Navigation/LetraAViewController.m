@@ -8,14 +8,15 @@
 
 #import "LetraAViewController.h"
 #import "LetraBViewController.h"
+#import "Pagina.h"
 
 @implementation LetraAViewController
 
-
+@synthesize lether,singleton;
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"A";
+    self.title = lether;
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -34,9 +35,13 @@
 }
 
 -(void)next:(id)sender {
-    LetraBViewController *proximo = [[LetraBViewController alloc]
+    singleton = [Singleton getInstancia];
+    LetraAViewController *proximo = [[LetraAViewController alloc]
                                               initWithNibName:nil
                                             bundle:NULL];
+    Pagina *p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
+    proximo.lether = p.title;
+    singleton.cont++;
     [self.navigationController pushViewController:proximo
                                          animated:YES];
     
