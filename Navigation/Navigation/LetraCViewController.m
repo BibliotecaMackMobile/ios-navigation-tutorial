@@ -17,6 +17,10 @@
 -(IBAction)next:(id)sender {
 }
 
+-(IBAction)descreverImagem:(id)sender {
+    NSLog(@"ImagemC");
+}
+
 #pragma mark - UIViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -45,9 +49,14 @@
     [[self imgViewCacetete] setImage:[self imgCacetete]];
     
     // Botão
+    [self setBtnCacetete:[[UIButton alloc] initWithFrame:CGRectMake(10, 100, 100, 100)]];
+    [[self btnCacetete] setTitle:@"Cacetete" forState:UIControlStateNormal];
+    [[self btnCacetete] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [[self btnCacetete] addTarget:self action:@selector(descreverImagem:) forControlEvents:UIControlEventTouchUpInside];
     
     // Adiciona no canvas
     [[self view] addSubview:[self imgViewCacetete]];
+    [[self view]addSubview:[self btnCacetete]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -21,4 +21,6 @@
 
 -(IBAction)next:(id)sender;
 
+-(IBAction)descreverImagem:(id)sender;
+
 @end
