@@ -15,8 +15,15 @@
     LetraAViewController *viewController = [[LetraAViewController alloc]
                                            initWithNibName:nil
                                            bundle:nil];
-    
+    NSArray *keys = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
+    NSArray *objects = [NSArray arrayWithObjects:@"Aranha",@"Barata",@"Carro",@"Diagrama",@"Elefante",@"Faca",@"Garfo",@"Homem",@"Irmão",@"Jaleco",@"Kaiak",@"Ladeira",@"Madeira",@"Norte",@"Ombro",@"Pizza",@"Queijo",@"Rato",@"Sardinha",@"Tempo",@"Urso",@"Vaca",@"Window",@"Xarope",@"You",@"Zebra", nil];
+
     viewController.num = 0;
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects
+                                                           forKeys:keys];
+    
+    viewController.palavras = objects;
+    viewController.letras = keys;
     self.navigationController = [[UINavigationController alloc]
                                  initWithRootViewController:viewController];
     self.window = [[UIWindow alloc]

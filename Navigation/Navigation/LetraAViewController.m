@@ -13,13 +13,10 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    NSArray *keys = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
-    NSArray *objects = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:objects
-                                                           forKeys:keys];
-
     NSLog(@"%d",_num);
-    
+    NSArray *keys = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
+    NSArray *objects = [NSArray arrayWithObjects:@"Aranha",@"Barata",@"Carro",@"Diagrama",@"Elefante",@"Faca",@"Garfo",@"Homem",@"Irmão",@"Jaleco",@"Kaiak",@"Ladeira",@"Madeira",@"Norte",@"Ombro",@"Pizza",@"Queijo",@"Rato",@"Sardinha",@"Tempo",@"Urso",@"Vaca",@"Window",@"Xarope",@"You",@"Zebra", nil];
+
     NSString *title =[keys objectAtIndex:_num];
     self.title = title;
         UIBarButtonItem *next = [[UIBarButtonItem alloc]
@@ -31,15 +28,28 @@
     
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao
-     setTitle:_palavra
+     setTitle:[objects objectAtIndex:_num]
      forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
     
     [self.view addSubview:botao];
-    
+    [self Speak:[objects objectAtIndex:_num]];
  
 }
+
+-(void) Speak :(NSString *) text
+{
+    
+    fala =[[ AVSpeechSynthesizer alloc] init];
+    falau = [[AVSpeechUtterance alloc] init];
+    falau = [AVSpeechUtterance speechUtteranceWithString:text];
+    [falau setRate:0.01f];
+    //[falau setVoice:<#(AVSpeechSynthesisVoice *)#>]
+    falau.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-PT"];
+    [fala speakUtterance:falau];
+}
+
 
 -(void)next:(id)sender {
     int var = _num +1;
