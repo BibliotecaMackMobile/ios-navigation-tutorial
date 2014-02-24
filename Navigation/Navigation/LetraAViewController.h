@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Singleton.h"
+#import "Pagina.h"
 
 @interface LetraAViewController : UIViewController
 
-@property (strong, nonatomic) NSString *letter;
+@property (strong, nonatomic) UILabel *letter;
+@property (strong, nonatomic) UILabel *word;
 @property (strong, nonatomic) Singleton *singleton;
+@property (strong, nonatomic) NSString *ttitle;
+@property (strong, nonatomic) Pagina *p;
 
 @end

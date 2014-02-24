@@ -7,16 +7,21 @@
 //
 
 #import "LetraAViewController.h"
-#import "LetraBViewController.h"
-#import "Pagina.h"
 
 @implementation LetraAViewController
 
-@synthesize letter,singleton;
+@synthesize letter,singleton,ttitle,word,p;
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = letter;
+    singleton = [Singleton getInstancia];
+    p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
+    letter = [[UILabel alloc]initWithFrame:CGRectMake(30, 130, 120 , 120)];
+    word = [[UILabel alloc]initWithFrame:CGRectMake(60, 260, 120 , 20)];
+    letter.font = [UIFont fontWithName:@"Arial" size:130.0f];
+    letter.text = ttitle;
+    word.text = p.word;
+    self.title = ttitle;
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -29,8 +34,9 @@
     [botao sizeToFit];
     botao.center = self.view.center;
     
-    [self.view addSubview:botao];
-    
+    //[self.view addSubview:botao];
+    [self.view addSubview:letter];
+    [self.view addSubview:word];
  
 }
 
@@ -39,8 +45,8 @@
     LetraAViewController *proximo = [[LetraAViewController alloc]
                                               initWithNibName:nil
                                             bundle:NULL];
-    Pagina *p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
-    proximo.letter = p.title;
+    proximo.ttitle = p.title;
+    proximo.letter.text = p.title;
     singleton.cont++;
     [self.navigationController pushViewController:proximo
                                          animated:YES];
