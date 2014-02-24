@@ -12,6 +12,7 @@
 
 @interface LetraAViewController : UIViewController {
     int num ;
+    NSString * nomeImagem;
     UIImage *imagem;
     NSArray *letras;
     NSArray *palavras;

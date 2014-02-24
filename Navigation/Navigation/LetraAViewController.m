@@ -17,9 +17,14 @@
     NSString *title =[_letras objectAtIndex:_num];
     self.title = title;
         UIBarButtonItem *next = [[UIBarButtonItem alloc]
-                                 initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
-        self.navigationItem.rightBarButtonItem=next;
-        
+                                 initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:) ];
+    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
+//                                            initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
+//                                             target:self action:@selector(back:) ];
+    self.navigationItem.rightBarButtonItem=next;
+    
+    
     if(_num ==25)
         self.navigationItem.rightBarButtonItem=nil;
     
@@ -30,7 +35,13 @@
     [botao sizeToFit];
     botao.center = self.view.center;
     
+    nomeImagem =  [[_palavras objectAtIndex:_num]stringByAppendingString:@".jpg"];
+     _imagem = [UIImage imageNamed:nomeImagem];
+    UIImageView * novo = [[UIImageView alloc]initWithImage:_imagem];
+    novo.center = self.view.center;
+    [self.view addSubview:novo];
     [self.view addSubview:botao];
+    
     [self Speak:[_palavras objectAtIndex:_num]];
  
 }
@@ -43,18 +54,23 @@
     falau = [AVSpeechUtterance speechUtteranceWithString:text];
     [falau setRate:0.01f];
     //[falau setVoice:<#(AVSpeechSynthesisVoice *)#>]
-    falau.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-PT"];
+    falau.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
     [fala speakUtterance:falau];
 }
 
+-(void)back:(id)sender {
+    _num = _num-1;
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 
 -(void)next:(id)sender {
-    int var = _num +1;
+    _num = _num +1;
     LetraAViewController *proximo = [[LetraAViewController alloc]
                                      initWithNibName:nil
                                      bundle:NULL];
     
-    proximo.num = var;
+    proximo.num = _num;
     proximo.palavras = _palavras;
     proximo.letras = _letras;
     
