@@ -24,13 +24,13 @@
     return [self getInstance];
 }
 
--(id)initSecret{
+-(id)init{
     self = [super init];
     if(self){
     elDicionario = [[NSMutableArray alloc]init];
-        [elDicionario addObject:[[Letra alloc]initWithLetter:@"a" andWord:@"Antchamber" andImagename:@"giraffe.jpg"]];
-        [elDicionario addObject:[[Letra alloc]initWithLetter:@"b" andWord:@"Bomberman" andImagename:@"giraffe.jpg"]];
-        [elDicionario addObject:[[Letra alloc]initWithLetter:@"c" andWord:@"call of duty" andImagename:@"giraffe.jpg"]];
+        [elDicionario addObject:[[Letra alloc]initWithLetter:@"a" andWord:@"Antchamber" andImagename:@"2013-01-30_00002.jpg"]];
+        [elDicionario addObject:[[Letra alloc]initWithLetter:@"b" andWord:@"Bomberman" andImagename:@"bomberman-2-wallpaper-19737.jpg"]];
+        [elDicionario addObject:[[Letra alloc]initWithLetter:@"c" andWord:@"call of duty" andImagename:@"call_of_duty_modern_warfare_3.jpg"]];
         [elDicionario addObject:[[Letra alloc]initWithLetter:@"d" andWord:@"Dead Island" andImagename:@"giraffe.jpg"]];
         [elDicionario addObject:[[Letra alloc]initWithLetter:@"e" andWord:@"Elder Scrolls" andImagename:@"giraffe.jpg"]];
         [elDicionario addObject:[[Letra alloc]initWithLetter:@"f" andWord:@"Final Fantasy" andImagename:@"giraffe.jpg"]];
@@ -57,7 +57,9 @@
     }
     return self;
 }
-
+-(Letra*)getletra:(int)index{
+    return [elDicionario objectAtIndex:index];
+}
 
 
 @end

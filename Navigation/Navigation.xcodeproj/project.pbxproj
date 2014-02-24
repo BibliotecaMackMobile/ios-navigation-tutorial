@@ -28,6 +28,11 @@
 		C894154218BB6D7800251835 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154118BB6D7800251835 /* Dicionario.m */; };
 		C894154518BB71DE00251835 /* Letra.m in Sources */ = {isa = PBXBuildFile; fileRef = C894154418BB71DE00251835 /* Letra.m */; };
 		C894154718BB785900251835 /* giraffe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154618BB785900251835 /* giraffe.jpg */; };
+		C894154918BBB57F00251835 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C894154818BBB57F00251835 /* AVFoundation.framework */; };
+		C894154B18BBB58F00251835 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C894154A18BBB58F00251835 /* AudioToolbox.framework */; };
+		C894154D18BBB87500251835 /* 2013-01-30_00002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154C18BBB87500251835 /* 2013-01-30_00002.jpg */; };
+		C894154F18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894154E18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg */; };
+		C894155118BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C894155018BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,11 @@
 		C894154318BB71DE00251835 /* Letra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letra.h; sourceTree = "<group>"; };
 		C894154418BB71DE00251835 /* Letra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letra.m; sourceTree = "<group>"; };
 		C894154618BB785900251835 /* giraffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giraffe.jpg; sourceTree = "<group>"; };
+		C894154818BBB57F00251835 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C894154A18BBB58F00251835 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C894154C18BBB87500251835 /* 2013-01-30_00002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2013-01-30_00002.jpg"; sourceTree = "<group>"; };
+		C894154E18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bomberman-2-wallpaper-19737.jpg"; sourceTree = "<group>"; };
+		C894155018BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = call_of_duty_modern_warfare_3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C894154B18BBB58F00251835 /* AudioToolbox.framework in Frameworks */,
+				C894154918BBB57F00251835 /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -104,6 +116,9 @@
 				C894154318BB71DE00251835 /* Letra.h */,
 				C894154418BB71DE00251835 /* Letra.m */,
 				C894154618BB785900251835 /* giraffe.jpg */,
+				C894154C18BBB87500251835 /* 2013-01-30_00002.jpg */,
+				C894154E18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg */,
+				C894155018BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg */,
 				C894154018BB6D7800251835 /* Dicionario.h */,
 				C894154118BB6D7800251835 /* Dicionario.m */,
 				27156F5218B76AF50053A99C /* Navigation */,
@@ -125,6 +140,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C894154A18BBB58F00251835 /* AudioToolbox.framework */,
+				C894154818BBB57F00251835 /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -269,8 +286,11 @@
 			files = (
 				C894154718BB785900251835 /* giraffe.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				C894154D18BBB87500251835 /* 2013-01-30_00002.jpg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				C894154F18BBB8DB00251835 /* bomberman-2-wallpaper-19737.jpg in Resources */,
 				C894153E18BB6BEB00251835 /* genericViewController.xib in Resources */,
+				C894155118BBB9F200251835 /* call_of_duty_modern_warfare_3.jpg in Resources */,
 				C894153918BB6BC600251835 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

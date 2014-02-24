@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Letra.h"
 @interface Dicionario : NSObject
 {
     NSMutableArray *elDicionario;
 }
+-(Letra*)getletra:(int)index;
+
 @end

@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Dicionario.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 @interface InitialViewController : UIViewController
+{
+    Dicionario *things;
+    
+}
 @property (weak, nonatomic) IBOutlet UILabel *Letter;
 @property (weak, nonatomic) IBOutlet UILabel *word;
 @property (weak, nonatomic) IBOutlet UIImageView *imege;
