@@ -7,8 +7,10 @@
 //
 
 #import "LetraAViewController.h"
-#import "LetraBViewController.h"
+//#import "LetraBViewController.h"
 #import "dicionario.h"
+#import "shared.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation LetraAViewController
 
@@ -17,6 +19,12 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
     [self preencheDicionario];
+    
+    CGRect myImageRect = CGRectMake( 100.0f, 100.0f, 40.0f, 40.0f);
+    UIImageView *myImage = [[UIImageView alloc]initWithFrame:myImageRect];
+    
+    [myImage setImage:[UIImage imageNamed:@"Corinthians_simbolo.png"]];
+    [self.view addSubview:myImage];
     
     shared *c = [shared sharedInstance];
     dicionario *d = [[dicionario alloc]init];
@@ -27,10 +35,16 @@
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
     
+    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:d.palavra];
+    [utterance setRate:0.1f];
+    [synthesizer speakUtterance:utterance];
+    
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao setTitle:d.palavra forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
+    
     
     [self.view addSubview:botao];
     

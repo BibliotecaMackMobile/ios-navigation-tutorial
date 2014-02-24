@@ -20,9 +20,11 @@
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 		F339D6BF18BB6C01001A16FA /* shared.m in Sources */ = {isa = PBXBuildFile; fileRef = F339D6BE18BB6C01001A16FA /* shared.m */; };
 		F339D6C218BB70AF001A16FA /* dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = F339D6C118BB70AF001A16FA /* dicionario.m */; };
+		F339D6C418BB83C9001A16FA /* Corinthians_simbolo.png in Resources */ = {isa = PBXBuildFile; fileRef = F339D6C318BB83C9001A16FA /* Corinthians_simbolo.png */; };
+		F339D6C618BB846E001A16FA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F339D6C518BB846E001A16FA /* AVFoundation.framework */; };
+		F339D6C818BB8474001A16FA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F339D6C718BB8474001A16FA /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +56,13 @@
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
 		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
 		F339D6BD18BB6C01001A16FA /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
 		F339D6BE18BB6C01001A16FA /* shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shared.m; sourceTree = "<group>"; };
 		F339D6C018BB70AF001A16FA /* dicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dicionario.h; sourceTree = "<group>"; };
 		F339D6C118BB70AF001A16FA /* dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dicionario.m; sourceTree = "<group>"; };
+		F339D6C318BB83C9001A16FA /* Corinthians_simbolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Corinthians_simbolo.png; sourceTree = "<group>"; };
+		F339D6C518BB846E001A16FA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F339D6C718BB8474001A16FA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F339D6C818BB8474001A16FA /* AudioToolbox.framework in Frameworks */,
+				F339D6C618BB846E001A16FA /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -108,6 +113,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F339D6C718BB8474001A16FA /* AudioToolbox.framework */,
+				F339D6C518BB846E001A16FA /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -125,12 +132,11 @@
 				27156F5318B76AF50053A99C /* Supporting Files */,
 				27156F7B18BA89430053A99C /* LetraAViewController.h */,
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 				F339D6C018BB70AF001A16FA /* dicionario.h */,
 				F339D6C118BB70AF001A16FA /* dicionario.m */,
 				F339D6BD18BB6C01001A16FA /* shared.h */,
 				F339D6BE18BB6C01001A16FA /* shared.m */,
+				F339D6C318BB83C9001A16FA /* Corinthians_simbolo.png */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				F339D6C418BB83C9001A16FA /* Corinthians_simbolo.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +271,6 @@
 				F339D6BF18BB6C01001A16FA /* shared.m in Sources */,
 				F339D6C218BB70AF001A16FA /* dicionario.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
