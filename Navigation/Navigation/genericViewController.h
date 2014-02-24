@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface genericViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *letter;
+@property (weak, nonatomic) IBOutlet UILabel *word;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @end
