@@ -1,27 +1,18 @@
 //
-//  LetraCViewController.m
+//  LetraViewController.m
 //  Navigation
 //
 //  Created by Luiz on 24/02/14.
 //  Copyright (c) 2014 Vinicius Miana. All rights reserved.
 //
 
-#import "LetraCViewController.h"
+#import "LetraViewController.h"
 
-@interface LetraCViewController ()
+@interface LetraViewController ()
 
 @end
 
-@implementation LetraCViewController
-
--(IBAction)next:(id)sender {
-}
-
--(IBAction)descreverImagem:(id)sender {
-    NSLog(@"ImagemC");
-}
-
-#pragma mark - UIViewController
+@implementation LetraViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

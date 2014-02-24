@@ -16,6 +16,6 @@
 @property (nonatomic, strong) UIImage *img;
 @property (nonatomic, strong) UIButton *btn;
 
--(id)initWithNome:(NSString*)valorNome andImageView:(UIImageView*)valorImgView andImage:(UIImage*)valorImg andBotao:(UIButton*)valorBtn;
+-(id)initWithNome:(NSString*)valorNome andImageView:(UIImageView*)valorImgView andBotao:(UIButton*)valorBtn;
 
 @end

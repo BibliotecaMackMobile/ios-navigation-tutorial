@@ -10,11 +10,10 @@
 
 @implementation LetraDicionario
 
--(id)initWithNome:(NSString *)valorNome andImageView:(UIImageView *)valorImgView andImage:(UIImage *)valorImg andBotao:(UIButton *)valorBtn {
+-(id)initWithNome:(NSString *)valorNome andImageView:(UIImageView *)valorImgView andBotao:(UIButton *)valorBtn {
     
     [self setNome:valorNome];
     [self setImgView:valorImgView];
-    [self setImg:valorImg];
     [self setBtn:valorBtn];
     
     return self;

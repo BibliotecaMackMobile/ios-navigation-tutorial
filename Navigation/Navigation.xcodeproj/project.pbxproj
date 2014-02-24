@@ -13,6 +13,8 @@
 		250D0C9A18BB7B21001B6AB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */; };
 		250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */; };
 		250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */; };
+		250D0CA318BBA8CD001B6AB8 /* LetraBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0CA218BBA8CD001B6AB8 /* LetraBuild.m */; };
+		250D0CA618BBB217001B6AB8 /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0CA518BBB217001B6AB8 /* LetraViewController.m */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -49,6 +51,10 @@
 		250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionario.m; sourceTree = "<group>"; };
 		250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionarioModel.h; sourceTree = "<group>"; };
 		250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionarioModel.m; sourceTree = "<group>"; };
+		250D0CA118BBA8CD001B6AB8 /* LetraBuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBuild.h; sourceTree = "<group>"; };
+		250D0CA218BBA8CD001B6AB8 /* LetraBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBuild.m; sourceTree = "<group>"; };
+		250D0CA418BBB217001B6AB8 /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
+		250D0CA518BBB217001B6AB8 /* LetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraViewController.m; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,11 +111,42 @@
 			name = Imagem;
 			sourceTree = "<group>";
 		};
-		250D0C9618BB72C0001B6AB8 /* New Group */ = {
+		250D0C9618BB72C0001B6AB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
+				250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */,
+				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
+				250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */,
+				250D0CA118BBA8CD001B6AB8 /* LetraBuild.h */,
+				250D0CA218BBA8CD001B6AB8 /* LetraBuild.m */,
 			);
-			name = "New Group";
+			name = Model;
+			sourceTree = "<group>";
+		};
+		250D0CA718BBB25E001B6AB8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27156F7B18BA89430053A99C /* LetraAViewController.h */,
+				27156F7C18BA89430053A99C /* LetraAViewController.m */,
+				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
+				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
+				250D0C9018BB6CC4001B6AB8 /* LetraCViewController.h */,
+				250D0C9118BB6CC4001B6AB8 /* LetraCViewController.m */,
+				250D0CA418BBB217001B6AB8 /* LetraViewController.h */,
+				250D0CA518BBB217001B6AB8 /* LetraViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		250D0CA818BBB279001B6AB8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
+				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
+				27156F5E18B76AF50053A99C /* Images.xcassets */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 		27156F4018B76AF50053A99C = {
@@ -147,20 +184,11 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				250D0C9618BB72C0001B6AB8 /* New Group */,
+				250D0CA818BBB279001B6AB8 /* AppDelegate */,
+				250D0CA718BBB25E001B6AB8 /* ViewController */,
+				250D0C9618BB72C0001B6AB8 /* Model */,
 				250D0C9318BB718D001B6AB8 /* Imagem */,
-				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
-				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
-				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
-				27156F7B18BA89430053A99C /* LetraAViewController.h */,
-				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
-				250D0C9018BB6CC4001B6AB8 /* LetraCViewController.h */,
-				250D0C9118BB6CC4001B6AB8 /* LetraCViewController.m */,
-				250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */,
-				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -172,8 +200,6 @@
 				27156F5518B76AF50053A99C /* InfoPlist.strings */,
 				27156F5818B76AF50053A99C /* main.m */,
 				27156F5A18B76AF50053A99C /* Navigation-Prefix.pch */,
-				250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */,
-				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -294,12 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
+				250D0CA618BBB217001B6AB8 /* LetraViewController.m in Sources */,
 				250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 				250D0C9218BB6CC4001B6AB8 /* LetraCViewController.m in Sources */,
 				250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */,
+				250D0CA318BBA8CD001B6AB8 /* LetraBuild.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

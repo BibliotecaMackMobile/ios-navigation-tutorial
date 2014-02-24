@@ -10,4 +10,10 @@
 
 @interface LetraDicionarioModel : NSObject
 
+// NSArray
+@property (nonatomic, strong) NSMutableDictionary *lista;
+
+//
++(LetraDicionarioModel*)sharadManager;
+
 @end
