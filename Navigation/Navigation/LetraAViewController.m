@@ -14,10 +14,7 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%d",_num);
-    NSArray *keys = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
-    NSArray *objects = [NSArray arrayWithObjects:@"Aranha",@"Barata",@"Carro",@"Diagrama",@"Elefante",@"Faca",@"Garfo",@"Homem",@"Irmão",@"Jaleco",@"Kaiak",@"Ladeira",@"Madeira",@"Norte",@"Ombro",@"Pizza",@"Queijo",@"Rato",@"Sardinha",@"Tempo",@"Urso",@"Vaca",@"Window",@"Xarope",@"You",@"Zebra", nil];
-
-    NSString *title =[keys objectAtIndex:_num];
+    NSString *title =[_letras objectAtIndex:_num];
     self.title = title;
         UIBarButtonItem *next = [[UIBarButtonItem alloc]
                                  initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
@@ -28,13 +25,13 @@
     
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao
-     setTitle:[objects objectAtIndex:_num]
+     setTitle:[_palavras objectAtIndex:_num]
      forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
     
     [self.view addSubview:botao];
-    [self Speak:[objects objectAtIndex:_num]];
+    [self Speak:[_palavras objectAtIndex:_num]];
  
 }
 
@@ -58,7 +55,9 @@
                                      bundle:NULL];
     
     proximo.num = var;
-    proximo.palavra = @"Eduardo";
+    proximo.palavras = _palavras;
+    proximo.letras = _letras;
+    
     [self.navigationController pushViewController:proximo
                                          animated:YES];
     

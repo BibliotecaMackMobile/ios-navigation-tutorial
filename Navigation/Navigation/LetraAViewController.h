@@ -12,8 +12,6 @@
 
 @interface LetraAViewController : UIViewController {
     int num ;
-    NSString *letra;
-    NSString *palavra;
     UIImage *imagem;
     NSArray *letras;
     NSArray *palavras;
