@@ -20,7 +20,8 @@
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
+		9CEC38F418BB7075003959D6 /* Palavras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38F318BB7075003959D6 /* Palavras.m */; };
+		9CEC38F618BB78A6003959D6 /* aranha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC38F518BB78A6003959D6 /* aranha.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
 		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		9CEC38F218BB7075003959D6 /* Palavras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palavras.h; sourceTree = "<group>"; };
+		9CEC38F318BB7075003959D6 /* Palavras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavras.m; sourceTree = "<group>"; };
+		9CEC38F518BB78A6003959D6 /* aranha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aranha.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +121,9 @@
 				27156F5318B76AF50053A99C /* Supporting Files */,
 				27156F7B18BA89430053A99C /* LetraAViewController.h */,
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
+				9CEC38F218BB7075003959D6 /* Palavras.h */,
+				9CEC38F318BB7075003959D6 /* Palavras.m */,
+				9CEC38F518BB78A6003959D6 /* aranha.jpg */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEC38F618BB78A6003959D6 /* aranha.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 			);
@@ -252,8 +256,8 @@
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
+				9CEC38F418BB7075003959D6 /* Palavras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +458,7 @@
 				27156F7718B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27156F7818B76AF50053A99C /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +467,7 @@
 				27156F7A18B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

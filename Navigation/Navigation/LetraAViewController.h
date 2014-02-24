@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Palavras.h"
 
-@interface LetraAViewController : UIViewController
+@interface LetraAViewController : UIViewController{
+    Palavras *a;
+    Palavras *b;
+    Palavras *c;
+    Palavras *d;
+    Palavras *e;
+    
+}
 
 @end
