@@ -10,4 +10,16 @@
 
 @interface LetraViewController : UIViewController
 
+// ImageView
+@property (nonatomic, strong) UIImageView *imgViewImagem;
+
+// Button
+@property (nonatomic, strong) UIButton *btnPlayAudio;
+
+// Metodo para o canvas
+-(CGRect)makeRectWithX:(CGFloat)x andY:(CGFloat)y andLargura:(CGFloat)largura andAltura:(CGFloat)altura;
+
+// Metodo para UIViewNavegationController
+-(IBAction)next:(id)sender;
+
 @end

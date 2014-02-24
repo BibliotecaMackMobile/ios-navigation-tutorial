@@ -36,6 +36,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self setTitle:@"C"];
+    
+    // Navigation
+    UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
+    [[self navigationItem] setRightBarButtonItem:next];
+    
+    // Imagens
+    [self setImgCacetete:[UIImage imageNamed:@"Cacetete.jpg"]];
+    [self setImgViewCacetete:[[UIImageView alloc] initWithFrame:CGRectMake(10, 30, 100, 100)]];
+    [[self imgViewCacetete] setImage:[self imgCacetete]];
+    
+    // Botão
+    [self setBtnCacetete:[[UIButton alloc] initWithFrame:CGRectMake(10, 100, 100, 100)]];
+    [[self btnCacetete] setTitle:@"Cacetete" forState:UIControlStateNormal];
+    [[self btnCacetete] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [[self btnCacetete] addTarget:self action:@selector(descreverImagem:) forControlEvents:UIControlEventTouchUpInside];
+    
+    // Audio
+    
+    // Adiciona no canvas
+    [[self view] addSubview:[self imgViewCacetete]];
+    [[self view]addSubview:[self btnCacetete]];
 }
 
 - (void)didReceiveMemoryWarning
