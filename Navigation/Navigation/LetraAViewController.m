@@ -7,6 +7,7 @@
 //
 
 #import "LetraAViewController.h"
+#import "Palavras.h"
 
 @implementation LetraAViewController
 
@@ -21,13 +22,14 @@
     d = [[Palavras alloc]initWithDados:@"D" palavra:@"Dado" imagem:@"aranha.jpg"];
     e = [[Palavras alloc]initWithDados:@"E" palavra:@"Elefante" imagem:@"aranha.jpg"];
     
-    // Continuar...
+    // Continuar... Mudar para Singleton aqui em cima...
     
+    //Botão próxima View
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextPO:)];
     self.navigationItem.rightBarButtonItem=next;
     
     //Título
-    self.title = @"Letra %@", [a letra];
+    self.title = a.letra;
     
     //Letra
     UILabel *letra = [[UILabel alloc]initWithFrame:CGRectMake(50, 150, 100, 100)];
@@ -55,10 +57,7 @@
 -(void)nextPO:(id)sender {
     LetraAViewController *proximo = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];
     [self.navigationController pushViewController:proximo animated:YES];
-    
 }
-
-
 
 
 @end

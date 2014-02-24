@@ -15,6 +15,9 @@
 @property NSString *palavra;
 @property NSString *imagem;
 
++(Palavras *)sharedInstance;
+
+
 -(id)initWithDados: (NSString *) letra palavra:(NSString *) palavra imagem:(NSString *)imagem;
 
 @end

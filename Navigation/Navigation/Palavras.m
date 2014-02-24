@@ -9,6 +9,9 @@
 #import "Palavras.h"
 
 @implementation Palavras
+@synthesize letra;
+@synthesize palavra;
+@synthesize imagem;
 
 //-(id)init {
 //    self = [super init];
@@ -21,20 +24,26 @@
 //}
 
 
++(Palavras *)sharedInstance {
+    static Palavras *instancia = nil;
+    if(!instancia){
+        instancia = [[super alloc] init];
+    }
+    return instancia;
+}
+
+
 -(id)initWithDados: (NSString *) letra palavra:(NSString *) palavra imagem:(NSString *)imagem{
     
     self = [super init];
     if (self) {
-        _letra = [[NSString alloc] init];
-        _palavra = [[NSString alloc] init];
-        _imagem = [[NSString alloc] init];
+        self.letra = [[NSString alloc] init];
+        self.palavra = [[NSString alloc] init];
+        self.imagem = [[NSString alloc] init];
     }
-    
-    _letra = letra;
-    _palavra = palavra;
-    _imagem = imagem;
-    
-    
+    self.letra = letra;
+    self.palavra = palavra;
+    self.imagem = imagem;
     return self;
 }
 
