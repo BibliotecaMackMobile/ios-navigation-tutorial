@@ -11,11 +11,21 @@
 
 @implementation LetraAViewController
 
+@synthesize letter;
 
+- (id)initWithLetter:(NSString *)l
+{
+    self = [super init];
+    if (self)
+    {
+        letter = l;
+    }
+    return self;
+}
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"A";
+    self.title = letter;
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -30,7 +40,7 @@
     
     [self.view addSubview:botao];
     
- 
+    NSLog(@"%d", [[self letter] characterAtIndex:0]);
 }
 
 -(void)next:(id)sender {
