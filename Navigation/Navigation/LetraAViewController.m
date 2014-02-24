@@ -12,11 +12,11 @@
 
 @implementation LetraAViewController
 
-@synthesize lether,singleton;
+@synthesize letter,singleton;
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = lether;
+    self.title = letter;
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -40,7 +40,7 @@
                                               initWithNibName:nil
                                             bundle:NULL];
     Pagina *p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
-    proximo.lether = p.title;
+    proximo.letter = p.title;
     singleton.cont++;
     [self.navigationController pushViewController:proximo
                                          animated:YES];

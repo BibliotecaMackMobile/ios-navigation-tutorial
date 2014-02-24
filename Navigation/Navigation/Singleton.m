@@ -29,8 +29,8 @@
     if (self = [super init]) {
         dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
                       [[Pagina alloc] initWithImage:nil Title:@"A" Word:@"Aranha"], @"A",
-                      [[Pagina alloc] initWithImage:Nil Title:@"B" Word:@"Aranha"], @"B",
-                      [[Pagina alloc] initWithImage:Nil Title:@"C" Word:@"Aranha"], @"C",
+                      [[Pagina alloc] initWithImage:Nil Title:@"B" Word:@"Bicicleta"], @"B",
+                      [[Pagina alloc] initWithImage:Nil Title:@"C" Word:@"Casa"], @"C",
                       [[Pagina alloc] initWithImage:Nil Title:@"D" Word:@"Aranha"], @"D",
                       [[Pagina alloc] initWithImage:Nil Title:@"E" Word:@"Aranha"], @"E",
                       [[Pagina alloc] initWithImage:Nil Title:@"F" Word:@"Aranha"], @"F",

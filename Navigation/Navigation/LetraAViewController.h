@@ -11,7 +11,7 @@
 
 @interface LetraAViewController : UIViewController
 
-@property (strong, nonatomic) NSString *lether;
+@property (strong, nonatomic) NSString *letter;
 @property (strong, nonatomic) Singleton *singleton;
 
 @end
