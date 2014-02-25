@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+#import "Singleton.h"
+#import "Letter.h"
 
 @interface LetterViewController : UIViewController
+@property (strong, nonatomic) AVSpeechSynthesizer* synthesizer;
+@property (strong, nonatomic) AVSpeechUtterance* utterance;
 
 
 @end

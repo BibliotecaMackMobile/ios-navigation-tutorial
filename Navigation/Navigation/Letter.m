@@ -19,9 +19,10 @@
     
     for(char cha = 'A'; cha <= 'Z'; cha++){
         Letter* object = [Letter new];
-        [object setWord:@"TextoTest"];
         [object setLetter:cha];
         [mut addLetter:object];
     }
+    
+    
 }
 @end

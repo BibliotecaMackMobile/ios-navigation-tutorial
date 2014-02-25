@@ -19,12 +19,13 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
-		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
-		AE6004D518BB680F00A28B0F /* LetraCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6004D418BB680F00A28B0F /* LetraCViewController.m */; };
 		AE6004DB18BB716200A28B0F /* LetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6004DA18BB716200A28B0F /* LetterViewController.m */; };
 		AE6004E118BB71FA00A28B0F /* Letter.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6004E018BB71FA00A28B0F /* Letter.m */; };
 		AE6004E418BB721500A28B0F /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6004E318BB721500A28B0F /* Singleton.m */; };
+		AE6004E618BCDD6400A28B0F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6004E518BCDD6400A28B0F /* AudioToolbox.framework */; };
+		AE6004E818BCDD7300A28B0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6004E718BCDD7300A28B0F /* AVFoundation.framework */; };
+		AE6004EB18BCE53800A28B0F /* IMG_0023.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE6004EA18BCE53800A28B0F /* IMG_0023.jpg */; };
+		AE6004ED18BCE58400A28B0F /* IMG_0009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE6004EC18BCE58400A28B0F /* IMG_0009.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,18 +55,16 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
-		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
-		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
-		AE6004D318BB680F00A28B0F /* LetraCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraCViewController.h; sourceTree = "<group>"; };
-		AE6004D418BB680F00A28B0F /* LetraCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraCViewController.m; sourceTree = "<group>"; };
 		AE6004D918BB716200A28B0F /* LetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LetterViewController.h; path = ../LetterViewController.h; sourceTree = "<group>"; };
 		AE6004DA18BB716200A28B0F /* LetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LetterViewController.m; path = ../LetterViewController.m; sourceTree = "<group>"; };
 		AE6004DF18BB71FA00A28B0F /* Letter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letter.h; sourceTree = "<group>"; };
 		AE6004E018BB71FA00A28B0F /* Letter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letter.m; sourceTree = "<group>"; };
 		AE6004E218BB721500A28B0F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		AE6004E318BB721500A28B0F /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		AE6004E518BCDD6400A28B0F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AE6004E718BCDD7300A28B0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE6004EA18BCE53800A28B0F /* IMG_0023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0023.jpg; sourceTree = "<group>"; };
+		AE6004EC18BCE58400A28B0F /* IMG_0009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0009.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6004E818BCDD7300A28B0F /* AVFoundation.framework in Frameworks */,
+				AE6004E618BCDD6400A28B0F /* AudioToolbox.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -114,6 +115,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE6004E718BCDD7300A28B0F /* AVFoundation.framework */,
+				AE6004E518BCDD6400A28B0F /* AudioToolbox.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -125,16 +128,11 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				AE6004E918BCE4EA00A28B0F /* img */,
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
-				27156F7B18BA89430053A99C /* LetraAViewController.h */,
-				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
-				AE6004D318BB680F00A28B0F /* LetraCViewController.h */,
-				AE6004D418BB680F00A28B0F /* LetraCViewController.m */,
 				AE6004D918BB716200A28B0F /* LetterViewController.h */,
 				AE6004DA18BB716200A28B0F /* LetterViewController.m */,
 				AE6004DF18BB71FA00A28B0F /* Letter.h */,
@@ -172,6 +170,15 @@
 				27156F6E18B76AF50053A99C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE6004E918BCE4EA00A28B0F /* img */ = {
+			isa = PBXGroup;
+			children = (
+				AE6004EC18BCE58400A28B0F /* IMG_0009.jpg */,
+				AE6004EA18BCE53800A28B0F /* IMG_0023.jpg */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6004ED18BCE58400A28B0F /* IMG_0009.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				AE6004EB18BCE53800A28B0F /* IMG_0023.jpg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,12 +281,9 @@
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				AE6004E418BB721500A28B0F /* Singleton.m in Sources */,
-				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				AE6004E118BB71FA00A28B0F /* Letter.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 				AE6004DB18BB716200A28B0F /* LetterViewController.m in Sources */,
-				AE6004D518BB680F00A28B0F /* LetraCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

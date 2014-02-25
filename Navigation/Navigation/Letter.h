@@ -12,6 +12,8 @@
 
 @property NSString* word;
 @property char letter;
+@property UIImage* img;
+
 
 -(void)alfabeto;
 
