@@ -8,6 +8,7 @@
 
 #import "LetraAViewController.h"
 #import "Palavra.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation LetraAViewController
 
@@ -46,24 +47,39 @@
     
     //Botão - não faz nada...
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
+    [botao setFont:[UIFont systemFontOfSize:20]];
     [botao setTitle:[a palavra] forState:UIControlStateNormal ];
+    word = [a palavra];
     botao.center = self.view.center;
     [botao sizeToFit];
     botao.center = self.view.center;
-
     
+    [botao addTarget:self action:@selector(falarTexto:)forControlEvents:UIControlEventTouchDown];
 
     if (item.palavras.count == 1) {
         next.enabled = NO;
     }
     
     
-    [item.palavras removeObjectAtIndex:0];
     
     [self.view addSubview:botao];
-    
+    [item.palavras removeObjectAtIndex:0];
 }
 
+-(void)falarTexto: (id)sender{
+    
+    Palavra *a = [item.palavras firstObject];
+    
+    AVSpeechSynthesizer * speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance * utterance = [[AVSpeechUtterance alloc] initWithString:word];
+    utterance.rate = 0.2;
+    [speechSynthesizer speakUtterance:utterance];
+
+    
+    
+    
+    
+}
 
 -(void)nextPO:(id)sender {
     LetraAViewController *proximo = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];

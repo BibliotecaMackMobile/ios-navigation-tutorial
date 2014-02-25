@@ -11,6 +11,7 @@
 
 @interface LetraAViewController : UIViewController{
     PalavrasSingleton *item;
+    NSString *word;
     
 }
 
