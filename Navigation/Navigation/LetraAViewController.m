@@ -21,7 +21,7 @@
     self.navigationItem.rightBarButtonItem=next;
     
     UIButton *botao = [UIButton
-                                        buttonWithType:UIButtonTypeSystem];
+                       buttonWithType:UIButtonTypeSystem];
     [botao
      setTitle:@"Mostre uma palavra, uma figura e leia a palavra ao apertar um botao"
      forState:UIControlStateNormal];
@@ -34,11 +34,9 @@
 }
 
 -(void)next:(id)sender {
-    LetraBViewController *proximo = [[LetraBViewController alloc]
-                                              initWithNibName:nil
-                                            bundle:NULL];
-    [self.navigationController pushViewController:proximo
-                                         animated:YES];
+    LetraBViewController *proximo = [[LetraBViewController alloc] initWithNibName:nil bundle:NULL];
+    
+    [self.navigationController pushViewController:proximo animated:YES];
     
 }
 

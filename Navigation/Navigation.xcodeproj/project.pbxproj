@@ -21,6 +21,9 @@
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
 		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
+		8FF3263418BD18580056EDCF /* Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3263318BD18580056EDCF /* Layout.xib */; };
+		8FF3263618BD25E40056EDCF /* abelha.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3263518BD25E40056EDCF /* abelha.png */; };
+		8FF3263C18BD31970056EDCF /* LetrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3263B18BD31970056EDCF /* LetrasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
 		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
 		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		8FF3263318BD18580056EDCF /* Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Layout.xib; sourceTree = "<group>"; };
+		8FF3263518BD25E40056EDCF /* abelha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abelha.png; sourceTree = "<group>"; };
+		8FF3263A18BD31970056EDCF /* LetrasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LetrasViewController.h; path = ../LetrasViewController.h; sourceTree = "<group>"; };
+		8FF3263B18BD31970056EDCF /* LetrasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LetrasViewController.m; path = ../LetrasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,7 @@
 		27156F4018B76AF50053A99C = {
 			isa = PBXGroup;
 			children = (
+				8FF3263518BD25E40056EDCF /* abelha.png */,
 				27156F5218B76AF50053A99C /* Navigation */,
 				27156F6B18B76AF50053A99C /* NavigationTests */,
 				27156F4B18B76AF50053A99C /* Frameworks */,
@@ -121,6 +129,9 @@
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
 				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
 				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
+				8FF3263A18BD31970056EDCF /* LetrasViewController.h */,
+				8FF3263B18BD31970056EDCF /* LetrasViewController.m */,
+				8FF3263318BD18580056EDCF /* Layout.xib */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -231,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				8FF3263418BD18580056EDCF /* Layout.xib in Resources */,
+				8FF3263618BD25E40056EDCF /* abelha.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +265,7 @@
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
+				8FF3263C18BD31970056EDCF /* LetrasViewController.m in Sources */,
 				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 			);
@@ -454,6 +468,7 @@
 				27156F7718B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27156F7818B76AF50053A99C /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +477,7 @@
 				27156F7A18B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
