@@ -12,11 +12,16 @@
 @implementation LetraAViewController
 
 
-
 -(void) viewDidLoad {
     [super viewDidLoad];
+    
+    item = [PalavrasSingleton sharedInstance];
+    [self exibirDados:item];
 
-    PalavrasSingleton *item = [PalavrasSingleton sharedInstance];
+}
+
+
+-(void)exibirDados:(PalavrasSingleton *)item{
     
     Palavra *a = [item.palavras firstObject];
     
@@ -45,8 +50,18 @@
     botao.center = self.view.center;
     [botao sizeToFit];
     botao.center = self.view.center;
+
+    
+
+    if (item.palavras.count == 1) {
+        next.enabled = NO;
+    }
+    
+    
+    [item.palavras removeObjectAtIndex:0];
+    
     [self.view addSubview:botao];
- 
+    
 }
 
 

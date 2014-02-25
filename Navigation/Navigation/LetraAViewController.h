@@ -10,8 +10,12 @@
 #import "Palavra.h"
 
 @interface LetraAViewController : UIViewController{
-
+    PalavrasSingleton *item;
     
 }
+
+-(void)exibirDados: (PalavrasSingleton *) item;
+
+
 
 @end

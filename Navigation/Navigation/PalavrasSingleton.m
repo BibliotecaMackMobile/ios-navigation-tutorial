@@ -18,9 +18,19 @@
     if (self) {
         self.palavras = [[NSMutableArray alloc] init];
         
-    
+        //Cadastro de palavras aqui...
+        
         Palavra *aux = [[Palavra alloc] initWithDados:@"A" palavra:@"Aranha" imagem:@"aranha.jpg"];
         [self.palavras addObject:aux];
+        
+        aux = [[Palavra alloc] initWithDados:@"B" palavra:@"Barco" imagem:@"barco.jpg"];
+        [self.palavras addObject:aux];
+        
+        aux = [[Palavra alloc] initWithDados:@"C" palavra:@"Barco" imagem:@"barco.jpg"];
+        [self.palavras addObject:aux];
+        aux = [[Palavra alloc] initWithDados:@"D" palavra:@"Barco" imagem:@"barco.jpg"];
+        [self.palavras addObject:aux];
+        
         
     }
     return self;
