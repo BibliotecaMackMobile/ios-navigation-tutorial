@@ -23,7 +23,7 @@
     UIButton *botao = [UIButton
                                         buttonWithType:UIButtonTypeSystem];
     [botao
-     setTitle:@"Mostre uma palavra, uma figura e leia a palavra ao apertar um botao"
+     setTitle:@"Arvore"
      forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;

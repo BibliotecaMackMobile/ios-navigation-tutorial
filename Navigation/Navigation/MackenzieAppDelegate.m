@@ -4,28 +4,25 @@
 //
 //  Created by Vinicius Miana on 2/21/14.
 //  Copyright (c) 2014 Vinicius Miana. All rights reserved.
-//
+// test
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "LetrasViewController.h"
+#import "Dicionario.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
-    
-    
+    Palavra *p = [[[Dicionario sharedInstancia] palavras] firstObject];
+    LetrasViewController *viewController = [[LetrasViewController alloc]initWithPalavra: p];
     self.navigationController = [[UINavigationController alloc]
                                  initWithRootViewController:viewController];
+    
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.navigationController;
 
-
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
