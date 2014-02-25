@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LetraAViewController : UIViewController
+@interface LetrasViewController : UIViewController
 
 @end

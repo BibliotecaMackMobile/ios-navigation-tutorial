@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Letras</key>
+	<array>
+		<string>Aranha</string>
+		<string>Banana</string>
+		<string>Cachorro</string>
+		<string>Dado</string>
+		<string>Elefante</string>
+		<string>Faca</string>
+		<string>Girafa</string>
+		<string>Helicóptero</string>
+		<string>Índio</string>
+		<string>Janela</string>
+		<string>Kiwi</string>
+		<string>Lutador</string>
+		<string>Macaco</string>
+		<string>Navio</string>
+		<string>Orelha</string>
+		<string>Pato</string>
+		<string>Queijo</string>
+		<string>Rato</string>
+		<string>Sapo</string>
+		<string>Telhado</string>
+		<string>Uva</string>
+		<string>Vaca</string>
+		<string>Website</string>
+		<string>Xadrez</string>
+		<string>Yoga</string>
+		<string>Zumbi</string>
+	</array>
+</dict>
+</plist>
