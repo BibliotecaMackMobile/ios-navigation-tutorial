@@ -25,6 +25,7 @@
 @synthesize letterImageView;
 @synthesize letterTitleLabel;
 @synthesize letterLanguageLabel;
+@synthesize letterLanguageImageView;
 
 #pragma mark - Constructors
 
@@ -94,6 +95,11 @@
     [[letterImageView layer] setBorderWidth:1.0];
     [[letterImageView layer] setBorderColor:[[UIColor darkGrayColor] CGColor]];
     [[letterImageView layer] setMasksToBounds:YES];
+    [letterLanguageImageView setImage:[UIImage imageNamed:[[sections languagesPicturesDictionary] objectForKey:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]]]];
+    [[letterLanguageImageView layer] setCornerRadius:20.0];
+    [[letterLanguageImageView layer] setBorderWidth:1.0];
+    [[letterLanguageImageView layer] setBorderColor:[[UIColor darkGrayColor] CGColor]];
+    [[letterLanguageImageView layer] setMasksToBounds:YES];
     [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
     [letterTitleLabel setTextColor:[UIColor darkGrayColor]];
     [letterLanguageLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]];
@@ -194,22 +200,63 @@
 
 -(IBAction)changeWord:(id)sender
 {
+    NSInteger lastIndex = letterWord;
     if(letterWord < ([[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] count] - 1))
         letterWord++;
     else
         letterWord = 0;
-    [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
-    [letterImageView setImage:[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterImage]];
+    if(letterWord != lastIndex)
+        [UIView animateWithDuration:0.2 animations:^
+         {
+             [letterTitleLabel setAlpha:0.0];
+             [letterLanguageLabel setAlpha:0.0];
+             [letterImageView setAlpha:0.0];
+             [letterLanguageImageView setAlpha:0.0];
+         } completion:^(BOOL finished)
+         {
+             if(finished)
+             {
+                 [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
+                 [letterImageView setImage:[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterImage]];
+                 [UIView animateWithDuration:0.2 animations:^
+                 {
+                     [letterTitleLabel setAlpha:1.0];
+                     [letterLanguageLabel setAlpha:1.0];
+                     [letterImageView setAlpha:1.0];
+                     [letterLanguageImageView setAlpha:1.0];
+                 }];
+             }
+         }];
 }
 
 -(IBAction)changeLanguage:(id)sender
 {
+    NSInteger lastIndex = letterLanguage;
     if(letterLanguage < ([[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] count] - 1))
         letterLanguage++;
     else
         letterLanguage = 0;
-    [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
-    [letterLanguageLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]];
+    if(letterLanguage != lastIndex)
+        [UIView animateWithDuration:0.2 animations:^
+         {
+             [letterTitleLabel setAlpha:0.0];
+             [letterLanguageLabel setAlpha:0.0];
+             [letterLanguageImageView setAlpha:0.0];
+         } completion:^(BOOL finished)
+         {
+             if(finished)
+             {
+                 [letterLanguageImageView setImage:[UIImage imageNamed:[[sections languagesPicturesDictionary] objectForKey:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]]]];
+                 [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
+                 [letterLanguageLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]];
+                 [UIView animateWithDuration:0.2 animations:^
+                  {
+                      [letterTitleLabel setAlpha:1.0];
+                      [letterLanguageLabel setAlpha:1.0];
+                      [letterLanguageImageView setAlpha:1.0];
+                  }];
+             }
+         }];
 }
 
 @end

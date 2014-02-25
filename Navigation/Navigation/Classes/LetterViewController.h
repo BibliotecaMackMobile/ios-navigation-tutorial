@@ -27,6 +27,7 @@
 @property (nonatomic,weak) IBOutlet UIImageView * letterImageView;
 @property (nonatomic,weak) IBOutlet UILabel * letterTitleLabel;
 @property (nonatomic,weak) IBOutlet UILabel * letterLanguageLabel;
+@property (nonatomic,weak) IBOutlet UIImageView * letterLanguageImageView;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andLetterIndex:(NSUInteger)index;
 -(IBAction)changeWord:(id)sender;

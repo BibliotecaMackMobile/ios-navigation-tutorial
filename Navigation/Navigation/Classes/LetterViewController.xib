@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LetterViewController">
             <connections>
                 <outlet property="letterImageView" destination="yfj-X0-f3E" id="aVp-tT-huW"/>
+                <outlet property="letterLanguageImageView" destination="zI4-8A-iXU" id="4bK-Oi-qlG"/>
                 <outlet property="letterLanguageLabel" destination="s1A-qR-jGR" id="ODV-uY-VFZ"/>
                 <outlet property="letterTitleLabel" destination="dP4-5d-coe" id="gi2-Fh-39K"/>
                 <outlet property="view" destination="1" id="tpw-GI-YMR"/>
@@ -18,11 +19,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LetterImagePlaceholder" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfj-X0-f3E">
-                    <rect key="frame" x="40" y="114" width="240" height="240"/>
+                    <rect key="frame" x="40" y="106" width="240" height="240"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LetterTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP4-5d-coe">
-                    <rect key="frame" x="0.0" y="394" width="320" height="60"/>
+                    <rect key="frame" x="0.0" y="354" width="320" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,11 +52,15 @@
                     <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </toolbar>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LetterLanguage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1A-qR-jGR">
-                    <rect key="frame" x="0.0" y="456" width="320" height="46"/>
+                    <rect key="frame" x="85" y="400" width="151" height="46"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zI4-8A-iXU">
+                    <rect key="frame" x="133" y="454" width="54" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

@@ -14,6 +14,7 @@
 
 @implementation Sections
 
+@synthesize languagesPicturesDictionary;
 @synthesize languagesDictionary;
 @synthesize alphabetArray;
 @synthesize lettersDictionary;
@@ -23,6 +24,7 @@
     self = [super init];
     if(self)
     {
+        languagesPicturesDictionary = @{@"Português":@"Brasil",@"Inglês":@"USA",@"Francês":@"Franca",@"Espanhol":@"Espanha"};
         languagesDictionary = @{@"Português":@"pt-BR",@"Inglês":@"en-US",@"Francês":@"fr-FR",@"Espanhol":@"es-ES"};
         alphabetArray = @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z"];
         NSArray * objectsArray = @[
