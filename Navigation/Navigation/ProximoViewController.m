@@ -17,25 +17,13 @@
 
 @implementation ProximoViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _synthesizer = [[AVSpeechSynthesizer alloc]init];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(id)init{
     self = [super init];
@@ -43,6 +31,12 @@
         UIBarButtonItem *next = [[UIBarButtonItem alloc]
                                  initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
         self.navigationItem.rightBarButtonItem=next;
+        
+        //botao da esquerda
+        UIBarButtonItem *back = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(back:)];
+        self.navigationItem.leftBarButtonItem = back;
+        
+        
         Singleton *single = [Singleton inicia];
         Dicionario *novaLetra = [[single letras]objectAtIndex:0];
         
@@ -51,13 +45,13 @@
         
         [_botaoProximo addTarget:self action:@selector(executaSom:) forControlEvents:UIControlEventTouchUpInside];
         [_botaoProximo
-         setTitle:[[novaLetra palavra] stringByAppendingString:@"         "] forState:UIControlStateNormal];
+         setTitle:@"         " forState:UIControlStateNormal];
         [_botaoProximo setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
         [_botaoProximo sizeToFit];
         _botaoProximo.center = self.view.center;
         [self.view addSubview:_botaoProximo];
         
-        _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 400, 500, 50)];
+        _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 500, 500, 50)];
         [_texto setText:@"                      "];
         [_texto setText:[novaLetra palavra]];
         [_texto setNumberOfLines:0];
@@ -70,25 +64,48 @@
 
 -(void)next:(id)sender{
     Singleton *single = [Singleton inicia];
+    if (single.indice>=26) {
+        [single setIndice:0];
+    }
     Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]];
     single.indice++;
+
     
     AnteriorViewController *anterior = [[AnteriorViewController alloc]init];
 
     [[self navigationController] pushViewController:anterior animated:YES];
     [anterior setTitle:[novaLetra letraGrande]];
-    [[anterior botaoAnterior] setTitle:[novaLetra palavra] forState:UIControlStateNormal];
+    //[[anterior botaoAnterior] setTitle:[novaLetra palavra] forState:UIControlStateNormal];
+    [[anterior botaoAnterior] setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
+    
+    [[anterior botaoAnterior] sizeToFit];
     
     [[anterior texto] setText:[novaLetra palavra]];
     
+}
+
+-(void)back: (id)sender{
+    Singleton *single = [Singleton inicia];
+    single.indice--;
+    if (single.indice<=0) {
+        [single setIndice:26];
+    }
+    Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]-1];
+
+    
+    AnteriorViewController *anterior = [[AnteriorViewController alloc]init];
+    
+    [[self navigationController] pushViewController:anterior animated:YES];
+    [anterior setTitle:[novaLetra letraGrande]];
+    //[[anterior botaoAnterior] setTitle:[novaLetra palavra] forState:UIControlStateNormal];
+    [[anterior botaoAnterior] setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
+    [[anterior texto] setText:[novaLetra palavra]];
 }
 
 -(void)executaSom: (id)sender{
     Singleton *single = [Singleton inicia];
     Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]-1];
     
-    
-    _synthesizer = [[AVSpeechSynthesizer alloc]init];
     _utterance = [AVSpeechUtterance speechUtteranceWithString:[novaLetra palavra]];
     _utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
     _utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
