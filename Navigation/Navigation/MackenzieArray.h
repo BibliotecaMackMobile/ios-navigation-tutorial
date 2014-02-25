@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MackenzieObject.h"
 
 @interface MackenzieArray : NSObject
 

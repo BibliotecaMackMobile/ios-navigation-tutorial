@@ -7,7 +7,6 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "MackenzieFirstViewController.h"
 
 
 @implementation MackenzieAppDelegate

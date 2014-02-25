@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MackenzieFirstViewController.h"
 
 @interface MackenzieAppDelegate : UIResponder <UIApplicationDelegate>
 

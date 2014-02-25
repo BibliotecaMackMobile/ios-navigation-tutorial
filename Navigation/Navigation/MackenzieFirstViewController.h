@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MackenzieArray.h"
 
 @interface MackenzieFirstViewController : UIViewController
 
