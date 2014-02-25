@@ -47,7 +47,6 @@
     [myLabel setText:[_letras objectAtIndex:_num]];
     [[self view] addSubview:myLabel];
     [myLabel setFont:[UIFont systemFontOfSize:92]];
-    [self Speak:[_palavras objectAtIndex:_num]];
     novo.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self action:@selector(Ler)];
@@ -55,6 +54,9 @@
     [novo addGestureRecognizer:tap];
     
     
+}
+-(void) viewWillAppear:(BOOL)animated {
+    [self Speak:[_palavras objectAtIndex:_num]];
 }
 -(void) Ler
 {
