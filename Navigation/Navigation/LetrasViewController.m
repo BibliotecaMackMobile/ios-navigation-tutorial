@@ -51,6 +51,7 @@
     palavraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:25.0];
     [self.view addSubview:palavraLabel];
     
+    //cria a image view e inicializa
     imagem = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
     imagem.image = [UIImage imageNamed:@"a"];
     imagem.center = self.view.center;
@@ -59,14 +60,16 @@
 
 - (void)next:(id)sender
 {
+    //incrementa o contador e pega a posiçao atual na string
     count ++;
     range = NSMakeRange(count, 1);
     self.title = [letras substringWithRange:range];
     
+    //se for a ultima letra desabilita o botao
     if (count == letras.length - 1)
     {
         self.navigationItem.rightBarButtonItem.enabled = NO;
-    } else if (count == 1){
+    } else if (count == 1){ //habilita o botao de retorno
         self.navigationItem.leftBarButtonItem.enabled = YES;
     }
     
@@ -76,14 +79,16 @@
 
 - (void)previous:(id)sender
 {
+    //decrementa o contador e pega a posicao atual na string
     count --;
     range = NSMakeRange(count, 1);
     self.title = [letras substringWithRange:range];
     
+    //se for a primeira posicao desabilita o botao de retorno
     if (count == 0)
     {
         self.navigationItem.leftBarButtonItem.enabled = NO;
-    } else if (count == letras.length - 2)
+    } else if (count == letras.length - 2) // habilita o botao de seguinte
     {
         self.navigationItem.rightBarButtonItem.enabled = YES;
     }
@@ -94,6 +99,7 @@
 
 - (void)loadData
 {
+    //pega o caminho do plist onde estao as palavras e carrega o array "palavras"
     NSString *path = [[NSBundle mainBundle]pathForResource:@"Letras" ofType:@"plist"];
     
     NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
