@@ -31,7 +31,7 @@
                    initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.window.rootViewController = self.navigationController;
-    self.window.backgroundColor = [UIColor blackColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     return YES;

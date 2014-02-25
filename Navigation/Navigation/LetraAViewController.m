@@ -30,8 +30,8 @@
     
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao
-     setTitle:[_palavras objectAtIndex:_num]
-     forState:UIControlStateNormal];
+    setTitle:[_palavras objectAtIndex:_num]
+    forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
     
@@ -41,10 +41,13 @@
     novo.center = self.view.center;
     [self.view addSubview:novo];
     [self.view addSubview:botao];
-    
+    UILabel *myLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 65, 80, 80)];
+    [myLabel setBackgroundColor:[UIColor whiteColor]];
+    [myLabel setText:[_letras objectAtIndex:_num]];
+    [[self view] addSubview:myLabel];
+    [myLabel setFont:[UIFont systemFontOfSize:92]];
     [self Speak:[_palavras objectAtIndex:_num]];
- 
-}
+ }
 
 -(void) Speak :(NSString *) text
 {
@@ -52,7 +55,7 @@
     fala =[[ AVSpeechSynthesizer alloc] init];
     falau = [[AVSpeechUtterance alloc] init];
     falau = [AVSpeechUtterance speechUtteranceWithString:text];
-    [falau setRate:0.01f];
+    [falau setRate:0.001f];
     //[falau setVoice:<#(AVSpeechSynthesisVoice *)#>]
     falau.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
     [fala speakUtterance:falau];
