@@ -10,7 +10,7 @@
 
 @implementation LetraAViewController
 
-@synthesize letter,singleton,ttitle,word,p,imgView;
+@synthesize letter,singleton,ttitle,word,p,imgView,av,utterance;
 
 -(void) viewDidLoad {
     [super viewDidLoad];
@@ -27,7 +27,7 @@
     
     //aloca os elementos gráficos e desenha da tela
     letter = [[UILabel alloc]initWithFrame:CGRectMake(widthMed-50, 65 , 120 , 120)];
-    word = [[UILabel alloc]initWithFrame:CGRectMake(widthMed-55, 410, 130 , 27)];
+    word = [[UILabel alloc]initWithFrame:CGRectMake(widthMed-55, 410, 230 , 27)];
     letter.font = [UIFont fontWithName:@"Arial" size:130.0f];
     word.font = [UIFont fontWithName:@"Arial" size:27.0f];
     letter.text = ttitle;
@@ -38,6 +38,12 @@
     imgView = [[UIImageView alloc] initWithFrame:CGRectMake(widthMed-90, heightMed-90, 180, 180)];
     [imgView setImage:p.image];
     
+    //criando e adicionando o gesto
+    UITapGestureRecognizer *gesto = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickImage:)];
+    [gesto setNumberOfTapsRequired:1];
+    [imgView addGestureRecognizer:gesto];
+    [imgView setUserInteractionEnabled:YES];
+
     //criando os botoes
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
@@ -55,7 +61,6 @@
     [botao sizeToFit];
     botao.center = self.view.center;
     
-    //[self.view addSubview:botao];
     [self.view addSubview:letter];
     [self.view addSubview:word];
     [self.view addSubview:imgView];
@@ -63,13 +68,9 @@
 }
 
 -(void)next:(id)sender {
+    if(singleton.cont == singleton.array.count-1) return;
     singleton.cont++;
     p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
-//    if(singleton.cont == singleton.array.count){
-//        for(int i = 0;i < singleton.array.count;i++){
-//            [self.navigationController popViewControllerAnimated:YES];
-//        }
-//    }
     LetraAViewController *proximo = [[LetraAViewController alloc]
                                               initWithNibName:nil
                                             bundle:NULL];
@@ -81,23 +82,22 @@
 }
 
 -(void)back:(id)sender {
-//    if(singleton.cont == 0){
-//        LetraAViewController *proximo = [[LetraAViewController alloc]
-//                                         initWithNibName:nil
-//                                         bundle:NULL];
-//        for(int i = 0;i < singleton.array.count-1;i++){
-//            
-//            [self.navigationController pushViewController:proximo
-//                                                 animated:YES];
-//        
-//        }
-//        return;
-//    }
+    if(singleton.cont == 0)return;
     singleton.cont--;
     [self.navigationController popViewControllerAnimated:YES];
     
 }
 
+-(void)clickImage:(id)sender{
+    [self speech:word.text];
+}
+
+-(void)speech:(NSString*)text{
+    av = [[AVSpeechSynthesizer alloc] init];
+    utterance = [[AVSpeechUtterance alloc] initWithString:text];
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
+    [av speakUtterance:utterance];
+}
 
 
 

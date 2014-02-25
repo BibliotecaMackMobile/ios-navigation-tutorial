@@ -49,6 +49,7 @@
 		400B494A18BB7FB20036036E /* xicara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 400B492F18BB7FB20036036E /* xicara.jpg */; };
 		400B494B18BB7FB20036036E /* youtube.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 400B493018BB7FB20036036E /* youtube.jpg */; };
 		400B494C18BB7FB20036036E /* zebra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 400B493118BB7FB20036036E /* zebra.jpg */; };
+		40A1E84E18BCC4270071278E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A1E84D18BCC4270071278E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		400B492F18BB7FB20036036E /* xicara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xicara.jpg; sourceTree = "<group>"; };
 		400B493018BB7FB20036036E /* youtube.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = youtube.jpg; sourceTree = "<group>"; };
 		400B493118BB7FB20036036E /* zebra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zebra.jpg; sourceTree = "<group>"; };
+		40A1E84D18BCC4270071278E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		40A1E84F18BCC4340071278E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A1E84E18BCC4270071278E /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -159,6 +163,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40A1E84F18BCC4340071278E /* AudioToolbox.framework */,
+				40A1E84D18BCC4270071278E /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
