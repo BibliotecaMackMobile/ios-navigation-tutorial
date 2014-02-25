@@ -7,13 +7,13 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "LetterViewController.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
+    LetterViewController *viewController = [[LetterViewController alloc]
                                            initWithNibName:nil
                                            bundle:nil];
     
