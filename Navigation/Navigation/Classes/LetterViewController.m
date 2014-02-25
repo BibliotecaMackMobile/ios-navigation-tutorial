@@ -65,11 +65,6 @@
 
 #pragma mark - UIView
 
--(void)viewWillAppear:(BOOL)animated
-{
-    
-}
-
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -120,7 +115,6 @@
     }
     [self createSwipeGestures];
     [self createTapGesture];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
 }
 
 -(void)nextLetter:(id)sender
