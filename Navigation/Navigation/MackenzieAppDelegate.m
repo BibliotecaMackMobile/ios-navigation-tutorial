@@ -8,28 +8,35 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetraAViewController.h"
+#import "DictionaryViewController.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
     
+    // Criar ViewController para o dicionario
+    DictionaryViewController *dictionaryViewController = [[DictionaryViewController alloc]initWithNibName:nil bundle:nil];
     
-    self.navigationController = [[UINavigationController alloc]
-                                 initWithRootViewController:viewController];
-    self.window = [[UIWindow alloc]
-                   initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
-
-
+    // Definir o dicionario como tela inicial
+    self.navigationController = [[UINavigationController alloc]initWithRootViewController:dictionaryViewController];
     
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    [[self window]setRootViewController:[self navigationController]];
+    [[self window]setBackgroundColor:[UIColor whiteColor]];
+    [[self window]makeKeyAndVisible];
     
     return YES;
+    
+    //LetraAViewController *viewController = [[LetraAViewController alloc] initWithNibName:nil bundle:nil];
+    //self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    //self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window.rootViewController = self.navigationController;
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //[self.window makeKeyAndVisible];
+    
+    //return YES;
 }
 
 
