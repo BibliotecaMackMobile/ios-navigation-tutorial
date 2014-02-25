@@ -8,8 +8,6 @@
 
 #import "LetrasViewController.h"
 #import "LetraBViewController.h"
-#import <AudioToolbox/AudioToolbox.h>
-#import <AVFoundation/AVFoundation.h>
 
 @interface LetrasViewController ()
 {
@@ -120,17 +118,16 @@
 
 - (void)mudarImagem
 {
-    
     imagem.image = [UIImage imageNamed:[[letras substringWithRange:range] lowercaseString]];
 }
 
 - (void)falaPalavra
 {
-    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc] init];
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:palavras[count]];
-    utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
-    [synthesizer speakUtterance:utterance];
+    _synthesizer = [[AVSpeechSynthesizer alloc] init];
+    _utterance = [AVSpeechUtterance speechUtteranceWithString:palavras[count]];
+    _utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    _utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+    [_synthesizer speakUtterance:_utterance];
 }
 
 @end
