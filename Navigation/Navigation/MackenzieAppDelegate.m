@@ -8,6 +8,7 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetraAViewController.h"
+#import "shared.h"
 
 @implementation MackenzieAppDelegate
 

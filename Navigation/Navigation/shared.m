@@ -30,6 +30,7 @@
     if (self) {
         _count = 0;
         _listaDicionario = [[NSMutableArray alloc]init];
+        //_viewController = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];
     }
     return self;
 }

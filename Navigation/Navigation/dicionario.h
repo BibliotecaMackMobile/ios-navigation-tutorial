@@ -12,5 +12,5 @@
 
 @property NSString *letra;
 @property NSString *palavra;
-@property UIImage *imagem;
+@property NSString *imagem;
 @end

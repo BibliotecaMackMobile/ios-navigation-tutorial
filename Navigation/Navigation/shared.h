@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LetraAViewController.h"
 
 @interface shared : NSObject
 @property int count;
 @property NSMutableArray *listaDicionario;
-
+@property LetraAViewController *viewController;
 +(shared*)sharedInstance;
 @end
