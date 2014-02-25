@@ -7,7 +7,7 @@
 //
 
 #import "LetraAViewController.h"
-#import "Palavras.h"
+#import "Palavra.h"
 
 @implementation LetraAViewController
 
@@ -16,13 +16,9 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
 
-    a = [[Palavras alloc]initWithDados:@"A" palavra:@"Aranha" imagem:@"aranha.jpg"];
-    b = [[Palavras alloc]initWithDados:@"B" palavra:@"Barco" imagem:@"aranha.jpg"];
-    c = [[Palavras alloc]initWithDados:@"C" palavra:@"Casa" imagem:@"aranha.jpg"];
-    d = [[Palavras alloc]initWithDados:@"D" palavra:@"Dado" imagem:@"aranha.jpg"];
-    e = [[Palavras alloc]initWithDados:@"E" palavra:@"Elefante" imagem:@"aranha.jpg"];
+    PalavrasSingleton *item = [PalavrasSingleton sharedInstance];
     
-    // Continuar... Mudar para Singleton aqui em cima...
+    Palavra *a = [item.palavras firstObject];
     
     //Botão próxima View
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextPO:)];
@@ -43,7 +39,7 @@
     [imagem setImage:img];
     [self.view addSubview:imagem];
     
-    //Botão
+    //Botão - não faz nada...
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao setTitle:[a palavra] forState:UIControlStateNormal ];
     botao.center = self.view.center;

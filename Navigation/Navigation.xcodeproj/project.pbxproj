@@ -20,7 +20,8 @@
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		9CEC38F418BB7075003959D6 /* Palavras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38F318BB7075003959D6 /* Palavras.m */; };
+		9CBD788318BCB7F500D43351 /* PalavrasSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD788218BCB7F500D43351 /* PalavrasSingleton.m */; };
+		9CEC38F418BB7075003959D6 /* Palavra.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC38F318BB7075003959D6 /* Palavra.m */; };
 		9CEC38F618BB78A6003959D6 /* aranha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CEC38F518BB78A6003959D6 /* aranha.jpg */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +54,10 @@
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
 		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		9CEC38F218BB7075003959D6 /* Palavras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palavras.h; sourceTree = "<group>"; };
-		9CEC38F318BB7075003959D6 /* Palavras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavras.m; sourceTree = "<group>"; };
+		9CBD788118BCB7F500D43351 /* PalavrasSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalavrasSingleton.h; sourceTree = "<group>"; };
+		9CBD788218BCB7F500D43351 /* PalavrasSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalavrasSingleton.m; sourceTree = "<group>"; };
+		9CEC38F218BB7075003959D6 /* Palavra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palavra.h; sourceTree = "<group>"; };
+		9CEC38F318BB7075003959D6 /* Palavra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavra.m; sourceTree = "<group>"; };
 		9CEC38F518BB78A6003959D6 /* aranha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aranha.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,9 +124,11 @@
 				27156F5318B76AF50053A99C /* Supporting Files */,
 				27156F7B18BA89430053A99C /* LetraAViewController.h */,
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				9CEC38F218BB7075003959D6 /* Palavras.h */,
-				9CEC38F318BB7075003959D6 /* Palavras.m */,
 				9CEC38F518BB78A6003959D6 /* aranha.jpg */,
+				9CEC38F218BB7075003959D6 /* Palavra.h */,
+				9CEC38F318BB7075003959D6 /* Palavra.m */,
+				9CBD788118BCB7F500D43351 /* PalavrasSingleton.h */,
+				9CBD788218BCB7F500D43351 /* PalavrasSingleton.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -257,7 +262,8 @@
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
-				9CEC38F418BB7075003959D6 /* Palavras.m in Sources */,
+				9CEC38F418BB7075003959D6 /* Palavra.m in Sources */,
+				9CBD788318BCB7F500D43351 /* PalavrasSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
