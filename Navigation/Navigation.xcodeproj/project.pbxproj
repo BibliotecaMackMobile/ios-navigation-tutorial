@@ -19,6 +19,8 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
+		751F887818BCC3DF00F47B16 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751F887518BCC26300F47B16 /* AVFoundation.framework */; };
+		751F887A18BCC3DF00F47B16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751F887918BCC3DF00F47B16 /* AudioToolbox.framework */; };
 		75A4B05118BB6B9A0066E0FD /* LetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A4B04F18BB6B9A0066E0FD /* LetterViewController.m */; };
 		75A4B05218BB6B9A0066E0FD /* LetterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A4B05018BB6B9A0066E0FD /* LetterViewController.xib */; };
 		75A4B05418BB6FD60066E0FD /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A4B05318BB6FD60066E0FD /* sound.png */; };
@@ -77,6 +79,9 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
+		751F887418BCC26300F47B16 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		751F887518BCC26300F47B16 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		751F887918BCC3DF00F47B16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		75A4B04E18BB6B9A0066E0FD /* LetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterViewController.h; sourceTree = "<group>"; };
 		75A4B04F18BB6B9A0066E0FD /* LetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterViewController.m; sourceTree = "<group>"; };
 		75A4B05018BB6B9A0066E0FD /* LetterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LetterViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751F887A18BCC3DF00F47B16 /* AudioToolbox.framework in Frameworks */,
+				751F887818BCC3DF00F47B16 /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -155,6 +162,9 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				751F887918BCC3DF00F47B16 /* AudioToolbox.framework */,
+				751F887418BCC26300F47B16 /* AudioUnit.framework */,
+				751F887518BCC26300F47B16 /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,

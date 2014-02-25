@@ -11,12 +11,17 @@
 @interface LetterViewController : UIViewController
 {
     NSString *letter;
+    NSString *previousLetter;
+    NSString *nextLetter;
+    
     __weak IBOutlet UIImageView *img;
     __weak IBOutlet UILabel *lblWord;
+    
 }
 
 @property NSString *letter;
 
 - (id)initWithLetter:(NSString *)l;
++ (void)setHiddenView:(LetterViewController *)view;
 
 @end

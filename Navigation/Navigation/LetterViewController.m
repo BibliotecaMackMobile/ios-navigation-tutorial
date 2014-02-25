@@ -7,6 +7,7 @@
 //
 
 #import "LetterViewController.h"
+@import AVFoundation;
 
 @interface LetterViewController ()
 
@@ -18,6 +19,8 @@
 
 static NSArray *words;
 
+static LetterViewController *hiddenView;
+
 - (id)initWithLetter:(NSString *)l
 {
     self = [super init];
@@ -26,7 +29,7 @@ static NSArray *words;
         letter = l;
         if (words == nil)
         {
-            words = [NSArray arrayWithObjects:@"Aranha", @"Burro", @"Cachorro", @"Dinossauro", @"Elefante", @"Foca", @"Girafa", @"Hipopotamo", @"Iena", @"Javali", @"Koala", @"Lagartixa", @"Macaco", @"Naja", @"Ovelha", @"Pato", @"Quati", @"Raposa", @"Sapo", @"Tartaruga", @"Urso", @"Vaca", @"Wolf", @"Ximango", @"Yorkshire", @"Zebra", nil];
+            words = [NSArray arrayWithObjects:@"Aranha", @"Burro", @"Cachorro", @"Dinossauro", @"Elefante", @"Foca", @"Girafa", @"Hipopótamo", @"Iena", @"Javali", @"Koala", @"Lagartixa", @"Macaco", @"Naja", @"Ovelha", @"Pato", @"Quati", @"Raposa", @"Sapo", @"Tartaruga", @"Urso", @"Vaca", @"Wolf", @"Ximango", @"Yorkshire", @"Zebra", nil];
         }
     }
     return self;
@@ -41,22 +44,30 @@ static NSArray *words;
     return self;
 }
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
+    if ([letter isEqualToString:@"A"])
+        previousLetter = @"Z";
+    else
+        previousLetter = [NSString stringWithFormat:@"%c", [letter characterAtIndex:0] - 1];
+    
+    if ([letter isEqualToString:@"Z"])
+        nextLetter = @"A";
+    else
+        nextLetter = [NSString stringWithFormat:@"%c", [letter characterAtIndex:0] + 1];
+    
     self.title = letter;
     
-    if (![letter isEqualToString:@"Z"])
-    {
-        UIBarButtonItem *next = [[UIBarButtonItem alloc]
-                                 initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
-        self.navigationItem.rightBarButtonItem=next;
-    }
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithTitle:[NSString stringWithFormat:@"< %@", previousLetter] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     
-    NSLog(@"%d", [[self letter] characterAtIndex:0]);
-    NSLog(@"View Controllers: %d", [[[self navigationController] viewControllers] count]);
+    [self.navigationItem setLeftBarButtonItem:back];
+    
+    UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithTitle:[NSString stringWithFormat:@"%@ >", nextLetter] style:UIBarButtonItemStylePlain target:self action:@selector(next)];
+    
+    [self.navigationItem setRightBarButtonItem:next];
     
     [lblWord setText:[words objectAtIndex:[letter characterAtIndex:0]-65]];
     [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letter]]];
@@ -68,12 +79,66 @@ static NSArray *words;
     // Dispose of any resources that can be recreated.
 }
 
--(void)next:(id)sender {
-    int l = [[self letter] characterAtIndex:0];
-    LetterViewController *proximo = [[LetterViewController alloc]
-                                     initWithLetter:[NSString stringWithFormat:@"%c", l+1]];
-    [self.navigationController pushViewController:proximo
-                                         animated:YES];
+-(void)next
+{
+    if (hiddenView == nil)
+    {
+        hiddenView = [[LetterViewController alloc] initWithLetter:nextLetter];
+    }
+    else if (![[hiddenView letter] isEqualToString:nextLetter])
+    {
+        [hiddenView updateView:nextLetter];
+    }
+    
+    if ([[self.navigationController viewControllers] count] == 2)
+    {
+        [[self navigationController] setViewControllers:[NSArray arrayWithObject:self]];
+        [[self navigationController] pushViewController:hiddenView animated:YES];
+    }
+    else
+        [[self navigationController] pushViewController:hiddenView animated:YES];
+    
+    hiddenView = self;
+}
+
+- (void)back
+{    
+    if (![[hiddenView letter] isEqualToString:previousLetter])
+    {
+        [hiddenView updateView:previousLetter];
+    }
+    
+    [[self navigationController] setViewControllers:[NSArray arrayWithObject:self]];
+    [[self navigationController] pushViewController:hiddenView animated:YES];
+    
+    hiddenView = self;
+}
+
+- (void)updateView:(NSString *)l
+{
+    letter = l;
+    int letterIntValue = [letter characterAtIndex:0];
+    
+    self.title = letter;
+    
+    [lblWord setText:[words objectAtIndex:letterIntValue-65]];
+    [img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", letter]]];
+}
+
++ (void)setHiddenView:(LetterViewController *)view
+{
+    hiddenView = view;
+}
+
+- (IBAction)speak:(id)sender {
+    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
+    
+    NSString *word = [words objectAtIndex:[letter characterAtIndex:0] - 65];
+    
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:word];
+    [utterance setRate:0.1f];
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+    [synthesizer speakUtterance:utterance];
 }
 
 @end
