@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Letra2ViewController.h"
 #import "DataSingleton.h"
 #import "Letter.h"
 #import <AudioToolbox/AudioToolbox.h>

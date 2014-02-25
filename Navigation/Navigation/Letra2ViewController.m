@@ -72,18 +72,15 @@
     }
     
     Letter *l = [dados.dataLetters objectAtIndex:dados.currentIndex];
+
     
-//    LetraViewController *proximo = [[LetraViewController alloc]
-//                                    initWithNibName:nil
-//                                    bundle:NULL andTitle:l.title andContent:l.word];
+    LetraViewController *proximo = (LetraViewController *)[[self.navigationController viewControllers] firstObject];
     
-    LetraViewController *proximo = self.navigationController.presentingViewController;
-    
-    proximo.title = l.title;
+    proximo.myTitle = l.title;
     proximo.content = l.word;
     
-    [self.navigationController popToViewController:proximo
-                                         animated:YES];
+    //[self.navigationController popToViewController:proximo animated:YES];
+    [[self navigationController] popToRootViewControllerAnimated:YES];
 }
 
 -(void)previous:(id)sender {
@@ -100,9 +97,9 @@
 //                                     initWithNibName:nil
 //                                     bundle:NULL andTitle:l.title andContent:l.word];
     
-    LetraViewController *anterior = self.navigationController.presentingViewController;
+    LetraViewController *anterior = (LetraViewController*)self.navigationController.presentingViewController;
     
-    anterior.title = l.title;
+    anterior.myTitle = l.title;
     anterior.content = l.word;
     
     [self.navigationController popToViewController:anterior animated:YES];
