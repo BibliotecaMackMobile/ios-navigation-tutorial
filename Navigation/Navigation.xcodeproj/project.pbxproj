@@ -20,7 +20,31 @@
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
+		6669ECFF18BB7DD000C4C4B1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6669ECFE18BB7DD000C4C4B1 /* AudioToolbox.framework */; };
+		6669ED0118BB7DD700C4C4B1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6669ED0018BB7DD700C4C4B1 /* AVFoundation.framework */; };
+		6669ED0918BBA8DD00C4C4B1 /* Aranha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6669ED0418BBA8DD00C4C4B1 /* Aranha.jpg */; };
+		6669ED0A18BBA8DD00C4C4B1 /* Barata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6669ED0518BBA8DD00C4C4B1 /* Barata.jpg */; };
+		6669ED0B18BBA8DD00C4C4B1 /* Carro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6669ED0618BBA8DD00C4C4B1 /* Carro.jpg */; };
+		6669ED0C18BBA8DD00C4C4B1 /* Dado.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6669ED0718BBA8DD00C4C4B1 /* Dado.jpg */; };
+		6669ED0D18BBA8DD00C4C4B1 /* Elefante.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6669ED0818BBA8DD00C4C4B1 /* Elefante.jpg */; };
+		66A46CAB18BCC7D700F7C502 /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A46CA918BCC7D700F7C502 /* LetraBViewController.m */; };
+		66A46CAF18BCDA2A00F7C502 /* Faca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CAD18BCDA2A00F7C502 /* Faca.jpg */; };
+		66A46CB018BCDA2A00F7C502 /* Garfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CAE18BCDA2A00F7C502 /* Garfo.jpg */; };
+		66A46CB218BCDF1300F7C502 /* Hino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CB118BCDF1300F7C502 /* Hino.jpg */; };
+		66A46CB418BCE00C00F7C502 /* Irmão.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CB318BCE00C00F7C502 /* Irmão.jpg */; };
+		66A46CB618BCE11000F7C502 /* Jornal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CB518BCE11000F7C502 /* Jornal.jpg */; };
+		66A46CBA18BCE1BA00F7C502 /* Ladeira.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CB918BCE1BA00F7C502 /* Ladeira.jpg */; };
+		66A46CC418BCE44C00F7C502 /* Vaca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CBC18BCE44C00F7C502 /* Vaca.jpg */; };
+		66A46CC518BCE44C00F7C502 /* Urso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CBD18BCE44C00F7C502 /* Urso.jpg */; };
+		66A46CCA18BCE44C00F7C502 /* Mulher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CC218BCE44C00F7C502 /* Mulher.jpg */; };
+		66A46CCD18BCE45500F7C502 /* Tempo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CCB18BCE45500F7C502 /* Tempo.jpg */; };
+		66A46CCE18BCE45500F7C502 /* Rato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CCC18BCE45500F7C502 /* Rato.jpg */; };
+		66A46CD918BCE53600F7C502 /* Pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CCF18BCE53600F7C502 /* Pizza.jpg */; };
+		66A46CDA18BCE53600F7C502 /* Ombro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CD018BCE53600F7C502 /* Ombro.jpg */; };
+		66A46CDD18BCE53600F7C502 /* Queijo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CD318BCE53600F7C502 /* Queijo.jpg */; };
+		66A46CDE18BCE53600F7C502 /* Norte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CD418BCE53600F7C502 /* Norte.jpg */; };
+		66A46CE218BCE53600F7C502 /* Tempo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CD818BCE53600F7C502 /* Tempo.png */; };
+		66A46CE418BCE5D400F7C502 /* Iogurte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66A46CE318BCE5D400F7C502 /* Iogurte.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +76,32 @@
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
 		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		6669ECFE18BB7DD000C4C4B1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6669ED0018BB7DD700C4C4B1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6669ED0418BBA8DD00C4C4B1 /* Aranha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Aranha.jpg; sourceTree = "<group>"; };
+		6669ED0518BBA8DD00C4C4B1 /* Barata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Barata.jpg; sourceTree = "<group>"; };
+		6669ED0618BBA8DD00C4C4B1 /* Carro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carro.jpg; sourceTree = "<group>"; };
+		6669ED0718BBA8DD00C4C4B1 /* Dado.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dado.jpg; sourceTree = "<group>"; };
+		6669ED0818BBA8DD00C4C4B1 /* Elefante.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Elefante.jpg; sourceTree = "<group>"; };
+		66A46CA818BCC7D700F7C502 /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
+		66A46CA918BCC7D700F7C502 /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		66A46CAD18BCDA2A00F7C502 /* Faca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Faca.jpg; sourceTree = "<group>"; };
+		66A46CAE18BCDA2A00F7C502 /* Garfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Garfo.jpg; sourceTree = "<group>"; };
+		66A46CB118BCDF1300F7C502 /* Hino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hino.jpg; sourceTree = "<group>"; };
+		66A46CB318BCE00C00F7C502 /* Irmão.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Irmão.jpg"; sourceTree = "<group>"; };
+		66A46CB518BCE11000F7C502 /* Jornal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jornal.jpg; sourceTree = "<group>"; };
+		66A46CB918BCE1BA00F7C502 /* Ladeira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ladeira.jpg; sourceTree = "<group>"; };
+		66A46CBC18BCE44C00F7C502 /* Vaca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vaca.jpg; sourceTree = "<group>"; };
+		66A46CBD18BCE44C00F7C502 /* Urso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Urso.jpg; sourceTree = "<group>"; };
+		66A46CC218BCE44C00F7C502 /* Mulher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mulher.jpg; sourceTree = "<group>"; };
+		66A46CCB18BCE45500F7C502 /* Tempo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tempo.jpg; sourceTree = "<group>"; };
+		66A46CCC18BCE45500F7C502 /* Rato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rato.jpg; sourceTree = "<group>"; };
+		66A46CCF18BCE53600F7C502 /* Pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pizza.jpg; sourceTree = "<group>"; };
+		66A46CD018BCE53600F7C502 /* Ombro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ombro.jpg; sourceTree = "<group>"; };
+		66A46CD318BCE53600F7C502 /* Queijo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Queijo.jpg; sourceTree = "<group>"; };
+		66A46CD418BCE53600F7C502 /* Norte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Norte.jpg; sourceTree = "<group>"; };
+		66A46CD818BCE53600F7C502 /* Tempo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tempo.png; sourceTree = "<group>"; };
+		66A46CE318BCE5D400F7C502 /* Iogurte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iogurte.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6669ED0118BB7DD700C4C4B1 /* AVFoundation.framework in Frameworks */,
+				6669ECFF18BB7DD000C4C4B1 /* AudioToolbox.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -102,6 +152,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6669ED0018BB7DD700C4C4B1 /* AVFoundation.framework */,
+				6669ECFE18BB7DD000C4C4B1 /* AudioToolbox.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -118,9 +170,9 @@
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
 				27156F7B18BA89430053A99C /* LetraAViewController.h */,
+				66A46CA818BCC7D700F7C502 /* LetraBViewController.h */,
+				66A46CA918BCC7D700F7C502 /* LetraBViewController.m */,
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -130,6 +182,28 @@
 			children = (
 				27156F5418B76AF50053A99C /* Navigation-Info.plist */,
 				27156F5518B76AF50053A99C /* InfoPlist.strings */,
+				6669ED0418BBA8DD00C4C4B1 /* Aranha.jpg */,
+				6669ED0518BBA8DD00C4C4B1 /* Barata.jpg */,
+				66A46CBC18BCE44C00F7C502 /* Vaca.jpg */,
+				66A46CCF18BCE53600F7C502 /* Pizza.jpg */,
+				66A46CD018BCE53600F7C502 /* Ombro.jpg */,
+				66A46CE318BCE5D400F7C502 /* Iogurte.jpg */,
+				66A46CD318BCE53600F7C502 /* Queijo.jpg */,
+				66A46CD418BCE53600F7C502 /* Norte.jpg */,
+				66A46CD818BCE53600F7C502 /* Tempo.png */,
+				66A46CBD18BCE44C00F7C502 /* Urso.jpg */,
+				66A46CCB18BCE45500F7C502 /* Tempo.jpg */,
+				66A46CCC18BCE45500F7C502 /* Rato.jpg */,
+				66A46CC218BCE44C00F7C502 /* Mulher.jpg */,
+				66A46CB118BCDF1300F7C502 /* Hino.jpg */,
+				6669ED0618BBA8DD00C4C4B1 /* Carro.jpg */,
+				66A46CB318BCE00C00F7C502 /* Irmão.jpg */,
+				6669ED0718BBA8DD00C4C4B1 /* Dado.jpg */,
+				66A46CB918BCE1BA00F7C502 /* Ladeira.jpg */,
+				6669ED0818BBA8DD00C4C4B1 /* Elefante.jpg */,
+				66A46CAD18BCDA2A00F7C502 /* Faca.jpg */,
+				66A46CB518BCE11000F7C502 /* Jornal.jpg */,
+				66A46CAE18BCDA2A00F7C502 /* Garfo.jpg */,
 				27156F5818B76AF50053A99C /* main.m */,
 				27156F5A18B76AF50053A99C /* Navigation-Prefix.pch */,
 			);
@@ -230,8 +304,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6669ED0A18BBA8DD00C4C4B1 /* Barata.jpg in Resources */,
+				6669ED0B18BBA8DD00C4C4B1 /* Carro.jpg in Resources */,
+				66A46CC518BCE44C00F7C502 /* Urso.jpg in Resources */,
+				66A46CE418BCE5D400F7C502 /* Iogurte.jpg in Resources */,
+				66A46CAF18BCDA2A00F7C502 /* Faca.jpg in Resources */,
+				66A46CCA18BCE44C00F7C502 /* Mulher.jpg in Resources */,
+				66A46CD918BCE53600F7C502 /* Pizza.jpg in Resources */,
+				66A46CB618BCE11000F7C502 /* Jornal.jpg in Resources */,
+				6669ED0D18BBA8DD00C4C4B1 /* Elefante.jpg in Resources */,
+				66A46CDE18BCE53600F7C502 /* Norte.jpg in Resources */,
+				66A46CE218BCE53600F7C502 /* Tempo.png in Resources */,
+				66A46CCE18BCE45500F7C502 /* Rato.jpg in Resources */,
+				66A46CDA18BCE53600F7C502 /* Ombro.jpg in Resources */,
+				66A46CC418BCE44C00F7C502 /* Vaca.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				66A46CCD18BCE45500F7C502 /* Tempo.jpg in Resources */,
+				6669ED0918BBA8DD00C4C4B1 /* Aranha.jpg in Resources */,
+				66A46CB218BCDF1300F7C502 /* Hino.jpg in Resources */,
+				6669ED0C18BBA8DD00C4C4B1 /* Dado.jpg in Resources */,
+				66A46CB418BCE00C00F7C502 /* Irmão.jpg in Resources */,
+				66A46CBA18BCE1BA00F7C502 /* Ladeira.jpg in Resources */,
+				66A46CDD18BCE53600F7C502 /* Queijo.jpg in Resources */,
+				66A46CB018BCDA2A00F7C502 /* Garfo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +348,7 @@
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
+				66A46CAB18BCC7D700F7C502 /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +550,7 @@
 				27156F7718B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27156F7818B76AF50053A99C /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +559,7 @@
 				27156F7A18B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
