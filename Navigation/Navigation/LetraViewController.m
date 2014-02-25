@@ -51,6 +51,7 @@
     // SOM
     AVSpeechSynthesizer *v = [[AVSpeechSynthesizer alloc] init];
     AVSpeechUtterance *u = [AVSpeechUtterance speechUtteranceWithString:[[[self btnPlayAudio] titleLabel] text]];
+    u.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
     [u setRate:0.1f];
     [v speakUtterance:u];
 }
