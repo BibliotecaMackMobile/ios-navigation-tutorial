@@ -80,8 +80,12 @@
     [[self navigationItem] setRightBarButtonItem:next];
     
     // Imagem
-    [self setImgViewImagem:[[UIImageView alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
-    [[self imgViewImagem] setImage:[auxObj img]];
+//    [self setImgViewImagem:[[UIImageView alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
+//    [[self imgViewImagem] setImage:[auxObj img]];
+    
+    [self setBtnImagem:[[UIButton alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
+    [[self btnImagem] setImage:[auxObj img] forState:UIControlStateNormal];
+    [[self btnImagem] addTarget:self  action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     
     // Botao
     [self setBtnPlayAudio:[[UIButton alloc] initWithFrame:[self makeRectWithX:40 andY:80 andLargura:90 andAltura:10]]];
@@ -90,7 +94,7 @@
     [[self btnPlayAudio] addTarget:self action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     
     // Adiciona no canvas
-    [[self view] addSubview:[self imgViewImagem]];
+    [[self view] addSubview:[self btnImagem]];
     [[self view] addSubview:[self btnPlayAudio]];
 }
 

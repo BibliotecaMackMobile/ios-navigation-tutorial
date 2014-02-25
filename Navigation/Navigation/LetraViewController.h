@@ -14,6 +14,7 @@
 
 // ImageView
 @property (nonatomic, strong) UIImageView *imgViewImagem;
+@property (nonatomic, strong) UIButton *btnImagem;
 
 // Button
 @property (nonatomic, strong) UIButton *btnPlayAudio;
