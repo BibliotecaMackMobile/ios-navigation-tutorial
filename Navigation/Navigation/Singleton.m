@@ -16,4 +16,19 @@
     }
     return single;
 }
+
+
+-(void)addLetra: (Dicionario *)dicionario{
+    if (!_letras) {
+        _letras = [[NSMutableArray alloc]init];
+        _indice = 0;
+    }
+
+    [_letras addObject:dicionario];
+}
+
++(id)allocWithZone:(struct _NSZone *)zone{
+    return [self inicia];
+}
+
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface ProximoViewController : UIViewController
+@property (strong, nonatomic) AVSpeechSynthesizer *synthesizer;
+@property (strong, nonatomic) AVSpeechUtterance *utterance;
+@property UIButton *botaoProximo;
+@property UILabel *texto;
 -(id)init;
 @end

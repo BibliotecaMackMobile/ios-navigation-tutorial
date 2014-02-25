@@ -11,5 +11,7 @@
 
 @interface Singleton : NSObject
 @property NSMutableArray *letras;
+@property NSInteger indice;
 +(id)inicia;
+-(void)addLetra: (Dicionario *)dicionario;
 @end

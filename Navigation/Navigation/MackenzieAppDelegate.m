@@ -9,14 +9,49 @@
 #import "MackenzieAppDelegate.h"
 #import "LetraAViewController.h"
 #import "ProximoViewController.h"
+#import "Dicionario.h"
+#import "Singleton.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    Dicionario *dic = [[Dicionario alloc]init];
+    [dic adicionaPalavra:@"Aranha" letraGrande:@"A" imagem:[UIImage imageNamed:@"aranha"]];
+    Dicionario *dic3 = [[Dicionario alloc]init];
+    [dic3 adicionaPalavra:@"Banana" letraGrande:@"B" imagem:nil];
+    Dicionario *dic4 = [[Dicionario alloc]init];
+    [dic4 adicionaPalavra:@"Cachorro" letraGrande:@"C" imagem:nil];
+    Dicionario *dic5 = [[Dicionario alloc]init];
+    [dic5 adicionaPalavra:@"Dromedario" letraGrande:@"D" imagem:nil];
+    Dicionario *dic2 = [[Dicionario alloc]init];
+    [dic2 adicionaPalavra:@"Elefante" letraGrande:@"E" imagem:nil];
+    Dicionario *dic6 = [[Dicionario alloc]init];
+    [dic6 adicionaPalavra:@"Foca" letraGrande:@"F" imagem:nil];
+    Dicionario *dic7 = [[Dicionario alloc]init];
+    [dic7 adicionaPalavra:@"Gato" letraGrande:@"G" imagem:nil];
+    Dicionario *dic8 = [[Dicionario alloc]init];
+    [dic8 adicionaPalavra:@"Hipopótamo" letraGrande:@"H" imagem:nil];
+    Dicionario *dic9 = [[Dicionario alloc]init];
+    [dic9 adicionaPalavra:@"Iguana" letraGrande:@"I" imagem:nil];
+    Dicionario *dic10 = [[Dicionario alloc]init];
+    [dic10 adicionaPalavra:@"Jaguar" letraGrande:@"J" imagem:nil];
+    Dicionario *dic11 = [[Dicionario alloc]init];
+    [dic11 adicionaPalavra:@"Kiwi" letraGrande:@"K" imagem:nil];
+    Dicionario *dic12 = [[Dicionario alloc]init];
+    [dic12 adicionaPalavra:@"Lagarto" letraGrande:@"L" imagem:nil];
+    Dicionario *dic13 = [[Dicionario alloc]init];
+    [dic13 adicionaPalavra:@"Macaco" letraGrande:@"M" imagem:nil];
+    Dicionario *dic14 = [[Dicionario alloc]init];
+    [dic14 adicionaPalavra:@"Navio" letraGrande:@"N" imagem:nil];
+    
+    Singleton *single = [Singleton inicia];
+    Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]];
+    single.indice++;
+    
     ProximoViewController *viewController = [[ProximoViewController alloc]
                                              init];
-    [viewController setTitle:@"primeira view"];
+    [viewController setTitle:[novaLetra letraGrande]];
     
     self.navigationController = [[UINavigationController alloc]
                                  initWithRootViewController:viewController];

@@ -7,6 +7,7 @@
 //
 
 #import "ProximoViewController.h"
+#import "AnteriorViewController.h"
 #import "Singleton.h"
 #import "Dicionario.h"
 
@@ -28,7 +29,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,24 +40,59 @@
 -(id)init{
     self = [super init];
     if (self) {
-        Singleton *single =[Singleton inicia];
-        Dicionario *dic = [[single letras] objectAtIndex:0];
-        [self setTitle:[dic letraGrande]];
         UIBarButtonItem *next = [[UIBarButtonItem alloc]
                                  initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
         self.navigationItem.rightBarButtonItem=next;
+        Singleton *single = [Singleton inicia];
+        Dicionario *novaLetra = [[single letras]objectAtIndex:0];
         
-        [self setTitle:[dic letraGrande]];
+        _botaoProximo = [UIButton
+                         buttonWithType:UIButtonTypeSystem];
+        
+        [_botaoProximo addTarget:self action:@selector(executaSom:) forControlEvents:UIControlEventTouchUpInside];
+        [_botaoProximo
+         setTitle:[[novaLetra palavra] stringByAppendingString:@"         "] forState:UIControlStateNormal];
+        [_botaoProximo setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
+        [_botaoProximo sizeToFit];
+        _botaoProximo.center = self.view.center;
+        [self.view addSubview:_botaoProximo];
+        
+        _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 400, 500, 50)];
+        [_texto setText:@"                      "];
+        [_texto setText:[novaLetra palavra]];
+        [_texto setNumberOfLines:0];
+        [_texto sizeToFit];
+        [self.view addSubview:_texto];
+        
     }
     return self;
 }
 
 -(void)next:(id)sender{
-    Dicionario *novaLetra = [[Dicionario alloc]init];
-    [novaLetra adicionaPalavra:@"Aranha" letraGrande:@"A" imagem:nil];
+    Singleton *single = [Singleton inicia];
+    Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]];
+    single.indice++;
     
-    ProximoViewController *proximo = [[ProximoViewController alloc]init];
-    [[self navigationController ] pushViewController:proximo animated:YES];
+    AnteriorViewController *anterior = [[AnteriorViewController alloc]init];
+
+    [[self navigationController] pushViewController:anterior animated:YES];
+    [anterior setTitle:[novaLetra letraGrande]];
+    [[anterior botaoAnterior] setTitle:[novaLetra palavra] forState:UIControlStateNormal];
+    
+    [[anterior texto] setText:[novaLetra palavra]];
+    
+}
+
+-(void)executaSom: (id)sender{
+    Singleton *single = [Singleton inicia];
+    Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]-1];
+    
+    
+    _synthesizer = [[AVSpeechSynthesizer alloc]init];
+    _utterance = [AVSpeechUtterance speechUtteranceWithString:[novaLetra palavra]];
+    _utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    _utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
+    [_synthesizer speakUtterance:_utterance];
 }
 
 @end

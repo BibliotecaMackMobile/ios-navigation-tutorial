@@ -9,11 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Dicionario : NSObject
-@property NSMutableArray *letras;
 @property UIImage *imagem;
 @property NSString *palavra;
 @property NSString *letraGrande;
 
 -(void)adicionaPalavra: (NSString *)palavra letraGrande: (NSString *)letraGrande imagem: (UIImage *)imagem;
-
 @end
