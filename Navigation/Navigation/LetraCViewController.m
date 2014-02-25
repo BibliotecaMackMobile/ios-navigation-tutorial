@@ -1,19 +1,22 @@
 //
-//  LetraBViewController.m
+//  LetraCViewController.m
 //  Navigation
 //
-//  Created by Vinicius Miana on 2/23/14.
+//  Created by Lucas Augusto Cordeiro on 2/24/14.
 //  Copyright (c) 2014 Vinicius Miana. All rights reserved.
 //
 
-#import "LetraBViewController.h"
 #import "LetraCViewController.h"
 
-@implementation LetraBViewController
+@interface LetraCViewController ()
+
+@end
+
+@implementation LetraCViewController
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"B";
+    self.title = @"C";
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -31,15 +34,13 @@
     
 }
 
--(void)next:(id)sender {
-    LetraCViewController *proximo = [[LetraCViewController alloc]
-                                     initWithNibName:nil
-                                     bundle:NULL];
-    [self.navigationController pushViewController:proximo
-                                         animated:YES];
-    
-}
-
-
+//-(void)next:(id)sender {
+//    LetraDViewController *proximo = [[LetraDViewController alloc]
+//                                     initWithNibName:nil
+//                                     bundle:NULL];
+//    [self.navigationController pushViewController:proximo
+//                                         animated:YES];
+//    
+//}
 
 @end

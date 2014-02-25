@@ -11,8 +11,6 @@
 
 @implementation LetraAViewController
 
-
-
 -(void) viewDidLoad {
     [super viewDidLoad];
     self.title = @"A";
