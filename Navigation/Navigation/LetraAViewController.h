@@ -17,5 +17,6 @@
 @property (strong, nonatomic) Singleton *singleton;
 @property (strong, nonatomic) NSString *ttitle;
 @property (strong, nonatomic) Pagina *p;
+@property (strong, nonatomic) UIImageView *imgView;
 
 @end

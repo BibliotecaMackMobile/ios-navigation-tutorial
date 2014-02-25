@@ -22,8 +22,8 @@
     Pagina *p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
     viewController.ttitle = p.title;
     viewController.letter.text = p.title;
-    viewController.word.text = p.word;
-    singleton.cont++;
+//    viewController.word.text = p.word;
+//    singleton.cont++;
     
     
     self.navigationController = [[UINavigationController alloc]
