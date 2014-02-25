@@ -16,7 +16,7 @@
                                            initWithNibName:nil
                                            bundle:nil];
     NSArray *keys = [NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
-    NSArray *objects = [NSArray arrayWithObjects:@"Aranha",@"Barata",@"Carro",@"Dado",@"Elefante",@"Faca",@"Garfo",@"Homem",@"Irmão",@"Jaleco",@"Kaiak",@"Ladeira",@"Mulher",@"Norte",@"Ombro",@"Pizza",@"Queijo",@"Rato",@"Sardinha",@"Tempo",@"Urso",@"Vaca",@"Window",@"Xarope",@"You",@"Zebra", nil];
+    NSArray *objects = [NSArray arrayWithObjects:@"Aranha",@"Barata",@"Carro",@"Dado",@"Elefante",@"Faca",@"Garfo",@"Hino",@"Irmão",@"Jaleco",@"Kaiak",@"Ladeira",@"Mulher",@"Norte",@"Ombro",@"Pizza",@"Queijo",@"Rato",@"Sardinha",@"Tempo",@"Urso",@"Vaca",@"Window",@"Xarope",@"Youpix",@"Zebra", nil];
     viewController.palavras = objects;
     viewController.letras = keys;
     viewController.num = 0;

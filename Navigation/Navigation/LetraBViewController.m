@@ -1,44 +1,43 @@
 //
-//  LetraAViewController.m
+//  LetraBViewController.m
 //  Navigation
 //
-//  Created by Vinicius Miana on 2/23/14.
+//  Created by Eduardo Lombardi on 25/02/14.
 //  Copyright (c) 2014 Vinicius Miana. All rights reserved.
 //
 
-#import "LetraAViewController.h"
 #import "LetraBViewController.h"
-@implementation LetraAViewController
-
+#import "LetraAViewController.h"
+@implementation LetraBViewController
 
 -(void) viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%d",_num);
     NSString *title =[_letras objectAtIndex:_num];
     self.title = title;
-        UIBarButtonItem *next = [[UIBarButtonItem alloc]
-                                 initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:) ];
+    UIBarButtonItem *next = [[UIBarButtonItem alloc]
+                             initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:) ];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
-                                            initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
+                                             initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
                                              target:self action:@selector(back:) ];
     self.navigationItem.rightBarButtonItem=next;
     
     
     if(_num ==25)
         self.navigationItem.rightBarButtonItem=nil;
-    
-    UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
-    [botao setFrame:CGRectMake(70 , 180, 180, 80)];
+        
+        UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
+        [botao setFrame:CGRectMake(70 , 130, 180, 180)];
     [botao
-    setTitle:[_palavras objectAtIndex:_num]
-    forState:UIControlStateNormal];
+     setTitle:[_palavras objectAtIndex:_num]
+     forState:UIControlStateNormal];
     //[botao sizeToFit];
     [botao setFont:[UIFont systemFontOfSize:35]];
     //botao.center = self.view.center;
     
     nomeImagem =  [[_palavras objectAtIndex:_num]stringByAppendingString:@".jpg"];
-     _imagem = [UIImage imageNamed:nomeImagem];
+    _imagem = [UIImage imageNamed:nomeImagem];
     UIImageView * novo = [[UIImageView alloc]initWithImage:_imagem];
     novo.center = self.view.center;
     [self.view addSubview:novo];
@@ -56,11 +55,12 @@
     [novo addGestureRecognizer:tap];
     
     
- }
+}
 -(void) Ler
 {
     [self Speak:[_palavras objectAtIndex:_num]];
 }
+
 -(void) Speak :(NSString *) text
 {
     
@@ -76,16 +76,17 @@
     _num = _num-1;
     if(_num < 0)
         _num = 0;
-     [self.navigationController popViewControllerAnimated:YES];
-
+        [self.navigationController popViewControllerAnimated:YES];
+    
+    
+    
 }
 
 -(void)next:(id)sender {
     //_num = _num +1;
-    LetraBViewController *proximo = [[LetraBViewController alloc]
+    LetraAViewController *proximo = [[LetraAViewController alloc]
                                      initWithNibName:nil
                                      bundle:NULL];
-    [self dismissViewControllerAnimated:YES completion:nil];
     proximo.num = _num+1;
     proximo.palavras = _palavras;
     proximo.letras = _letras;
@@ -94,7 +95,6 @@
                                          animated:YES];
     
 }
-
 
 
 
