@@ -6,6 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MackenzieFirstViewController">
             <connections>
+                <outlet property="lblImage" destination="xKb-fN-0fI" id="dgZ-7A-Ufv"/>
+                <outlet property="lblLetter" destination="iX7-P7-dQZ" id="SVU-60-lIi"/>
+                <outlet property="lblWord" destination="Hqp-19-q3d" id="mMn-a4-RlK"/>
+                <outlet property="navegationBar" destination="cNM-ed-6KX" id="Kpf-nQ-8Uf"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -31,6 +35,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-fN-0fI">
                     <rect key="frame" x="40" y="237" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqp-19-q3d">
                     <rect key="frame" x="40" y="417" width="240" height="72"/>

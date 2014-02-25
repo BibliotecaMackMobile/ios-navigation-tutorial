@@ -7,14 +7,15 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "MackenzieFirstViewController.h"
+
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
+    MackenzieFirstViewController *viewController = [[MackenzieFirstViewController alloc]
+                                           initWithNibName:@"MackenzieFirstViewController"
                                            bundle:nil];
     
     

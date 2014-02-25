@@ -10,4 +10,10 @@
 
 @interface MackenzieFirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblLetter;
+@property (weak, nonatomic) IBOutlet UIImageView *lblImage;
+@property (weak, nonatomic) IBOutlet UILabel *lblWord;
+
+@property (weak, nonatomic) IBOutlet UINavigationItem *navegationBar;
+
 @end
