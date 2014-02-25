@@ -8,6 +8,8 @@
 
 #import "LetrasViewController.h"
 #import "LetraBViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface LetrasViewController ()
 {
@@ -55,7 +57,11 @@
     imagem = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
     imagem.image = [UIImage imageNamed:@"a"];
     imagem.center = self.view.center;
+    imagem.userInteractionEnabled = YES;
     [self.view addSubview:imagem];
+    
+    UITapGestureRecognizer *imagemTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(falaPalavra)];
+    [imagem addGestureRecognizer:imagemTap];
 }
 
 - (void)next:(id)sender
@@ -116,6 +122,15 @@
 {
     
     imagem.image = [UIImage imageNamed:[[letras substringWithRange:range] lowercaseString]];
+}
+
+- (void)falaPalavra
+{
+    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:palavras[count]];
+    utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+    [synthesizer speakUtterance:utterance];
 }
 
 @end
