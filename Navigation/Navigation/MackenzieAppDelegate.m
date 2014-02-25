@@ -15,8 +15,7 @@
 {
     LetterViewController *viewController = [[LetterViewController alloc]
                                            initWithLetter:@"A"];
-    LetterViewController *otherViewController = [[LetterViewController alloc]
-                                                 initWithLetter:@"B"];
+    LetterViewController *otherViewController;
     
     [LetterViewController setHiddenView:otherViewController];
     

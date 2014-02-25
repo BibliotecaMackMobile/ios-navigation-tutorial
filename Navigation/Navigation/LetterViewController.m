@@ -29,8 +29,14 @@ static LetterViewController *hiddenView;
         letter = l;
         if (words == nil)
         {
-            words = [NSArray arrayWithObjects:@"Aranha", @"Burro", @"Cachorro", @"Dinossauro", @"Elefante", @"Foca", @"Girafa", @"Hipopótamo", @"Iena", @"Javali", @"Koala", @"Lagartixa", @"Macaco", @"Naja", @"Ovelha", @"Pato", @"Quati", @"Raposa", @"Sapo", @"Tartaruga", @"Urso", @"Vaca", @"Wolf", @"Ximango", @"Yorkshire", @"Zebra", nil];
+            words = [NSArray arrayWithObjects:@"Aranha", @"Burro", @"Cachorro", @"Dinossauro", @"Elefante", @"Foca", @"Girafa", @"Hipopótamo", @"Iena", @"Javali", @"Koala", @"Largatixa", @"Macaco", @"Naja", @"Ovelha", @"Pato não faz gol", @"Quati", @"Raposa", @"Sapo", @"Tartaruga", @"Urso", @"Vaca", @"Wolf", @"Ximango", @"Yorkshire", @"Zebra", nil];
         }
+        
+        AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
+        AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"Bem vindo ao dicionário Aurélio da zueira"];
+        [utterance setRate:0.1f];
+        utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+        [synthesizer speakUtterance:utterance];
     }
     return self;
 }
@@ -40,6 +46,7 @@ static LetterViewController *hiddenView;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
@@ -108,8 +115,8 @@ static LetterViewController *hiddenView;
         [hiddenView updateView:previousLetter];
     }
     
-    [[self navigationController] setViewControllers:[NSArray arrayWithObject:self]];
-    [[self navigationController] pushViewController:hiddenView animated:YES];
+    [[self navigationController] setViewControllers:[NSArray arrayWithObjects:hiddenView, self, nil]];
+    [[self navigationController] popViewControllerAnimated:YES];
     
     hiddenView = self;
 }
@@ -131,10 +138,9 @@ static LetterViewController *hiddenView;
 }
 
 - (IBAction)speak:(id)sender {
-    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
-    
     NSString *word = [words objectAtIndex:[letter characterAtIndex:0] - 65];
     
+    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:word];
     [utterance setRate:0.1f];
     utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
