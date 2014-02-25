@@ -21,6 +21,13 @@
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
 		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
+		A2353CF718BB687E00440F0F /* LetraCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2353CF618BB687E00440F0F /* LetraCViewController.m */; };
+		A2353CFA18BB698E00440F0F /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2353CF918BB698E00440F0F /* LetraViewController.m */; };
+		A2353CFD18BB69CD00440F0F /* DataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2353CFC18BB69CD00440F0F /* DataSingleton.m */; };
+		A2353D0018BB6A7200440F0F /* Letter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2353CFF18BB6A7200440F0F /* Letter.m */; };
+		A2353D0318BCC82900440F0F /* Letra2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2353D0218BCC82900440F0F /* Letra2ViewController.m */; };
+		A2353D0518BCD86800440F0F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2353D0418BCD86800440F0F /* AudioToolbox.framework */; };
+		A2353D0718BCD86E00440F0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2353D0618BCD86E00440F0F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,18 @@
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
 		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
 		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		A2353CF518BB687E00440F0F /* LetraCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraCViewController.h; sourceTree = "<group>"; };
+		A2353CF618BB687E00440F0F /* LetraCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraCViewController.m; sourceTree = "<group>"; };
+		A2353CF818BB698E00440F0F /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
+		A2353CF918BB698E00440F0F /* LetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraViewController.m; sourceTree = "<group>"; };
+		A2353CFB18BB69CD00440F0F /* DataSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSingleton.h; sourceTree = "<group>"; };
+		A2353CFC18BB69CD00440F0F /* DataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSingleton.m; sourceTree = "<group>"; };
+		A2353CFE18BB6A7200440F0F /* Letter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letter.h; sourceTree = "<group>"; };
+		A2353CFF18BB6A7200440F0F /* Letter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letter.m; sourceTree = "<group>"; };
+		A2353D0118BCC82900440F0F /* Letra2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letra2ViewController.h; sourceTree = "<group>"; };
+		A2353D0218BCC82900440F0F /* Letra2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letra2ViewController.m; sourceTree = "<group>"; };
+		A2353D0418BCD86800440F0F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A2353D0618BCD86E00440F0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2353D0718BCD86E00440F0F /* AVFoundation.framework in Frameworks */,
+				A2353D0518BCD86800440F0F /* AudioToolbox.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -102,6 +123,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2353D0618BCD86E00440F0F /* AVFoundation.framework */,
+				A2353D0418BCD86800440F0F /* AudioToolbox.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -121,6 +144,16 @@
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
 				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
 				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
+				A2353CF518BB687E00440F0F /* LetraCViewController.h */,
+				A2353CF618BB687E00440F0F /* LetraCViewController.m */,
+				A2353CF818BB698E00440F0F /* LetraViewController.h */,
+				A2353CF918BB698E00440F0F /* LetraViewController.m */,
+				A2353D0118BCC82900440F0F /* Letra2ViewController.h */,
+				A2353D0218BCC82900440F0F /* Letra2ViewController.m */,
+				A2353CFB18BB69CD00440F0F /* DataSingleton.h */,
+				A2353CFC18BB69CD00440F0F /* DataSingleton.m */,
+				A2353CFE18BB6A7200440F0F /* Letter.h */,
+				A2353CFF18BB6A7200440F0F /* Letter.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -202,6 +235,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Vinicius Miana";
 				TargetAttributes = {
+					27156F4818B76AF50053A99C = {
+						DevelopmentTeam = KKKTBJ9APM;
+					};
 					27156F6318B76AF50053A99C = {
 						TestTargetID = 27156F4818B76AF50053A99C;
 					};
@@ -250,10 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2353CFD18BB69CD00440F0F /* DataSingleton.m in Sources */,
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
+				A2353CFA18BB698E00440F0F /* LetraViewController.m in Sources */,
+				A2353D0018BB6A7200440F0F /* Letter.m in Sources */,
+				A2353D0318BCC82900440F0F /* Letra2ViewController.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
+				A2353CF718BB687E00440F0F /* LetraCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +413,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Navigation/Navigation-Prefix.pch";
 				INFOPLIST_FILE = "Navigation/Navigation-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -385,10 +429,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Navigation/Navigation-Prefix.pch";
 				INFOPLIST_FILE = "Navigation/Navigation-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,6 +501,7 @@
 				27156F7718B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27156F7818B76AF50053A99C /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +510,7 @@
 				27156F7A18B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
