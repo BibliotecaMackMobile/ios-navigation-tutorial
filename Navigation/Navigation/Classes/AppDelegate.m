@@ -16,11 +16,14 @@
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     navigationController = [[UINavigationController alloc] initWithRootViewController:[LetterViewController new]];
-    [[navigationController navigationBar] setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor redColor],UITextAttributeTextShadowColor:[UIColor blackColor],UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0.0f,0.0f)],UITextAttributeFont:[UIFont fontWithName:@"ChalkboardSE-Bold" size:20.0f]}];
+    [[navigationController navigationBar] setTitleTextAttributes:@{UITextAttributeTextColor:[UIColor whiteColor],UITextAttributeTextShadowColor:[UIColor blackColor],UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0.0f,0.0f)],UITextAttributeFont:[UIFont fontWithName:@"ChalkboardSE-Bold" size:20.0f]}];
+    [[navigationController navigationBar] setBarTintColor:[UIColor colorWithRed:0.000 green:0.478 blue:1.000 alpha:1.000]];
     window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     [window setRootViewController:navigationController];
     [window setBackgroundColor:[UIColor whiteColor]];
     [window makeKeyAndVisible];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     return YES;
 }
 

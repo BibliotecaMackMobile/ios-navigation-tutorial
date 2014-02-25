@@ -23,7 +23,8 @@
 @implementation LetterViewController
 
 @synthesize letterImageView;
-@synthesize letterTitle;
+@synthesize letterTitleLabel;
+@synthesize letterLanguageLabel;
 
 #pragma mark - Constructors
 
@@ -33,14 +34,13 @@
     if(self)
     {
         letterIndex = 0;
+        letterWord = 0;
+        letterLanguage = 0;
         sections = [Sections sharedInstance];
         rightSwipeGesture = nil;
         leftSwipeGesture = nil;
         tapGesture = nil;
         speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-        letterSpeech = [[AVSpeechUtterance alloc] initWithString:[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] letterFonetics]];
-        [letterSpeech setRate:0.2];
-        [letterSpeech setVoice:[AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"]];
     }
     return self;
 }
@@ -51,19 +51,23 @@
     if(self)
     {
         letterIndex = index;
+        letterWord = 0;
+        letterLanguage = 0;
         sections = [Sections sharedInstance];
         rightSwipeGesture = nil;
         leftSwipeGesture = nil;
         tapGesture = nil;
         speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-        letterSpeech = [[AVSpeechUtterance alloc] initWithString:[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] letterFonetics]];
-        [letterSpeech setRate:0.2];
-        [letterSpeech setVoice:[AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"]];
     }
     return self;
 }
 
 #pragma mark - UIView
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 
 -(void)viewDidLoad
 {
@@ -80,38 +84,42 @@
 
 -(void)initInterface
 {
+    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Clouds"]]];
     [[self navigationItem] setTitle:[[sections alphabetArray] objectAtIndex:letterIndex]];
     [[[self navigationItem] rightBarButtonItem] setTitle:@""];
-    [letterImageView setImage:[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] letterImage]];
+    [letterImageView setImage:[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterImage]];
+    [letterImageView setBackgroundColor:[UIColor whiteColor]];
     [letterImageView setUserInteractionEnabled:YES];
     [[letterImageView layer] setCornerRadius:30.0];
     [[letterImageView layer] setBorderWidth:1.0];
     [[letterImageView layer] setBorderColor:[[UIColor darkGrayColor] CGColor]];
     [[letterImageView layer] setMasksToBounds:YES];
-    [letterTitle setText:[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] letterTitle]];
-    [letterTitle setTextColor:[UIColor darkGrayColor]];
+    [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
+    [letterTitleLabel setTextColor:[UIColor darkGrayColor]];
+    [letterLanguageLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]];
+    [letterLanguageLabel setTextColor:[UIColor darkGrayColor]];
     [[self navigationItem] setBackBarButtonItem:nil];
     if(letterIndex == 0 || letterIndex == 25)
     {
         if(letterIndex == 0)
         {
             [[self navigationItem] setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"RightArrow"] style:UIBarButtonItemStyleBordered target:self action:@selector(nextLetter:)]];
-            [[[self navigationItem] rightBarButtonItem] setTintColor:[UIColor redColor]];
+            [[[self navigationItem] rightBarButtonItem] setTintColor:[UIColor whiteColor]];
             [[self navigationItem] setLeftBarButtonItem:nil];
         }
         else
         {
             [[self navigationItem] setRightBarButtonItem:nil];
             [[self navigationItem] setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"LeftArrow"] style:UIBarButtonItemStyleBordered target:self action:@selector(previousLetter:)]];
-            [[[self navigationItem] leftBarButtonItem] setTintColor:[UIColor redColor]];
+            [[[self navigationItem] leftBarButtonItem] setTintColor:[UIColor whiteColor]];
         }
     }
     else
     {
         [[self navigationItem] setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"RightArrow"] style:UIBarButtonItemStyleBordered target:self action:@selector(nextLetter:)]];
-        [[[self navigationItem] rightBarButtonItem] setTintColor:[UIColor redColor]];
+        [[[self navigationItem] rightBarButtonItem] setTintColor:[UIColor whiteColor]];
         [[self navigationItem] setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"LeftArrow"] style:UIBarButtonItemStyleBordered target:self action:@selector(previousLetter:)]];
-        [[[self navigationItem] leftBarButtonItem] setTintColor:[UIColor redColor]];
+        [[[self navigationItem] leftBarButtonItem] setTintColor:[UIColor whiteColor]];
     }
     [self createSwipeGestures];
     [self createTapGesture];
@@ -159,10 +167,8 @@
             [self previousLetter:nil];
     }
     else
-    {
         if(letterIndex < 25)
             [self nextLetter:nil];
-    }
 }
 
 -(void)createTapGesture
@@ -174,8 +180,36 @@
 
 -(void)handleTapGesture:(UITapGestureRecognizer *)sender
 {
-    if(!speechSynthesizer.speaking)
-        [speechSynthesizer speakUtterance:letterSpeech];
+    if([[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterFonetics] objectAtIndex:letterLanguage] length] > 0)
+        if(!speechSynthesizer.speaking)
+        {
+            letterSpeech = [AVSpeechUtterance speechUtteranceWithString:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterFonetics] objectAtIndex:letterLanguage]];
+            [letterSpeech setRate:0.2];
+            [letterSpeech setVoice:[AVSpeechSynthesisVoice voiceWithLanguage:[[sections languagesDictionary] objectForKey:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]]]];
+            [speechSynthesizer speakUtterance: letterSpeech];
+        }
+}
+
+#pragma mark - IBActions
+
+-(IBAction)changeWord:(id)sender
+{
+    if(letterWord < ([[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] count] - 1))
+        letterWord++;
+    else
+        letterWord = 0;
+    [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
+    [letterImageView setImage:[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterImage]];
+}
+
+-(IBAction)changeLanguage:(id)sender
+{
+    if(letterLanguage < ([[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] count] - 1))
+        letterLanguage++;
+    else
+        letterLanguage = 0;
+    [letterTitleLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterTitles] objectAtIndex:letterLanguage]];
+    [letterLanguageLabel setText:[[[[[sections lettersDictionary] objectForKey:[[sections alphabetArray] objectAtIndex:letterIndex]] objectAtIndex:letterWord] letterLanguages] objectAtIndex:letterLanguage]];
 }
 
 @end

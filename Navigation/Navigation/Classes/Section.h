@@ -10,11 +10,12 @@
 
 @interface Section : NSObject
 
-@property (nonatomic,strong) NSString * letterTitle;
+@property (nonatomic,strong) NSArray * letterTitles;
+@property (nonatomic,strong) NSArray * letterLanguages;
 @property (nonatomic,strong) UIImage * letterImage;
-@property (nonatomic,strong) NSString * letterFonetics;
+@property (nonatomic,strong) NSArray * letterFonetics;
 
 -(id)init;
--(id)initWithLetterTitle:(NSString *)newLetterTitle letterImage:(UIImage *)newLetterImage andLetterFonetics:(NSString *)newLetterFonetics;
+-(id)initWithLetterTitle:(NSArray *)newLetterTitles forNewLetterLanguages:(NSArray *)newLetterLanguages letterImage:(UIImage *)newLetterImage andLetterFonetics:(NSArray *)newLetterFonetics;
 
 @end

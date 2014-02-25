@@ -14,6 +14,8 @@
 @interface LetterViewController : UIViewController
 {
     NSUInteger letterIndex;
+    NSUInteger letterWord;
+    NSUInteger letterLanguage;
     Sections * sections;
     UISwipeGestureRecognizer * rightSwipeGesture;
     UISwipeGestureRecognizer * leftSwipeGesture;
@@ -23,8 +25,11 @@
 }
 
 @property (nonatomic,weak) IBOutlet UIImageView * letterImageView;
-@property (nonatomic,weak) IBOutlet UILabel * letterTitle;
+@property (nonatomic,weak) IBOutlet UILabel * letterTitleLabel;
+@property (nonatomic,weak) IBOutlet UILabel * letterLanguageLabel;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andLetterIndex:(NSUInteger)index;
+-(IBAction)changeWord:(id)sender;
+-(IBAction)changeLanguage:(id)sender;
 
 @end

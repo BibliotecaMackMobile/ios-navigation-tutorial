@@ -14,7 +14,8 @@
 
 @implementation Section
 
-@synthesize letterTitle;
+@synthesize letterTitles;
+@synthesize letterLanguages;
 @synthesize letterImage;
 @synthesize letterFonetics;
 
@@ -23,20 +24,22 @@
     self = [super init];
     if(self)
     {
-        letterTitle = nil;
+        letterTitles = nil;
+        letterLanguages = nil;
         letterImage = [UIImage imageNamed:@"LetterImagePlaceholder"];
         letterFonetics = nil;
     }
     return self;
 }
 
--(id)initWithLetterTitle:(NSString *)newLetterTitle letterImage:(UIImage *)newLetterImage andLetterFonetics:(NSString *)newLetterFonetics
+-(id)initWithLetterTitle:(NSArray *)newLetterTitles forNewLetterLanguages:(NSArray *)newLetterLanguages letterImage:(UIImage *)newLetterImage andLetterFonetics:(NSArray *)newLetterFonetics
 {
     self = [super init];
     if(self)
     {
-        letterTitle = newLetterTitle;
-        letterImage = ((letterImage) ? newLetterImage : [UIImage imageNamed:@"LetterImagePlaceholder"]);
+        letterTitles = newLetterTitles;
+        letterLanguages = newLetterLanguages;
+        letterImage = ((newLetterImage) ? newLetterImage : [UIImage imageNamed:@"LetterImagePlaceholder"]);
         letterFonetics = newLetterFonetics;
     }
     return self;

@@ -11,8 +11,9 @@
 
 @interface Sections : NSObject
 
+@property (nonatomic,strong) NSDictionary * languagesDictionary;
 @property (nonatomic,strong) NSArray * alphabetArray;
-@property (nonatomic,strong) NSMutableDictionary * lettersDictionary;
+@property (nonatomic,strong) NSDictionary * lettersDictionary;
 
 +(id)sharedInstance;
 
