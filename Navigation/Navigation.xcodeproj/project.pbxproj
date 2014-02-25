@@ -27,7 +27,7 @@
 		F3C9605018BC08A600EE9DB8 /* abelha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603518BC08A600EE9DB8 /* abelha.jpg */; };
 		F3C9605118BC08A600EE9DB8 /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603618BC08A600EE9DB8 /* banana.jpg */; };
 		F3C9605218BC08A600EE9DB8 /* carambola.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603718BC08A600EE9DB8 /* carambola.jpg */; };
-		F3C9605318BC08A600EE9DB8 /* danone.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603818BC08A600EE9DB8 /* danone.JPG */; };
+		F3C9605318BC08A600EE9DB8 /* danone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603818BC08A600EE9DB8 /* danone.jpg */; };
 		F3C9605418BC08A600EE9DB8 /* escola.gif in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603918BC08A600EE9DB8 /* escola.gif */; };
 		F3C9605518BC08A600EE9DB8 /* floresta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603A18BC08A600EE9DB8 /* floresta.jpg */; };
 		F3C9605618BC08A600EE9DB8 /* gorila.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3C9603B18BC08A600EE9DB8 /* gorila.jpg */; };
@@ -91,7 +91,7 @@
 		F3C9603518BC08A600EE9DB8 /* abelha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abelha.jpg; sourceTree = "<group>"; };
 		F3C9603618BC08A600EE9DB8 /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
 		F3C9603718BC08A600EE9DB8 /* carambola.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carambola.jpg; sourceTree = "<group>"; };
-		F3C9603818BC08A600EE9DB8 /* danone.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = danone.JPG; sourceTree = "<group>"; };
+		F3C9603818BC08A600EE9DB8 /* danone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = danone.jpg; sourceTree = "<group>"; };
 		F3C9603918BC08A600EE9DB8 /* escola.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = escola.gif; sourceTree = "<group>"; };
 		F3C9603A18BC08A600EE9DB8 /* floresta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floresta.jpg; sourceTree = "<group>"; };
 		F3C9603B18BC08A600EE9DB8 /* gorila.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gorila.jpg; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 				F3C9603518BC08A600EE9DB8 /* abelha.jpg */,
 				F3C9603618BC08A600EE9DB8 /* banana.jpg */,
 				F3C9603718BC08A600EE9DB8 /* carambola.jpg */,
-				F3C9603818BC08A600EE9DB8 /* danone.JPG */,
+				F3C9603818BC08A600EE9DB8 /* danone.jpg */,
 				F3C9603918BC08A600EE9DB8 /* escola.gif */,
 				F3C9603A18BC08A600EE9DB8 /* floresta.jpg */,
 				F3C9603B18BC08A600EE9DB8 /* gorila.jpg */,
@@ -335,7 +335,7 @@
 			files = (
 				F3C9605718BC08A600EE9DB8 /* hospital.gif in Resources */,
 				F3C9605818BC08A600EE9DB8 /* hospital.png in Resources */,
-				F3C9605318BC08A600EE9DB8 /* danone.JPG in Resources */,
+				F3C9605318BC08A600EE9DB8 /* danone.jpg in Resources */,
 				F3C9605F18BC08A600EE9DB8 /* orkut.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				F3C9606418BC08A600EE9DB8 /* taturana.jpg in Resources */,

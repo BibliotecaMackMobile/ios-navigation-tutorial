@@ -67,7 +67,19 @@
 }
 
 -(void)next:(id)sender {
-    shared *c = [shared sharedInstance];
+   shared *c = [shared sharedInstance];
+//    if (c.count == 26) {
+//        c.count = 0;
+//        //[self.navigationController popToRootViewControllerAnimated:YES];
+//        
+//    }
+    if (c.count == 25)
+    {
+        c.count = 0;
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        return;
+    }
+    
     c.count = c.count + 1;
     LetraAViewController *viewController = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];
     [self.navigationController pushViewController:viewController animated:NO];
