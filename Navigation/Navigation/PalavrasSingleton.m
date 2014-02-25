@@ -32,10 +32,7 @@
         aux = [[Palavra alloc] initWithDados:@"D" palavra:@"Dado" imagem:@"dado.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"D" palavra:@"Dado" imagem:@"dado.jpg"];
-        [self.palavras addObject:aux];
-        
-        aux = [[Palavra alloc] initWithDados:@"E" palavra:@"Elefante" imagem:@"elefante.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"E" palavra:@"Escola" imagem:@"escola.jpg"];
         [self.palavras addObject:aux];
         
         aux = [[Palavra alloc] initWithDados:@"F" palavra:@"Faca" imagem:@"faca.jpg"];
@@ -44,7 +41,7 @@
         aux = [[Palavra alloc] initWithDados:@"G" palavra:@"Gato" imagem:@"gato.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"H" palavra:@"???" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"H" palavra:@"Helicóptero" imagem:@"helicoptero.jpg"];
         [self.palavras addObject:aux];
         
         aux = [[Palavra alloc] initWithDados:@"I" palavra:@"Ilha" imagem:@"ilha.jpg"];
@@ -53,52 +50,49 @@
         aux = [[Palavra alloc] initWithDados:@"J" palavra:@"Jacaré" imagem:@"jacare.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"K" palavra:@"???" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"K" palavra:@"Kiwi" imagem:@"kiwi.jpg"];
         [self.palavras addObject:aux];
         
         aux = [[Palavra alloc] initWithDados:@"L" palavra:@"Lapis" imagem:@"lapis.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"M" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"M" palavra:@"Nariz" imagem:@"nariz.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"N" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"O" palavra:@"Ovo" imagem:@"ovo.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"O" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"P" palavra:@"Pato" imagem:@"pato.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"P" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"Q" palavra:@"Queijo" imagem:@"queijo.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"Q" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"R" palavra:@"Rato" imagem:@"rato.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"R" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"S" palavra:@"Sapo" imagem:@"sapo.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"S" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"T" palavra:@"Tatu" imagem:@"tatu.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"T" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"U" palavra:@"Uva" imagem:@"uva.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"U" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"V" palavra:@"Vestido" imagem:@"vestido.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"V" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"W" palavra:@"Whatsapp" imagem:@"whatsapp.png"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"W" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"X" palavra:@"Xerife" imagem:@"xerife.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"X" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"Y" palavra:@"Youtube" imagem:@"youtube.jpg"];
         [self.palavras addObject:aux];
         
-        aux = [[Palavra alloc] initWithDados:@"Y" palavra:@"Dado" imagem:@"dado.jpg"];
-        [self.palavras addObject:aux];
-        
-        aux = [[Palavra alloc] initWithDados:@"Z" palavra:@"Dado" imagem:@"dado.jpg"];
+        aux = [[Palavra alloc] initWithDados:@"Z" palavra:@"Zebra" imagem:@"zebra.jpg"];
         [self.palavras addObject:aux];
     }
     return self;
