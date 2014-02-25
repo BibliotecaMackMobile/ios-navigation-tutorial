@@ -13,6 +13,7 @@
 @end
 
 @implementation MackenzieFirstViewController
+@synthesize lblLetter, lblWord, lblImage, AlfaDictionary;
 static int contLetter = 0;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,11 +29,19 @@ static int contLetter = 0;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    AlfaDictionary = [[MackenzieArray alloc]init];
    self.title = @"Pokemon";
     UIBarButtonItem *nextLetter = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem = nextLetter;
-                                
+    UIBarButtonItem *backLetter = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(back:)];
+    self.navigationItem.leftBarButtonItem = backLetter;
     
+    //---------
+    
+    [lblLetter setText:[[AlfaDictionary letterAtIndex:contLetter] letterObject]];
+    [lblWord setText:[[AlfaDictionary letterAtIndex:contLetter] wordObject]];
+    UIImage * image = [UIImage imageNamed:[[AlfaDictionary letterAtIndex:contLetter] letterObject]];
+    [lblImage setImage:image]; //lblImage e a UIImageView
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,9 +64,12 @@ static int contLetter = 0;
 }
 
 - (void) back:(id)sender {
-    contLetter --;
-    if(contLetter < 0) {
-        contLetter = 25;
+    if(contLetter > 0) {
+        contLetter --;
+        [self.navigationController popViewControllerAnimated:YES];
     }
+}
+- (IBAction)speakName:(id)sender {
+    
 }
 @end

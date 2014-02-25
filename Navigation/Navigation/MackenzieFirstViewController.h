@@ -11,9 +11,11 @@
 
 @interface MackenzieFirstViewController : UIViewController
 
+@property (nonatomic) MackenzieArray * AlfaDictionary;
 @property (weak, nonatomic) IBOutlet UILabel *lblLetter;
 @property (weak, nonatomic) IBOutlet UIImageView *lblImage;
 @property (weak, nonatomic) IBOutlet UILabel *lblWord;
+- (IBAction)speakName:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *navegationBar;
 

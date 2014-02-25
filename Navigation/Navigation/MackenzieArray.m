@@ -60,4 +60,8 @@
     return self;
 }
 
+- (MackenzieObject *) letterAtIndex:(int)newIndex {
+    return [dictionaryArray objectAtIndex:newIndex];
+}
+
 @end

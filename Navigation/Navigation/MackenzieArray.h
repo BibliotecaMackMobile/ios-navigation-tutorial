@@ -12,5 +12,5 @@
 @interface MackenzieArray : NSObject
 
 @property (nonatomic, strong) NSMutableArray * dictionaryArray;
-
+- (MackenzieObject *) letterAtIndex:(int)newIndex;
 @end
