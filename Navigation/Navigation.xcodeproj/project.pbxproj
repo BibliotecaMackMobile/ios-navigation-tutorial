@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		250D0C9818BB7B19001B6AB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9718BB7B19001B6AB8 /* AVFoundation.framework */; };
 		250D0C9A18BB7B21001B6AB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */; };
-		250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */; };
 		250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */; };
 		250D0CA618BBB217001B6AB8 /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0CA518BBB217001B6AB8 /* LetraViewController.m */; };
 		250D0CC418BBD05F001B6AB8 /* Abelha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 250D0CA918BBD05F001B6AB8 /* Abelha.jpg */; };
@@ -67,8 +66,6 @@
 /* Begin PBXFileReference section */
 		250D0C9718BB7B19001B6AB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionario.h; sourceTree = "<group>"; };
-		250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionario.m; sourceTree = "<group>"; };
 		250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionarioModel.h; sourceTree = "<group>"; };
 		250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraDicionarioModel.m; sourceTree = "<group>"; };
 		250D0CA418BBB217001B6AB8 /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
@@ -182,8 +179,6 @@
 		250D0C9618BB72C0001B6AB8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */,
-				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
 				250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */,
 				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
 				25FAE99018BE00D9009742E3 /* DicionarioModel.plist */,
@@ -411,7 +406,6 @@
 				250D0CA618BBB217001B6AB8 /* LetraViewController.m in Sources */,
 				250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
-				250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
