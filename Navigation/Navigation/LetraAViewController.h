@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Palavra.h"
 
-@interface LetraAViewController : UIViewController
+@interface LetraAViewController : UIViewController{
+    PalavrasSingleton *item;
+    NSString *word;
+ 
+}
+
+-(void)exibirDados: (PalavrasSingleton *) item;
 
 @end
