@@ -41,6 +41,7 @@
     self = [super initWithNibName:Nil bundle:nil];
     if (self) {
         [self setTitle:valorLetra];
+        [self setDicionario:(NSDictionary*)[[[LetraDicionarioModel sharadManager] lista] objectForKey:valorLetra]];
         [self setKey:[[NSArray alloc] initWithObjects:@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I",  @"J",  @"K",  @"L",  @"M",  @"N",  @"O",  @"P",  @"Q",  @"R",  @"S",  @"T",  @"U",  @"V",  @"W",  @"X", @"Y", @"Z", nil]];
     }
     return self;
@@ -68,7 +69,8 @@
 
 - (void)viewDidLoad
 {
-//    NSString *auxTitulo = [self title];
+    NSString *nome = [[self dicionario] objectForKey:@"Nome"];
+    NSString *imagem = [[self dicionario] objectForKey:@"Imagem"];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -79,9 +81,11 @@
     
     // Imagem
     [self setImgViewImagem:[[UIImageView alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
+    [[self imgViewImagem] setImage:[UIImage imageNamed:imagem]];
     
     // Botao
     [self setBtnPlayAudio:[[UIButton alloc] initWithFrame:[self makeRectWithX:40 andY:80 andLargura:90 andAltura:10]]];
+    [[self btnPlayAudio] setTitle:nome forState:UIControlStateNormal];
     [[self btnPlayAudio] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [[self btnPlayAudio] addTarget:self action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     

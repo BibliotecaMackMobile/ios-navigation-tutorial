@@ -10,11 +10,11 @@
 
 @interface LetraViewController : UIViewController
 
+@property (nonatomic) NSDictionary *dicionario;
 @property (nonatomic) NSArray *key;
 
 // ImageView
 @property (nonatomic, strong) UIImageView *imgViewImagem;
-@property (nonatomic, strong) UIButton *btnImagem;
 
 // Button
 @property (nonatomic, strong) UIButton *btnPlayAudio;
