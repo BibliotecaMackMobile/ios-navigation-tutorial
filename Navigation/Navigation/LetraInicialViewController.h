@@ -10,7 +10,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface LetrasViewController : UIViewController
+@interface LetraInicialViewController : UIViewController
 
 @property (strong, nonatomic) AVSpeechSynthesizer *synthesizer;
 @property (strong, nonatomic) AVSpeechUtterance *utterance;

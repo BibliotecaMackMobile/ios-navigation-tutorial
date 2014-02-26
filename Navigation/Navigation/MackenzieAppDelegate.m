@@ -7,13 +7,13 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetrasViewController.h"
+#import "LetraInicialViewController.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetrasViewController *viewController = [[LetrasViewController alloc]
+    LetraInicialViewController *viewController = [[LetraInicialViewController alloc]
                                            initWithNibName:nil
                                            bundle:nil];
     
@@ -23,8 +23,6 @@
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.navigationController;
-
-
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
