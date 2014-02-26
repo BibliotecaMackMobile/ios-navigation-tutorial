@@ -20,13 +20,14 @@
         dicionario= [[NSMutableDictionary alloc]init];
         [dicionario dictionaryWithValuesForKeys:vetorLetras];
         
-        UIImage *imagem= [[UIImage alloc]init];
+        //UIImage *imagem= [[UIImage alloc]init];
         
-        for (int i=0; i<27; i++){
+        for (int i=0; i<26; i++){
             unichar l= i+ 65; // 65= A
             NSString *key= [[NSString stringWithCharacters:&l length:1]capitalizedString];
             
-            UIImage *imagem= [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", key]];
+            NSLog(@"%@", key);
+            UIImage *imagem= [UIImage imageNamed:[NSString stringWithFormat:@"img%@.png", key]];
             
             Letra *letra= [[Letra alloc]initWithImagem:imagem andPalavra:[vetorPalavras objectAtIndex:i]];
             

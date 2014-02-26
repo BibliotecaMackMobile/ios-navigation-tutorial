@@ -13,11 +13,13 @@
 //    NSString *letra;
 //    UIImage *imagem;
 //    NSString *palavra;
+    char letra;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *labelPalavra;
+@property IBOutlet UIButton *botPalavra;
 
-//-(id)initwith
+
+-(id)initWithLetra:(char )l;
 
 
 @end
