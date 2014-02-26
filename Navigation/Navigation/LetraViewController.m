@@ -69,8 +69,7 @@
 
 - (void)viewDidLoad
 {
-    NSString *auxTitulo = [self title];
-    LetraDicionario *auxObj = [[[LetraDicionarioModel sharadManager] lista] objectForKey:auxTitulo];
+//    NSString *auxTitulo = [self title];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -79,17 +78,21 @@
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     [[self navigationItem] setRightBarButtonItem:next];
     
+    NSDictionary *d = [[[LetraDicionarioModel sharadManager] lista] infoDictionary];
+    NSArray *a = [d allKeys];
+    NSLog(@"%@", [a firstObject]);
+    
     // Imagem
 //    [self setImgViewImagem:[[UIImageView alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
 //    [[self imgViewImagem] setImage:[auxObj img]];
     
     [self setBtnImagem:[[UIButton alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
-    [[self btnImagem] setImage:[auxObj img] forState:UIControlStateNormal];
+//    [[self btnImagem] setImage:[auxObj img] forState:UIControlStateNormal];
     [[self btnImagem] addTarget:self  action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     
     // Botao
     [self setBtnPlayAudio:[[UIButton alloc] initWithFrame:[self makeRectWithX:40 andY:80 andLargura:90 andAltura:10]]];
-    [[self btnPlayAudio] setTitle:[auxObj nome] forState:UIControlStateNormal];
+//    [[self btnPlayAudio] setTitle:[auxObj nome] forState:UIControlStateNormal];
     [[self btnPlayAudio] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [[self btnPlayAudio] addTarget:self action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     

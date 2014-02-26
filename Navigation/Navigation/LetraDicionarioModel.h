@@ -12,7 +12,7 @@
 @interface LetraDicionarioModel : NSObject
 
 // NSArray
-@property (nonatomic, strong) NSDictionary *lista;
+@property (nonatomic, strong) NSBundle *lista;
 
 //
 +(LetraDicionarioModel*)sharadManager;

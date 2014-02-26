@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		250D0C9218BB6CC4001B6AB8 /* LetraCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9118BB6CC4001B6AB8 /* LetraCViewController.m */; };
 		250D0C9818BB7B19001B6AB8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9718BB7B19001B6AB8 /* AVFoundation.framework */; };
 		250D0C9A18BB7B21001B6AB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */; };
 		250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */; };
@@ -40,6 +39,7 @@
 		250D0CDC18BBD05F001B6AB8 /* Xexe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 250D0CC118BBD05F001B6AB8 /* Xexe.jpeg */; };
 		250D0CDD18BBD05F001B6AB8 /* Yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 250D0CC218BBD05F001B6AB8 /* Yoda.jpg */; };
 		250D0CDE18BBD05F001B6AB8 /* Zebra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 250D0CC318BBD05F001B6AB8 /* Zebra.jpg */; };
+		25FAE99118BE00D9009742E3 /* DicionarioModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25FAE99018BE00D9009742E3 /* DicionarioModel.plist */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -52,8 +52,6 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
-		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		250D0C9018BB6CC4001B6AB8 /* LetraCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraCViewController.h; sourceTree = "<group>"; };
-		250D0C9118BB6CC4001B6AB8 /* LetraCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraCViewController.m; sourceTree = "<group>"; };
 		250D0C9718BB7B19001B6AB8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		250D0C9918BB7B21001B6AB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		250D0C9B18BB7EB8001B6AB8 /* LetraDicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraDicionario.h; sourceTree = "<group>"; };
@@ -104,6 +100,7 @@
 		250D0CC118BBD05F001B6AB8 /* Xexe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Xexe.jpeg; path = "../../../../../../Pictures/BEPiD Imagens/Imagens Aula/Dicionario/Xexe.jpeg"; sourceTree = "<group>"; };
 		250D0CC218BBD05F001B6AB8 /* Yoda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Yoda.jpg; path = "../../../../../../Pictures/BEPiD Imagens/Imagens Aula/Dicionario/Yoda.jpg"; sourceTree = "<group>"; };
 		250D0CC318BBD05F001B6AB8 /* Zebra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Zebra.jpg; path = "../../../../../../Pictures/BEPiD Imagens/Imagens Aula/Dicionario/Zebra.jpg"; sourceTree = "<group>"; };
+		25FAE99018BE00D9009742E3 /* DicionarioModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DicionarioModel.plist; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,10 +117,6 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
-		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
-		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +186,7 @@
 				250D0C9C18BB7EB8001B6AB8 /* LetraDicionario.m */,
 				250D0C9E18BB85EF001B6AB8 /* LetraDicionarioModel.h */,
 				250D0C9F18BB85EF001B6AB8 /* LetraDicionarioModel.m */,
+				25FAE99018BE00D9009742E3 /* DicionarioModel.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -200,12 +194,6 @@
 		250D0CA718BBB25E001B6AB8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				27156F7B18BA89430053A99C /* LetraAViewController.h */,
-				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
-				250D0C9018BB6CC4001B6AB8 /* LetraCViewController.h */,
-				250D0C9118BB6CC4001B6AB8 /* LetraCViewController.m */,
 				250D0CA418BBB217001B6AB8 /* LetraViewController.h */,
 				250D0CA518BBB217001B6AB8 /* LetraViewController.m */,
 			);
@@ -382,6 +370,7 @@
 				250D0CD518BBD05F001B6AB8 /* Queroquero.jpg in Resources */,
 				250D0CDD18BBD05F001B6AB8 /* Yoda.jpg in Resources */,
 				250D0CD918BBD05F001B6AB8 /* Urso.jpg in Resources */,
+				25FAE99118BE00D9009742E3 /* DicionarioModel.plist in Resources */,
 				250D0CDC18BBD05F001B6AB8 /* Xexe.jpeg in Resources */,
 				250D0CD618BBD05F001B6AB8 /* Raposa.jpg in Resources */,
 				250D0CC918BBD05F001B6AB8 /* Esquilo.jpg in Resources */,
@@ -421,10 +410,7 @@
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				250D0CA618BBB217001B6AB8 /* LetraViewController.m in Sources */,
 				250D0CA018BB85EF001B6AB8 /* LetraDicionarioModel.m in Sources */,
-				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
-				250D0C9218BB6CC4001B6AB8 /* LetraCViewController.m in Sources */,
 				250D0C9D18BB7EB8001B6AB8 /* LetraDicionario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
