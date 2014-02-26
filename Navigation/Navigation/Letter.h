@@ -11,7 +11,7 @@
 @interface Letter : NSObject
 
 @property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) UIImage *image;
+@property (strong, nonatomic) UIImage *myImage;
 @property (strong, nonatomic) NSString *word;
 
 - (id)initWithTitle:(NSString *)title andImage:(UIImage *)image andWord:(NSString *)word;

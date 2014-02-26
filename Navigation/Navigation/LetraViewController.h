@@ -17,10 +17,11 @@
 
 @property (weak, nonatomic) NSString *myTitle;
 @property (weak, nonatomic) NSString *content;
+@property (weak, nonatomic) UIImage *myImage;
 
 @property (strong, nonatomic) AVSpeechSynthesizer *synthesizer;
 @property (strong, nonatomic) AVSpeechUtterance *utterance;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andTitle:(NSString *)title andContent:(NSString *)content;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andTitle:(NSString *)title andContent:(NSString *)content andImage:(UIImage *)image;
 
 @end

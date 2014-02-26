@@ -34,13 +34,13 @@
                         @"Casa",
                         @"Dado",
                         @"Elefante",
-                        @"Foca",
-                        @"Gelo",
+                        @"Fogueira",
+                        @"Girafa",
                         @"Horta",
                         @"Ilha",
                         @"Jacaré",
                         @"Kiwi",
-                        @"Lagoa",
+                        @"Lâmpada",
                         @"Macaco",
                         @"Nuvem",
                         @"Ovo",
@@ -53,18 +53,48 @@
                         @"Vaca",
                         @"Washington",
                         @"Xilofone",
-                        @"Yakisoba",
+                        @"Yakissoba",
                         @"Zebra"];
     
     NSArray *keys = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J",
                       @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T",
                       @"U", @"V", @"W", @"X", @"Y", @"Z"];
     
-    wordForLeter = [[NSDictionary alloc] initWithObjects:values forKeys:keys];
+    NSArray *images = @[@"arara.jpeg",
+                        @"bola.jpeg",
+                        @"casa.jpg",
+                        @"dado.jpeg",
+                        @"elefante.jpeg",
+                        @"fogueira.jpg",
+                        @"girafa.jpeg",
+                        @"helicoptero.jpeg",
+                        @"ilha.jpeg",
+                        @"jacare.jpeg",
+                        @"kiwi.jpeg",
+                        @"lampada.jpeg",
+                        @"macaco.jpeg",
+                        @"nuvem.jpeg",
+                        @"ovo.jpeg",
+                        @"pato.jpeg",
+                        @"quati.jpg",
+                        @"rato.jpeg",
+                        @"sapo.jpeg",
+                        @"tatu.jpeg",
+                        @"uva.jpeg",
+                        @"vaca.jpeg",
+                        @"washington.jpeg",
+                        @"xilofone.jpeg",
+                        @"yakissoba.jpeg",
+                        @"zebra.jpeg"];
+    
+    wordForLetter = [[NSDictionary alloc] initWithObjects:values forKeys:keys];
+    imageForLetter = [[NSDictionary alloc] initWithObjects:images forKeys:keys];
     
     
     for (char i = 'A'; i <= 'Z'; i++) {
-        Letter *l = [[Letter alloc] initWithTitle:[NSString stringWithFormat:@"%c", i] andImage:nil andWord:[wordForLeter objectForKey:[NSString stringWithFormat:@"%c", i]]];
+        Letter *l = [[Letter alloc] initWithTitle:[NSString stringWithFormat:@"%c", i]
+                                         andImage:[UIImage imageNamed:imageForLetter[[NSString stringWithFormat:@"%c", i]]]
+                                          andWord:wordForLetter[[NSString stringWithFormat:@"%c", i]]];
         [self addLetter:l];
     }
     return self;

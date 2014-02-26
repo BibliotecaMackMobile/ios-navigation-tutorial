@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface DataSingleton : NSObject {
-    NSDictionary *wordForLeter;
+    NSDictionary *wordForLetter;
+    NSDictionary *imageForLetter;
 }
 
 @property (strong, nonatomic) NSMutableArray *dataLetters;

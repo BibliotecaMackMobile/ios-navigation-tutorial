@@ -15,7 +15,7 @@
     
     if (self) {
         _title = title;
-        _image = nil;
+        _myImage = image;
         _word = word;
     }
     

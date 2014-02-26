@@ -26,11 +26,14 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil
                bundle:(NSBundle *)nibBundleOrNil
              andTitle:(NSString *)title
-           andContent:(NSString *)content {
+           andContent:(NSString *)content
+             andImage:(UIImage *)image {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _myTitle = title;
         _content = content;
+        _myImage = image;
+        
     }
     return self;
 }
@@ -55,9 +58,14 @@
                              initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(previous:)];
     self.navigationItem.leftBarButtonItem=previous;
     
+    //imagem referente à palavra
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(110, 110, 100, 100)];
+    [imageView setImage:_myImage];
+    [self.view addSubview:imageView];
+    
+    //botao com a palavra escrita
     UIButton *botao = [UIButton
                        buttonWithType:UIButtonTypeSystem];
-
     [botao addTarget:self action:@selector(makeUtterance:) forControlEvents:UIControlEventTouchUpInside];
     [botao setTitle:_content forState:UIControlStateNormal];
     [botao sizeToFit];
@@ -78,7 +86,7 @@
     
     LetraViewController *proximo = [[LetraViewController alloc]
                                     initWithNibName:nil
-                                    bundle:NULL andTitle:l.title andContent:l.word];
+                                    bundle:NULL andTitle:l.title andContent:l.word andImage:l.myImage];
     
     [self.navigationController pushViewController:proximo
                                          animated:YES];
@@ -96,7 +104,7 @@
     
     LetraViewController *anterior = [[LetraViewController alloc]
                                     initWithNibName:nil
-                                    bundle:NULL andTitle:l.title andContent:l.word];
+                                    bundle:NULL andTitle:l.title andContent:l.word andImage:l.myImage];
     
     [self.navigationController pushViewController:anterior animated:YES];
 }
