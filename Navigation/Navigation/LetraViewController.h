@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LetraViewController : UIViewController
+@interface LetraViewController : UIViewController<UIImagePickerControllerDelegate>
 
 @property (nonatomic) NSDictionary *dicionario;
 @property (nonatomic) NSArray *key;
@@ -18,6 +18,9 @@
 
 // Button
 @property (nonatomic, strong) UIButton *btnPlayAudio;
+
+// Label
+@property (nonatomic, strong) UILabel *lblNomeImagem;
 
 // Metodo para o canvas
 -(CGRect)makeRectWithX:(CGFloat)x andY:(CGFloat)y andLargura:(CGFloat)largura andAltura:(CGFloat)altura;

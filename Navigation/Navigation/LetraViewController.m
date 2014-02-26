@@ -50,7 +50,7 @@
 -(IBAction)efeitoBtnPlayAudio:(id)sender {
     // SOM
     AVSpeechSynthesizer *v = [[AVSpeechSynthesizer alloc] init];
-    AVSpeechUtterance *u = [AVSpeechUtterance speechUtteranceWithString:[[[self btnPlayAudio] titleLabel] text]];
+    AVSpeechUtterance *u = [AVSpeechUtterance speechUtteranceWithString:[[self lblNomeImagem] text]];
     u.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
     [u setRate:0.1f];
     [v speakUtterance:u];
@@ -82,16 +82,23 @@
     // Imagem
     [self setImgViewImagem:[[UIImageView alloc] initWithFrame:[self makeRectWithX:30 andY:35 andLargura:40 andAltura:30]]];
     [[self imgViewImagem] setImage:[UIImage imageNamed:imagem]];
+    UITapGestureRecognizer *g = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(efeitoBtnPlayAudio:)];
+    [g setNumberOfTapsRequired:1];
+    [[self view] addGestureRecognizer:g];
+    [[self view] setUserInteractionEnabled:YES];
+    
+    // Label
+    [self setLblNomeImagem:[[UILabel alloc] initWithFrame:[self makeRectWithX:30 andY:67 andLargura:40 andAltura:10]]];
+    [[self lblNomeImagem] setText:nome];
     
     // Botao
-    [self setBtnPlayAudio:[[UIButton alloc] initWithFrame:[self makeRectWithX:40 andY:80 andLargura:90 andAltura:10]]];
-    [[self btnPlayAudio] setTitle:nome forState:UIControlStateNormal];
-    [[self btnPlayAudio] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [[self btnPlayAudio] addTarget:self action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
+//    [self setBtnPlayAudio:[[UIButton alloc] initWithFrame:[self makeRectWithX:0 andY:10 andLargura:100 andAltura:90]]];
+//    [[self btnPlayAudio] addTarget:self action:@selector(efeitoBtnPlayAudio:) forControlEvents:UIControlEventTouchUpInside];
     
     // Adiciona no canvas
     [[self view] addSubview:[self imgViewImagem]];
-    [[self view] addSubview:[self btnPlayAudio]];
+    [[self view] addSubview:[self lblNomeImagem]];
+//    [[self view] addSubview:[self lblNomeImagem]];
 }
 
 - (void)didReceiveMemoryWarning
