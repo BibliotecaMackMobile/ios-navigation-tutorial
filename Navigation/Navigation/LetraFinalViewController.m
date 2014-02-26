@@ -25,6 +25,10 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"Views no Navigation Controller: %lu", (unsigned long)self.navigationController.viewControllers.count);
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     self.title = [[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)];
     
     //cria o botao de "seguinte"

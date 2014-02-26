@@ -24,6 +24,10 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSLog(@"Views no Navigation Controller: %lu", (unsigned long)self.navigationController.viewControllers.count);
+    
     //carrega o array com as palavras
     [[Dados sharedInstance] loadData];
     
@@ -72,8 +76,7 @@
 - (void)previous:(id)sender
 {
     [Dados sharedInstance].count --;
-    [self.navigationController popViewControllerAnimated:YES];
-    
+    [self.navigationController popViewControllerAnimated:YES];    
 }
 
 - (void)falaPalavra
