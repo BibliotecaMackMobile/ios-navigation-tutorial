@@ -40,7 +40,7 @@ static int contLetter = 0;
     
     [lblLetter setText:[[AlfaDictionary letterAtIndex:contLetter] letterObject]];
     [lblWord setText:[[AlfaDictionary letterAtIndex:contLetter] wordObject]];
-    UIImage * image = [UIImage imageNamed:[[AlfaDictionary letterAtIndex:contLetter] letterObject]];
+    UIImage * image = [UIImage imageNamed:[[AlfaDictionary letterAtIndex:contLetter] imageObject]];
     [lblImage setImage:image]; //lblImage e a UIImageView
 }
 
@@ -72,7 +72,7 @@ static int contLetter = 0;
 - (IBAction)speakName:(id)sender {
     AVSpeechSynthesizer * synthesizer = [[AVSpeechSynthesizer alloc] init];
     AVSpeechUtterance * utterance = [AVSpeechUtterance speechUtteranceWithString:[lblWord text]];
-    [utterance setRate:0.3f]; //Velocidade da voz
+    [utterance setRate:0.2f]; //Velocidade da voz
     [synthesizer speakUtterance:utterance];
 }
 @end
