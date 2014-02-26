@@ -27,10 +27,12 @@
         
         UIBarButtonItem *back = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(back:)];
         self.navigationItem.leftBarButtonItem = back;
-
-        _botaoAnterior = [UIButton buttonWithType:UIButtonTypeSystem];
-        [_botaoAnterior addTarget:self action:@selector(executaSom:) forControlEvents:UIControlEventTouchUpInside];
-
+        
+        _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 500, 10, 10)];
+        [_texto setText:@"App Store"];
+        [_texto sizeToFit];
+        [_texto setNumberOfLines:0];
+        [self.view addSubview:_texto];
     }
     return self;
 }
@@ -40,20 +42,16 @@
     [super viewDidLoad];
     _synthesizer = [[AVSpeechSynthesizer alloc]init];
 
+    _botaoAnterior = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_botaoAnterior addTarget:self action:@selector(executaSom:) forControlEvents:UIControlEventTouchUpInside];
     [_botaoAnterior sizeToFit];
-    _botaoAnterior.center = self.view.center;
+    [_botaoAnterior setFrame:CGRectMake((self.view.frame.size.width/2)-128, (self.view.frame.size.height/2)-128, 256, 256)];
     [self.view addSubview:_botaoAnterior];
     
-    _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 500, 100, 50)];
-    [_texto setText:@"App Store"];
-    [_texto sizeToFit];
-    [_texto setNumberOfLines:0];
-    [self.view addSubview:_texto];
-
 }
 
 
--(IBAction)next: (id)sender{
+-(void)next: (id)sender{
     Singleton *single = [Singleton inicia];
     if (single.indice>=26) {
         [single setIndice:0];
@@ -72,7 +70,7 @@
     [[self navigationController] pushViewController:proximo animated:YES];
 
 }
--(IBAction)back: (id)sender{
+-(void)back: (id)sender{
     Singleton *single = [Singleton inicia];
     single.indice--;
     if (single.indice<=0) {
@@ -88,7 +86,7 @@
     [[proximo texto] setText:[novaLetra palavra]];
 }
 
--(IBAction)executaSom:(id)sender{
+-(void)executaSom:(id)sender{
     Singleton *single = [Singleton inicia];
     Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]-1];
 
