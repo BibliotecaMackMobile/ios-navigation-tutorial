@@ -16,8 +16,18 @@
     static LetraDicionarioModel *instancia;
     if (!instancia) {
         instancia = [[super allocWithZone:Nil] init];
+        [instancia criarDicionario];
     }
     return instancia;
+}
+
+-(void)criarDicionario {
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"DicionarioModel" ofType:@"plist"];
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+    NSPropertyListFormat plistFormat;
+    NSString *plistErrorDescription;
+    [self setLista:(NSDictionary*)[NSPropertyListSerialization propertyListFromData:plistXML mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&plistFormat errorDescription:&plistErrorDescription]];
+    
 }
 
 +(id)allocWithZone:(struct _NSZone *)zone {
