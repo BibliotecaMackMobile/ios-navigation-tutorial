@@ -1,9 +1,9 @@
+
+//  AppDelegate.m
+//  ios-navigation
 //
-//  MackenzieAppDelegate.m
-//  Navigation
-//
-//  Created by Vinicius Miana on 2/21/14.
-//  Copyright (c) 2014 Vinicius Miana. All rights reserved.
+//  Created by Diego Jurfest Ceccon on 25/02/14.
+//  Copyright (c) 2014 ___DIEGOJURFESTCECCON___. All rights reserved.
 //
 
 #import "MackenzieAppDelegate.h"
@@ -14,8 +14,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
+                                            initWithNibName:nil
+                                            bundle:nil];
     
     
     self.navigationController = [[UINavigationController alloc]
@@ -23,8 +23,8 @@
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.navigationController;
-
-
+    
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -41,7 +41,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
