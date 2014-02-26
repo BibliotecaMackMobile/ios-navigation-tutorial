@@ -1,9 +1,9 @@
 //
-//  MackenzieAppDelegate.h
-//  Navigation
+//  AppDelegate.h
+//  ios-navigation
 //
-//  Created by Vinicius Miana on 2/21/14.
-//  Copyright (c) 2014 Vinicius Miana. All rights reserved.
+//  Created by Diego Jurfest Ceccon on 25/02/14.
+//  Copyright (c) 2014 ___DIEGOJURFESTCECCON___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
