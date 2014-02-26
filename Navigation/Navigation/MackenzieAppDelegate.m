@@ -7,7 +7,6 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
 #import "ProximoViewController.h"
 #import "Dicionario.h"
 #import "Singleton.h"

@@ -19,8 +19,6 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
-		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 		AC3977AB18BCB4330061B005 /* AnteriorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3977AA18BCB4330061B005 /* AnteriorViewController.m */; };
 		AC3977B118BCCB0F0061B005 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3977B018BCCB0F0061B005 /* AVFoundation.framework */; };
 		AC3977B318BCCB150061B005 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3977B218BCCB150061B005 /* AudioToolbox.framework */; };
@@ -62,10 +60,6 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
-		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
-		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
 		AC3977A918BCB4330061B005 /* AnteriorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnteriorViewController.h; sourceTree = "<group>"; };
 		AC3977AA18BCB4330061B005 /* AnteriorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnteriorViewController.m; sourceTree = "<group>"; };
 		AC3977B018BCCB0F0061B005 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -162,10 +156,6 @@
 				AC3977BE18BCDD8B0061B005 /* candy-256.png */,
 				AC3977BC18BCDD4B0061B005 /* basketball-256.png */,
 				AC3977C018BCE0B10061B005 /* cat-256.png */,
-				27156F7B18BA89430053A99C /* LetraAViewController.h */,
-				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
 			);
 			path = Navigation;
@@ -305,9 +295,7 @@
 				AC75652C18BB64EC004837D5 /* Dicionario.m in Sources */,
 				AC75653318BB7187004837D5 /* ProximoViewController.m in Sources */,
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
-				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				AC75652F18BB6B0F004837D5 /* Singleton.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				AC3977AB18BCB4330061B005 /* AnteriorViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 			);

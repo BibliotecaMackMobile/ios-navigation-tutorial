@@ -22,6 +22,13 @@
 {
     [super viewDidLoad];
     _synthesizer = [[AVSpeechSynthesizer alloc]init];
+    
+    Singleton *single = [Singleton inicia];
+    Dicionario *novaLetra = [[single letras]objectAtIndex:0];
+    _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 500, 500, 50)];
+    [_texto setText:[novaLetra palavra]];
+    [_texto setNumberOfLines:0];
+    [self.view addSubview:_texto];
 }
 
 
@@ -44,19 +51,11 @@
                          buttonWithType:UIButtonTypeSystem];
         
         [_botaoProximo addTarget:self action:@selector(executaSom:) forControlEvents:UIControlEventTouchUpInside];
-        [_botaoProximo
-         setTitle:@"         " forState:UIControlStateNormal];
+        [_botaoProximo setTitle:@"         " forState:UIControlStateNormal];
         [_botaoProximo setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
         [_botaoProximo sizeToFit];
         _botaoProximo.center = self.view.center;
         [self.view addSubview:_botaoProximo];
-        
-        _texto = [[UILabel alloc]initWithFrame:CGRectMake(130, 500, 500, 50)];
-        [_texto setText:@"                      "];
-        [_texto setText:[novaLetra palavra]];
-        [_texto setNumberOfLines:0];
-        [_texto sizeToFit];
-        [self.view addSubview:_texto];
         
     }
     return self;
@@ -70,18 +69,14 @@
     Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]];
     single.indice++;
 
-    
     AnteriorViewController *anterior = [[AnteriorViewController alloc]init];
 
     [[self navigationController] pushViewController:anterior animated:YES];
+    
     [anterior setTitle:[novaLetra letraGrande]];
-    //[[anterior botaoAnterior] setTitle:[novaLetra palavra] forState:UIControlStateNormal];
     [[anterior botaoAnterior] setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
-    
     [[anterior botaoAnterior] sizeToFit];
-    
     [[anterior texto] setText:[novaLetra palavra]];
-    
 }
 
 -(void)back: (id)sender{
@@ -91,15 +86,17 @@
         [single setIndice:26];
     }
     Dicionario *novaLetra = [[single letras]objectAtIndex:[single indice]-1];
-
     
     AnteriorViewController *anterior = [[AnteriorViewController alloc]init];
     
     [[self navigationController] pushViewController:anterior animated:YES];
+    
     [anterior setTitle:[novaLetra letraGrande]];
-    //[[anterior botaoAnterior] setTitle:[novaLetra palavra] forState:UIControlStateNormal];
     [[anterior botaoAnterior] setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
     [[anterior texto] setText:[novaLetra palavra]];
+    //anterior.botaoAnterior.center = anterior.view.center;
+    [[anterior botaoAnterior] sizeToFit];
+
 }
 
 -(void)executaSom: (id)sender{
