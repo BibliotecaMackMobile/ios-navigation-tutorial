@@ -12,11 +12,9 @@
 @interface LetraAViewController : UIViewController{
     PalavrasSingleton *item;
     NSString *word;
-    
+ 
 }
 
 -(void)exibirDados: (PalavrasSingleton *) item;
-
-
 
 @end

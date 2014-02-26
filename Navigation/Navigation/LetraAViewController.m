@@ -12,23 +12,23 @@
 
 @implementation LetraAViewController
 
+int i = 0;
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    
     item = [PalavrasSingleton sharedInstance];
     [self exibirDados:item];
-
 }
 
-
--(void)exibirDados:(PalavrasSingleton *)item{
-    
-    Palavra *a = [item.palavras firstObject];
+-(void)exibirDados: (PalavrasSingleton *) item{
+    Palavra *a = [item.palavras objectAtIndex:i];
     
     //Botão próxima View
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextPO:)];
     self.navigationItem.rightBarButtonItem=next;
+    
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(backPO:)];
+    self.navigationItem.leftBarButtonItem=back;
     
     //Título
     self.title = a.letra;
@@ -45,7 +45,7 @@
     [imagem setImage:img];
     [self.view addSubview:imagem];
     
-    //Botão - não faz nada...
+    //Botão
     UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
     [botao setFont:[UIFont systemFontOfSize:20]];
     [botao setTitle:[a palavra] forState:UIControlStateNormal ];
@@ -53,38 +53,32 @@
     botao.center = self.view.center;
     [botao sizeToFit];
     botao.center = self.view.center;
-    
     [botao addTarget:self action:@selector(falarTexto:)forControlEvents:UIControlEventTouchDown];
-
-    if (item.palavras.count == 1) {
+    if (i == item.palavras.count-1) {
         next.enabled = NO;
     }
-    
-    
-    
+    if (i == 0) {
+        back.enabled = NO;
+    }
     [self.view addSubview:botao];
-    [item.palavras removeObjectAtIndex:0];
 }
 
 -(void)falarTexto: (id)sender{
-    
-    Palavra *a = [item.palavras firstObject];
-    
     AVSpeechSynthesizer * speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
     AVSpeechUtterance * utterance = [[AVSpeechUtterance alloc] initWithString:word];
     utterance.rate = 0.2;
     [speechSynthesizer speakUtterance:utterance];
-
-    
-    
-    
-    
 }
 
 -(void)nextPO:(id)sender {
-    LetraAViewController *proximo = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];
+        i++;
+   LetraAViewController *proximo = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];
     [self.navigationController pushViewController:proximo animated:YES];
 }
 
+-(void)backPO: (id)sender{
+    i--;
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end
