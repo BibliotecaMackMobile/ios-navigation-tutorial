@@ -45,7 +45,7 @@
         [dicionario setObject:@"Miley" forKey:@"M"];
         [dicionario setObject:@"Navio" forKey:@"N"];
         [dicionario setObject:@"Ovo" forKey:@"O"];
-        [dicionario setObject:@"Poste" forKey:@"P"];
+        [dicionario setObject:@"Pastel de Flango" forKey:@"P"];
         [dicionario setObject:@"Queijo" forKey:@"Q"];
         [dicionario setObject:@"Rato" forKey:@"R"];
         [dicionario setObject:@"Sino" forKey:@"S"];

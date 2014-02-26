@@ -14,7 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     LetraViewController *viewController = [[LetraViewController alloc]
-                                           initWithNibName:nil
+                                           initWithNibName:@"Letra_View"
                                            bundle:nil];
     
     

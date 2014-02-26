@@ -19,6 +19,7 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
+		6747C95518BE7411009B7861 /* Letra_View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6747C95418BE7411009B7861 /* Letra_View.xib */; };
 		676C57C418BD13D900925DC2 /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C57C318BD13D900925DC2 /* LetraViewController.m */; };
 		676C57C718BD14D800925DC2 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C57C618BD14D800925DC2 /* Dicionario.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
+		6747C95418BE7411009B7861 /* Letra_View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Letra_View.xib; sourceTree = "<group>"; };
 		676C57C218BD13D900925DC2 /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
 		676C57C318BD13D900925DC2 /* LetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraViewController.m; sourceTree = "<group>"; };
 		676C57C518BD14D800925DC2 /* Dicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dicionario.h; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
 				676C57C218BD13D900925DC2 /* LetraViewController.h */,
 				676C57C318BD13D900925DC2 /* LetraViewController.m */,
+				6747C95418BE7411009B7861 /* Letra_View.xib */,
 				676C57C518BD14D800925DC2 /* Dicionario.h */,
 				676C57C618BD14D800925DC2 /* Dicionario.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
@@ -232,6 +235,7 @@
 			files = (
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				6747C95518BE7411009B7861 /* Letra_View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
