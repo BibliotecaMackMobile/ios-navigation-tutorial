@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MackenzieArray.h"
+//------ Imports para o som
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface MackenzieFirstViewController : UIViewController
 

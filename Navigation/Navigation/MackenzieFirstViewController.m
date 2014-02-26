@@ -70,6 +70,9 @@ static int contLetter = 0;
     }
 }
 - (IBAction)speakName:(id)sender {
-    
+    AVSpeechSynthesizer * synthesizer = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance * utterance = [AVSpeechUtterance speechUtteranceWithString:[lblWord text]];
+    [utterance setRate:0.3f]; //Velocidade da voz
+    [synthesizer speakUtterance:utterance];
 }
 @end

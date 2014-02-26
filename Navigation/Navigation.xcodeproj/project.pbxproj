@@ -25,6 +25,9 @@
 		F5C44B9518BC1403001FE7F6 /* MackenzieFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C44B9318BC1403001FE7F6 /* MackenzieFirstViewController.xib */; };
 		F5C44B9E18BC1D3B001FE7F6 /* MackenzieObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C44B9D18BC1D3B001FE7F6 /* MackenzieObject.m */; };
 		F5C44BA118BC1EF2001FE7F6 /* MackenzieArray.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C44BA018BC1EF2001FE7F6 /* MackenzieArray.m */; };
+		F5DA270B18BD6614001C58DF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DA270A18BD6614001C58DF /* AVFoundation.framework */; };
+		F5DA270D18BD661D001C58DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DA270C18BD661D001C58DF /* AudioToolbox.framework */; };
+		F5DA270F18BD6883001C58DF /* mp3-128.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DA270E18BD6883001C58DF /* mp3-128.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		F5C44B9D18BC1D3B001FE7F6 /* MackenzieObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MackenzieObject.m; sourceTree = "<group>"; };
 		F5C44B9F18BC1EF2001FE7F6 /* MackenzieArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MackenzieArray.h; sourceTree = "<group>"; };
 		F5C44BA018BC1EF2001FE7F6 /* MackenzieArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MackenzieArray.m; sourceTree = "<group>"; };
+		F5DA270A18BD6614001C58DF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F5DA270C18BD661D001C58DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F5DA270E18BD6883001C58DF /* mp3-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mp3-128.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DA270D18BD661D001C58DF /* AudioToolbox.framework in Frameworks */,
+				F5DA270B18BD6614001C58DF /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -113,6 +121,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5DA270C18BD661D001C58DF /* AudioToolbox.framework */,
+				F5DA270A18BD6614001C58DF /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -124,6 +134,7 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F5DA270E18BD6883001C58DF /* mp3-128.png */,
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
 				F5C44B9118BC1403001FE7F6 /* MackenzieFirstViewController.h */,
@@ -258,6 +269,7 @@
 			files = (
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				F5DA270F18BD6883001C58DF /* mp3-128.png in Resources */,
 				F5C44B9518BC1403001FE7F6 /* MackenzieFirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
