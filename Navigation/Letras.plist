@@ -4,32 +4,32 @@
 <dict>
 	<key>Letras</key>
 	<array>
-		<string>Aranha</string>
-		<string>Banana</string>
-		<string>Cachorro</string>
-		<string>Dado</string>
-		<string>Elefante</string>
-		<string>Faca</string>
-		<string>Girafa</string>
-		<string>Helicóptero</string>
-		<string>Índio</string>
-		<string>Janela</string>
-		<string>Kiwi</string>
-		<string>Lutador</string>
-		<string>Macaco</string>
-		<string>Navio</string>
-		<string>Orelha</string>
-		<string>Pato</string>
-		<string>Queijo</string>
-		<string>Rato</string>
-		<string>Sapo</string>
-		<string>Telhado</string>
-		<string>Uva</string>
-		<string>Vaca</string>
-		<string>Website</string>
-		<string>Xadrez</string>
-		<string>Yoga</string>
-		<string>Zumbi</string>
+		<string>ARANHA</string>
+		<string>BANANA</string>
+		<string>CACHORRO</string>
+		<string>DADO</string>
+		<string>ELEFANTE</string>
+		<string>FACA</string>
+		<string>GIRAFA</string>
+		<string>HELICÓPTERO</string>
+		<string>ÍNDIO</string>
+		<string>JANELA</string>
+		<string>KIWI</string>
+		<string>LUTADOR</string>
+		<string>MACACO</string>
+		<string>NAVIO</string>
+		<string>ORELHA</string>
+		<string>PATO</string>
+		<string>QUEIJO</string>
+		<string>RATO</string>
+		<string>SAPO</string>
+		<string>TELHADO</string>
+		<string>UVA</string>
+		<string>VACA</string>
+		<string>WEBSITE</string>
+		<string>XADREZ</string>
+		<string>YOGA</string>
+		<string>ZUMBI</string>
 	</array>
 </dict>
 </plist>

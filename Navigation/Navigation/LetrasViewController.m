@@ -7,14 +7,10 @@
 //
 
 #import "LetrasViewController.h"
-#import "LetraBViewController.h"
+#import "Dados.h"
 
 @interface LetrasViewController ()
 {
-    NSString *letras;
-    NSInteger count;
-    NSRange range;
-    NSArray *palavras;
     UILabel *palavraLabel;
     UIImageView *imagem;
 }
@@ -25,13 +21,14 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
     
+    _synthesizer = [[AVSpeechSynthesizer alloc] init];
+    
     //carrega o array com as palavras
     [self loadData];
+    [[Dados sharedInstance] loadData];
     
     //inicializa as variaveis auxiliares
-    count = 0;
-    letras = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    self.title = @"A";
+    self.title = [[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)];
     
     //cria o botao de "seguinte"
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
@@ -46,14 +43,14 @@
     
     //cria a label para a palavra
     palavraLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 320, 50)];
-    palavraLabel.text = palavras[count];
+    palavraLabel.text = [Dados sharedInstance].palavras[[Dados sharedInstance].count];
     palavraLabel.textAlignment = NSTextAlignmentCenter;
-    palavraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:25.0];
+    palavraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:30.0];
     [self.view addSubview:palavraLabel];
     
     //cria a image view e inicializa
     imagem = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
-    imagem.image = [UIImage imageNamed:@"a"];
+    imagem.image = [UIImage imageNamed:[[[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)] lowercaseString]];
     imagem.center = self.view.center;
     imagem.userInteractionEnabled = YES;
     [self.view addSubview:imagem];
@@ -65,15 +62,14 @@
 - (void)next:(id)sender
 {
     //incrementa o contador e pega a posiçao atual na string
-    count ++;
-    range = NSMakeRange(count, 1);
-    self.title = [letras substringWithRange:range];
+    [Dados sharedInstance].count ++;
+    self.title = [[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)];
     
     //se for a ultima letra desabilita o botao
-    if (count == letras.length - 1)
+    if ([Dados sharedInstance].count == [Dados sharedInstance].alfabeto.length - 1)
     {
         self.navigationItem.rightBarButtonItem.enabled = NO;
-    } else if (count == 1){ //habilita o botao de retorno
+    } else if ([Dados sharedInstance].count == 1){ //habilita o botao de retorno
         self.navigationItem.leftBarButtonItem.enabled = YES;
     }
     
@@ -84,15 +80,14 @@
 - (void)previous:(id)sender
 {
     //decrementa o contador e pega a posicao atual na string
-    count --;
-    range = NSMakeRange(count, 1);
-    self.title = [letras substringWithRange:range];
+    [Dados sharedInstance].count --;
+    self.title = [[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)];
     
     //se for a primeira posicao desabilita o botao de retorno
-    if (count == 0)
+    if ([Dados sharedInstance].count == 0)
     {
         self.navigationItem.leftBarButtonItem.enabled = NO;
-    } else if (count == letras.length - 2) // habilita o botao de seguinte
+    } else if ([Dados sharedInstance].count == [Dados sharedInstance].alfabeto.length - 2) // habilita o botao de seguinte
     {
         self.navigationItem.rightBarButtonItem.enabled = YES;
     }
@@ -108,25 +103,24 @@
     
     NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
     
-    palavras = [dictionary valueForKey:@"Letras"];
+    [Dados sharedInstance].palavras = [dictionary valueForKey:@"Letras"];
 }
 
 - (void)mudarFrase
 {
-    palavraLabel.text = palavras[count];
+    palavraLabel.text = [Dados sharedInstance].palavras[[Dados sharedInstance].count];
 }
 
 - (void)mudarImagem
 {
-    imagem.image = [UIImage imageNamed:[[letras substringWithRange:range] lowercaseString]];
+    imagem.image = [UIImage imageNamed:[[[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)] lowercaseString]];
 }
 
 - (void)falaPalavra
 {
-    _synthesizer = [[AVSpeechSynthesizer alloc] init];
-    _utterance = [AVSpeechUtterance speechUtteranceWithString:palavras[count]];
+    _utterance = [AVSpeechUtterance speechUtteranceWithString:[Dados sharedInstance].palavras[[Dados sharedInstance].count]];
     _utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
-    _utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+    _utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-Br"];
     [_synthesizer speakUtterance:_utterance];
 }
 
