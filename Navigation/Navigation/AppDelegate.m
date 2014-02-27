@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Vinicius Miana. All rights reserved.
 //
 
-#import "MackenzieAppDelegate.h"
+#import "AppDelegate.h"
 #import "LetrasViewController.h"
 
-@implementation MackenzieAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
