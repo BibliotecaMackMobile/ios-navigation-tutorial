@@ -39,6 +39,14 @@ static char letra = 65;
 
 -(void) viewWillAppear:(BOOL)animated
 {
+    //Limpa o pilha de views para não acumular
+    if ([[[self navigationController] viewControllers] count] > 2)
+    {
+        NSArray *cView = [[self navigationController] viewControllers];
+        NSArray *nView = [cView subarrayWithRange:NSMakeRange([cView count] -2, [cView count] - 1)];
+        [[self navigationController] setViewControllers:nView];
+    }
+    
     //Seta o título da página com a letra
     [[self navigationItem] setTitle:[[NSString alloc] initWithFormat:@"%c", letra]];
     
@@ -56,7 +64,6 @@ static char letra = 65;
     [_button setTitle: [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]] forState:UIControlStateNormal];
     
     //Adiciona a imagem
-    
     NSString * nomeImg = [[NSString alloc] initWithFormat:@"%@.png", [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]]];
     
     UIImage *ibagem = [UIImage imageNamed: nomeImg];
@@ -75,6 +82,14 @@ static char letra = 65;
 -(IBAction)voltar:(id)sender
 {
     letra--;
+    if ([[[self navigationController] viewControllers] count] == 1)
+    {
+        LetraViewController *l =[[LetraViewController alloc] initWithNibName:@"Letra_View" bundle:nil];
+        NSMutableArray *nViews = [[NSMutableArray alloc] initWithArray:[[self navigationController] viewControllers]];
+        [nViews insertObject:l atIndex:0];
+        [[self navigationController] setViewControllers:nViews animated:YES];
+    }
+    NSLog(@"%d", [[[self navigationController] viewControllers] count]);
     [[self navigationController] popViewControllerAnimated:YES];
 }
 
