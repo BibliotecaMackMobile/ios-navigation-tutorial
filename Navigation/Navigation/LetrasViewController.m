@@ -62,10 +62,11 @@
 }
 
 -(void)next:(id)sender {
-
+    [[Dicionario sharedInstancia]Atualizar];
+    
     LetrasViewController *proximo = [[LetrasViewController allocWithZone:Nil]initWithPalavra:_palavra];
+    
     [self.navigationController pushViewController:proximo animated:YES];
-
 }
 
 

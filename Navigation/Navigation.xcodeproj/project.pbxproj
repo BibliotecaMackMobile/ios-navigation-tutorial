@@ -176,6 +176,8 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				7532701F18BD2C2B00F6C605 /* Palavra.h */,
+				7532702018BD2C2B00F6C605 /* Palavra.m */,
 				7532701A18BD1DE700F6C605 /* Dicionario.h */,
 				7532701B18BD1DE700F6C605 /* Dicionario.m */,
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
@@ -188,8 +190,6 @@
 				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 				7532701718BD175300F6C605 /* LetrasViewController.h */,
 				7532701818BD175300F6C605 /* LetrasViewController.m */,
-				7532701F18BD2C2B00F6C605 /* Palavra.h */,
-				7532702018BD2C2B00F6C605 /* Palavra.m */,
 				75AAD49618BE62CC00F9F410 /* Imagens */,
 			);
 			path = Navigation;

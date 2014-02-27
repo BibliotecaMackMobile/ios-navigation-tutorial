@@ -16,7 +16,7 @@
 {
     Palavra *p = [[[Dicionario sharedInstancia] palavras] firstObject];
     
-    LetrasViewController *viewController = [[LetrasViewController alloc]initWithPalavra: p];
+    LetrasViewController *viewController = [[LetrasViewController alloc]initWithPalavra:p];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
     self.window = [[UIWindow alloc]

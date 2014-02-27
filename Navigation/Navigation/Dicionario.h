@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Palavra;
 
 @interface Dicionario : NSObject
-
+{
+}
 @property (nonatomic, strong) NSMutableArray *palavras;
 
 +(id)sharedInstancia;
 
+-(void)Atualizar;
 @end

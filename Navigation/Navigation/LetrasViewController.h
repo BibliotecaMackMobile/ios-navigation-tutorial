@@ -16,6 +16,8 @@
 @property (nonatomic, strong) Palavra *palavra;
 
 
+
+
 -(id) initWithPalavra:(Palavra *)palavra;
 
 @end

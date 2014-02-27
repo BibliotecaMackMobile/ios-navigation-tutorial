@@ -32,7 +32,6 @@
 }
 
 
-
 -(void) viewDidLoad {
     [super viewDidLoad];
     self.title = [_palavra letra];
@@ -58,11 +57,9 @@
 }
 
 -(void)next:(id)sender {
-    LetrasViewController *proximo = [[LetrasViewController alloc]
-                                     initWithNibName:nil
-                                     bundle:NULL];
-    [self.navigationController pushViewController:proximo
-                                         animated:YES];
+   // LetrasViewController *proximo = [[LetrasViewController allocWithZone:Nil]initWithPalavra:_palavra];
+//    [self.navigationController pushViewController:proximo
+//                                         animated:YES];
     
 }
 

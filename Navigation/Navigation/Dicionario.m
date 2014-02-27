@@ -26,26 +26,29 @@ static Dicionario *sharedInstance = nil;
     self = [super init];
     
     if (self) {
-        
         _palavras = [[NSMutableArray alloc] init];
+        
         
         
         Palavra *p = [[Palavra alloc] init];
         [p setLetra:@"Menu"];
         [p setPalavra:@"Dicionario Infantil"];
         [p setImagem:@"dicionario.jpg"];
+        [p setIndice1:0];
         [[self palavras] addObject:p];
-        
+
         p = [[Palavra alloc] init];
         [p setLetra:@"A"];
         [p setPalavra:@"Arvore"];
         [p setImagem:@"arvore.png"];
+        [p setIndice1:1];
         [[self palavras] addObject:p];
         
         p = [[Palavra alloc] init];
         [p setLetra:@"B"];
         [p setPalavra:@"Botao"];
         [p setImagem:@"button.jpeg"];
+        [p setIndice1:2];
         [[self palavras] addObject:p];
         
         p = [[Palavra alloc] init];
@@ -185,10 +188,16 @@ static Dicionario *sharedInstance = nil;
         [p setPalavra:@"Zebra"];
         [p setImagem:@"zebra.jpeg"];
         [[self palavras] addObject:p];
+     
         
     }
     
     return self;
+}
+
+-(void)Atualizar{
+    [_palavras objectAtIndex:+1];
+    
 }
 
 + (id)allocWithZone:(NSZone*)zone {
