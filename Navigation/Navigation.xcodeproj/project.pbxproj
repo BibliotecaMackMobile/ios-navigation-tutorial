@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		079C2CF018BFB64200A53362 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079C2CEF18BFB64200A53362 /* AVFoundation.framework */; };
 		079E53F618BD15E100F4BBB4 /* LetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079E53F418BD15E100F4BBB4 /* LetraViewController.m */; };
 		079E53F718BD15E100F4BBB4 /* LetraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079E53F518BD15E100F4BBB4 /* LetraViewController.xib */; };
 		079E53FA18BD176500F4BBB4 /* Letra.m in Sources */ = {isa = PBXBuildFile; fileRef = 079E53F918BD176500F4BBB4 /* Letra.m */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079C2CEF18BFB64200A53362 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		079E53F318BD15E100F4BBB4 /* LetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraViewController.h; sourceTree = "<group>"; };
 		079E53F418BD15E100F4BBB4 /* LetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraViewController.m; sourceTree = "<group>"; };
 		079E53F518BD15E100F4BBB4 /* LetraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LetraViewController.xib; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079C2CF018BFB64200A53362 /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -198,6 +201,7 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				079C2CEF18BFB64200A53362 /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
