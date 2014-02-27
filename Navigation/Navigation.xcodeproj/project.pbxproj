@@ -31,6 +31,10 @@
 		AC75652C18BB64EC004837D5 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = AC75652B18BB64EC004837D5 /* Dicionario.m */; };
 		AC75652F18BB6B0F004837D5 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC75652E18BB6B0F004837D5 /* Singleton.m */; };
 		AC75653318BB7187004837D5 /* ProximoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC75653118BB7187004837D5 /* ProximoViewController.m */; };
+		ACF9ED0D18BE36BF00DC028C /* e.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACF9ED0918BE36BF00DC028C /* e.jpeg */; };
+		ACF9ED0E18BE36BF00DC028C /* f.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACF9ED0A18BE36BF00DC028C /* f.jpeg */; };
+		ACF9ED0F18BE36BF00DC028C /* h.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACF9ED0B18BE36BF00DC028C /* h.jpeg */; };
+		ACF9ED1018BE36BF00DC028C /* i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACF9ED0C18BE36BF00DC028C /* i.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		AC75652E18BB6B0F004837D5 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		AC75653018BB7187004837D5 /* ProximoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProximoViewController.h; sourceTree = "<group>"; };
 		AC75653118BB7187004837D5 /* ProximoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProximoViewController.m; sourceTree = "<group>"; };
+		ACF9ED0918BE36BF00DC028C /* e.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e.jpeg; sourceTree = "<group>"; };
+		ACF9ED0A18BE36BF00DC028C /* f.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f.jpeg; sourceTree = "<group>"; };
+		ACF9ED0B18BE36BF00DC028C /* h.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h.jpeg; sourceTree = "<group>"; };
+		ACF9ED0C18BE36BF00DC028C /* i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,10 @@
 				AC75652A18BB64EC004837D5 /* Dicionario.h */,
 				AC75652B18BB64EC004837D5 /* Dicionario.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
+				ACF9ED0918BE36BF00DC028C /* e.jpeg */,
+				ACF9ED0A18BE36BF00DC028C /* f.jpeg */,
+				ACF9ED0B18BE36BF00DC028C /* h.jpeg */,
+				ACF9ED0C18BE36BF00DC028C /* i.jpg */,
 				AC3977B818BCDD120061B005 /* spider-256.png */,
 				AC3977BA18BCDD2C0061B005 /* dog-256.png */,
 				AC3977C218BCE0E60061B005 /* cruise_ship-256.png */,
@@ -266,12 +278,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF9ED0F18BE36BF00DC028C /* h.jpeg in Resources */,
+				ACF9ED0E18BE36BF00DC028C /* f.jpeg in Resources */,
 				AC3977BB18BCDD2C0061B005 /* dog-256.png in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
 				AC3977BD18BCDD4B0061B005 /* basketball-256.png in Resources */,
 				AC3977C118BCE0B10061B005 /* cat-256.png in Resources */,
 				AC3977B918BCDD120061B005 /* spider-256.png in Resources */,
+				ACF9ED0D18BE36BF00DC028C /* e.jpeg in Resources */,
 				AC3977BF18BCDD8B0061B005 /* candy-256.png in Resources */,
+				ACF9ED1018BE36BF00DC028C /* i.jpg in Resources */,
 				AC3977C318BCE0E60061B005 /* cruise_ship-256.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 			);
