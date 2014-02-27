@@ -19,8 +19,17 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
-		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
+		78AB2BF618BD0D7D00D24845 /* KidsDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB2BF518BD0D7D00D24845 /* KidsDictionary.m */; };
+		78B584E018BD124500503458 /* ItemDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B584DF18BD124500503458 /* ItemDictionary.m */; };
+		78B584E318BD15DE00503458 /* DictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B584E218BD15DE00503458 /* DictionaryViewController.m */; };
+		78B5852418BD2C4D00503458 /* actionscript in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852218BD2C4D00503458 /* actionscript */; };
+		78B5852718BD304F00503458 /* basic.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852618BD304F00503458 /* basic.png */; };
+		78B5852918BD348700503458 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B5852818BD348700503458 /* AVFoundation.framework */; };
+		78B5852B18BE523900503458 /* cobol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852A18BE523900503458 /* cobol.jpg */; };
+		78B5852D18BE604900503458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B5852C18BE604900503458 /* AudioToolbox.framework */; };
+		78B5852F18BE6BC800503458 /* delphi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852E18BE6BC800503458 /* delphi.jpg */; };
+		78B5853118BE72C500503458 /* ecmascript.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B5853018BE72C500503458 /* ecmascript.png */; };
+		78B5853318BE765D00503458 /* flex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B5853218BE765D00503458 /* flex.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +59,20 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
-		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
-		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		78AB2BF418BD0D7D00D24845 /* KidsDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidsDictionary.h; sourceTree = "<group>"; };
+		78AB2BF518BD0D7D00D24845 /* KidsDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidsDictionary.m; sourceTree = "<group>"; };
+		78B584DE18BD124500503458 /* ItemDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDictionary.h; sourceTree = "<group>"; };
+		78B584DF18BD124500503458 /* ItemDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDictionary.m; sourceTree = "<group>"; };
+		78B584E118BD15DE00503458 /* DictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryViewController.h; sourceTree = "<group>"; };
+		78B584E218BD15DE00503458 /* DictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryViewController.m; sourceTree = "<group>"; };
+		78B5852218BD2C4D00503458 /* actionscript */ = {isa = PBXFileReference; lastKnownFileType = file; path = actionscript; sourceTree = SOURCE_ROOT; };
+		78B5852618BD304F00503458 /* basic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic.png; sourceTree = SOURCE_ROOT; };
+		78B5852818BD348700503458 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		78B5852A18BE523900503458 /* cobol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cobol.jpg; sourceTree = SOURCE_ROOT; };
+		78B5852C18BE604900503458 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		78B5852E18BE6BC800503458 /* delphi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delphi.jpg; sourceTree = SOURCE_ROOT; };
+		78B5853018BE72C500503458 /* ecmascript.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecmascript.png; sourceTree = SOURCE_ROOT; };
+		78B5853218BE765D00503458 /* flex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flex.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B5852D18BE604900503458 /* AudioToolbox.framework in Frameworks */,
+				78B5852918BD348700503458 /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -102,6 +123,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78B5852C18BE604900503458 /* AudioToolbox.framework */,
+				78B5852818BD348700503458 /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -113,14 +136,17 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				78B5852118BD2C4100503458 /* Images */,
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
-				27156F7B18BA89430053A99C /* LetraAViewController.h */,
-				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
+				78AB2BF418BD0D7D00D24845 /* KidsDictionary.h */,
+				78AB2BF518BD0D7D00D24845 /* KidsDictionary.m */,
+				78B584DE18BD124500503458 /* ItemDictionary.h */,
+				78B584DF18BD124500503458 /* ItemDictionary.m */,
+				78B584E118BD15DE00503458 /* DictionaryViewController.h */,
+				78B584E218BD15DE00503458 /* DictionaryViewController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -152,6 +178,19 @@
 				27156F6E18B76AF50053A99C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78B5852118BD2C4100503458 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				78B5852218BD2C4D00503458 /* actionscript */,
+				78B5852618BD304F00503458 /* basic.png */,
+				78B5852A18BE523900503458 /* cobol.jpg */,
+				78B5852E18BE6BC800503458 /* delphi.jpg */,
+				78B5853018BE72C500503458 /* ecmascript.png */,
+				78B5853218BE765D00503458 /* flex.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				78B5852F18BE6BC800503458 /* delphi.jpg in Resources */,
+				78B5852418BD2C4D00503458 /* actionscript in Resources */,
+				78B5852718BD304F00503458 /* basic.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				78B5853118BE72C500503458 /* ecmascript.png in Resources */,
+				78B5853318BE765D00503458 /* flex.jpg in Resources */,
+				78B5852B18BE523900503458 /* cobol.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
-				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
+				78B584E018BD124500503458 /* ItemDictionary.m in Sources */,
+				78AB2BF618BD0D7D00D24845 /* KidsDictionary.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
+				78B584E318BD15DE00503458 /* DictionaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +500,7 @@
 				27156F7718B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27156F7818B76AF50053A99C /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +509,7 @@
 				27156F7A18B76AF50053A99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
