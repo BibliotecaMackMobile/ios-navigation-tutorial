@@ -44,7 +44,7 @@ static char letra = 65;
     
     //Coloca o botão para ir para próxima letra
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
-    self.navigationItem.rightBarButtonItem=next;
+    self.navigationItem.rightBarButtonItem = next;
     
     //Coloca o botão para voltar para letra anterior
     UIBarButtonItem *butaum = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(voltar:)];
@@ -54,7 +54,10 @@ static char letra = 65;
     [_button setTitle: [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]] forState:UIControlStateNormal];
     
     //Adiciona a imagem
-    UIImage *ibagem = [UIImage imageNamed: [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]]];
+    
+    NSString * nomeImg = [[NSString alloc] initWithFormat:@"%@.png", [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]]];
+    
+    UIImage *ibagem = [UIImage imageNamed: nomeImg];
     
     [_image setImage:ibagem];
 }
@@ -78,5 +81,49 @@ static char letra = 65;
         [[self navigationController] popViewControllerAnimated:YES];
     }
 }
+
+- (IBAction)startSpeak:(id)sender
+{
+    NSString *p;
+    
+    if (letra == 77) p = @"Maili";
+    else p = [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]];
+    _utt = [[AVSpeechUtterance alloc] initWithString:p];
+    
+    if ( letra == 87 ) _utt.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-us"];
+    else _utt.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-br"];
+    
+    _syn = [[AVSpeechSynthesizer alloc] init];
+    [_syn speakUtterance:_utt];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

@@ -51,11 +51,11 @@
         [dicionario setObject:@"Sino" forKey:@"S"];
         [dicionario setObject:@"Tatu" forKey:@"T"];
         [dicionario setObject:@"Uva" forKey:@"U"];
-        [dicionario setObject:@"Veiculo" forKey:@"V"];
+        [dicionario setObject:@"Vassoura" forKey:@"V"];
         [dicionario setObject:@"Xadrez" forKey:@"X"];
         [dicionario setObject:@"Zebra" forKey:@"Z"];
-        [dicionario setObject:@"KKKKK" forKey:@"K"];
-        [dicionario setObject:@"Yolo" forKey:@"Y"];
+        [dicionario setObject:@"Kiwi" forKey:@"K"];
+        [dicionario setObject:@"Yoda" forKey:@"Y"];
         [dicionario setObject:@"Walter White" forKey:@"W"];
     }
     

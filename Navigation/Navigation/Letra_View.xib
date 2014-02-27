@@ -22,6 +22,9 @@
                     <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="startSpeak:" destination="-1" eventType="touchUpInside" id="A7Q-dC-NUQ"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJr-cz-I5y">
                     <rect key="frame" x="6" y="86" width="308" height="308"/>
