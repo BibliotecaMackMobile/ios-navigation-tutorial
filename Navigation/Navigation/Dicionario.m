@@ -26,7 +26,7 @@
             unichar l= i+ 65; // 65= A
             NSString *key= [[NSString stringWithCharacters:&l length:1]capitalizedString];
             
-            NSLog(@"%@", key);
+            //NSLog(@"%@", key);
             UIImage *imagem= [UIImage imageNamed:[NSString stringWithFormat:@"img%@.png", key]];
             
             Letra *letra= [[Letra alloc]initWithImagem:imagem andPalavra:[vetorPalavras objectAtIndex:i]];

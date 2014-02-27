@@ -37,22 +37,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    //NSString *chave1 = [NSString stringWithFormat:@"%c",contador ];
 
+    //casting de char para String
     NSString *l= [NSString stringWithFormat:@"%c", letra];
+    
     //titulo da view
     self.title= l;
     
-    NSLog(@"%@", l);
+    //NSLog(@"%@", l);
 
-    //botao proximo
-    UIBarButtonItem *next= [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextView:)];
-    self.navigationItem.rightBarButtonItem= next;
+    if (![l isEqualToString:@"Z"]){
+        //botao proximo
+        UIBarButtonItem *next= [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextView:)];
+        self.navigationItem.rightBarButtonItem= next;
+    }
     
     Letra *obj= [[[Dicionario sharedInstance]letrasDicionario]objectForKey:l];
-    NSLog(@"%@", obj.palavra);
+    //NSLog(@"%@", obj.palavra);
     [botPalavra setTitle:obj.palavra forState:UIControlStateNormal];
-   // [imageView setImage:obj.imagem];
+    [imageView setImage:obj.imagem];
 }
 
 - (void)didReceiveMemoryWarning
