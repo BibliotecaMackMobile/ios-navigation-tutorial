@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemDictionary.h"
 
-@interface DictionaryViewController : UIViewController
+
+@interface DictionaryViewController : UIViewController <UINavigationControllerDelegate>
 
 - (void)showSelectedItem;
+- (void)readLetter:(id)sender;
 
 @end

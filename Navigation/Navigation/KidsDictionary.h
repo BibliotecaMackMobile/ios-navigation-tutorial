@@ -9,19 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "ItemDictionary.h"
 
-@interface KidsDictionary : NSObject{
-    NSMutableDictionary *dictionary;
-    NSArray *letters;
-}
+@interface KidsDictionary : NSObject
 
 #pragma mark Property
 
 @property int actualIndex;
+@property NSMutableDictionary *dictionary;
+@property NSArray *letters;
 
 #pragma mark Methods
 
 + (KidsDictionary *)sharedInstance;
 - (void)writeDictionary;
+
 - (ItemDictionary *)getActualItem;
+- (ItemDictionary *)getPreviousItem;
+- (ItemDictionary *)getNextItem;
 
 @end

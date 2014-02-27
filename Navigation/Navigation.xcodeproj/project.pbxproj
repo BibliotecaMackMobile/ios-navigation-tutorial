@@ -25,6 +25,11 @@
 		78B5852418BD2C4D00503458 /* actionscript in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852218BD2C4D00503458 /* actionscript */; };
 		78B5852718BD304F00503458 /* basic.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852618BD304F00503458 /* basic.png */; };
 		78B5852918BD348700503458 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B5852818BD348700503458 /* AVFoundation.framework */; };
+		78B5852B18BE523900503458 /* cobol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852A18BE523900503458 /* cobol.jpg */; };
+		78B5852D18BE604900503458 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B5852C18BE604900503458 /* AudioToolbox.framework */; };
+		78B5852F18BE6BC800503458 /* delphi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B5852E18BE6BC800503458 /* delphi.jpg */; };
+		78B5853118BE72C500503458 /* ecmascript.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B5853018BE72C500503458 /* ecmascript.png */; };
+		78B5853318BE765D00503458 /* flex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78B5853218BE765D00503458 /* flex.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		78B5852218BD2C4D00503458 /* actionscript */ = {isa = PBXFileReference; lastKnownFileType = file; path = actionscript; sourceTree = SOURCE_ROOT; };
 		78B5852618BD304F00503458 /* basic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic.png; sourceTree = SOURCE_ROOT; };
 		78B5852818BD348700503458 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		78B5852A18BE523900503458 /* cobol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cobol.jpg; sourceTree = SOURCE_ROOT; };
+		78B5852C18BE604900503458 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		78B5852E18BE6BC800503458 /* delphi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delphi.jpg; sourceTree = SOURCE_ROOT; };
+		78B5853018BE72C500503458 /* ecmascript.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ecmascript.png; sourceTree = SOURCE_ROOT; };
+		78B5853218BE765D00503458 /* flex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flex.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B5852D18BE604900503458 /* AudioToolbox.framework in Frameworks */,
 				78B5852918BD348700503458 /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
@@ -112,6 +123,7 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78B5852C18BE604900503458 /* AudioToolbox.framework */,
 				78B5852818BD348700503458 /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
@@ -171,8 +183,12 @@
 		78B5852118BD2C4100503458 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				78B5852618BD304F00503458 /* basic.png */,
 				78B5852218BD2C4D00503458 /* actionscript */,
+				78B5852618BD304F00503458 /* basic.png */,
+				78B5852A18BE523900503458 /* cobol.jpg */,
+				78B5852E18BE6BC800503458 /* delphi.jpg */,
+				78B5853018BE72C500503458 /* ecmascript.png */,
+				78B5853218BE765D00503458 /* flex.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -254,9 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				78B5852F18BE6BC800503458 /* delphi.jpg in Resources */,
 				78B5852418BD2C4D00503458 /* actionscript in Resources */,
 				78B5852718BD304F00503458 /* basic.png in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				78B5853118BE72C500503458 /* ecmascript.png in Resources */,
+				78B5853318BE765D00503458 /* flex.jpg in Resources */,
+				78B5852B18BE523900503458 /* cobol.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
