@@ -23,16 +23,26 @@
 
 @implementation LetrasViewController
 
--(void) viewDidLoad {
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+}
+
+- (void) viewDidLoad {
     [super viewDidLoad];
     
     _synthesizer = [[AVSpeechSynthesizer alloc] init];
+    
     
     //cria animacao para mudar imagens
     transition = [CATransition animation];
     transition.duration = 0.5f;
     //transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionPush;
+    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"iosBG2.png"]];
     
     //carrega o array com as palavras
     [self loadData];
@@ -51,23 +61,23 @@
     self.navigationItem.leftBarButtonItem = previous;
     previous.enabled = NO;
     
-    NSLog(@"%f", self.view.bounds.size.height / 2);
-    
-    letraLabel = [[UILabel alloc] initWithFrame:CGRectMake(135, 80, 50, 50)];
+    letraLabel = [[UILabel alloc] initWithFrame:CGRectMake(135, 40, 50, 50)];
     letraLabel.text = [[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)];
     letraLabel.textAlignment = NSTextAlignmentCenter;
-    letraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:35.0];
+    letraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:40.0];
+    letraLabel.textColor = [UIColor redColor];
     [self.view addSubview:letraLabel];
     
     //cria a label para a palavra
-    palavraLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 100, 320, 50)];
+    palavraLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 120, 320, 50)];
     palavraLabel.text = [Dados sharedInstance].palavras[[Dados sharedInstance].count];
     palavraLabel.textAlignment = NSTextAlignmentCenter;
-    palavraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:30.0];
+    palavraLabel.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:45.0];
+    palavraLabel.textColor = [UIColor redColor];
     [self.view addSubview:palavraLabel];
     
     //cria a image view e inicializa
-    imagem = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
+    imagem = [[UIImageView alloc] initWithFrame:CGRectMake(50, 150, 200, 200)];
     imagem.image = [UIImage imageNamed:[[[Dados sharedInstance].alfabeto substringWithRange:NSMakeRange([Dados sharedInstance].count, 1)] lowercaseString]];
     imagem.center = self.view.center;
     imagem.userInteractionEnabled = YES;
