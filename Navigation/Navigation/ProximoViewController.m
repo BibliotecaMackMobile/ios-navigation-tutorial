@@ -94,9 +94,7 @@
     [anterior setTitle:[novaLetra letraGrande]];
     [[anterior botaoAnterior] setBackgroundImage:[novaLetra imagem] forState:UIControlStateNormal];
     [[anterior texto] setText:[novaLetra palavra]];
-    //anterior.botaoAnterior.center = anterior.view.center;
     [[anterior botaoAnterior] sizeToFit];
-
 }
 
 -(void)executaSom: (id)sender{
