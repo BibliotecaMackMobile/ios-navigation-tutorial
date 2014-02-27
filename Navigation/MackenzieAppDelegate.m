@@ -8,17 +8,22 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetrasViewController.h"
+
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     LetrasViewController *viewController = [[LetrasViewController alloc]
-                                           initWithNibName:@"Layout"
+                                            initWithNibName:@"Layout"
                                            bundle:nil];
     
-    self.navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
     
-    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.navigationController = [[UINavigationController alloc]
+                                 initWithRootViewController:viewController];
+    
+    self.window = [[UIWindow alloc]
+                   initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.navigationController;
 
 

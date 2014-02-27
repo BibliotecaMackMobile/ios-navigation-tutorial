@@ -6,9 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LetrasViewController">
             <connections>
-                <outlet property="falar" destination="Krz-bA-VNI" id="5DJ-kF-X7x"/>
-                <outlet property="nomeLabel" destination="flp-JK-u30" id="Pg3-uY-jyb"/>
-                <outlet property="view" destination="1" id="ESQ-bP-pgR"/>
+                <outlet property="fieldLabel" destination="MPq-gY-3vX" id="7VA-ka-Nga"/>
+                <outlet property="imageView" destination="mKn-ed-bvB" id="FJT-7l-Ss8"/>
+                <outlet property="view" destination="1" id="6qk-Mb-NgM"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,24 +16,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flp-JK-u30">
-                    <rect key="frame" x="20" y="99" width="280" height="43"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abelha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPq-gY-3vX">
+                    <rect key="frame" x="20" y="459" width="280" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abelha.png" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-mG-1r5">
-                    <rect key="frame" x="40" y="150" width="240" height="169"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abelha2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mKn-ed-bvB">
+                    <rect key="frame" x="40" y="166" width="240" height="285"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-bA-VNI">
-                    <rect key="frame" x="20" y="336" width="280" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-mt-xrc">
+                    <rect key="frame" x="102" y="89" width="116" height="69"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Escute o nome (:">
+                    <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                    <state key="normal" title="🔊">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="falar:" destination="-1" eventType="touchUpInside" id="LNf-hA-Aiu"/>
+                        <action selector="falar:" destination="-1" eventType="touchUpInside" id="NS9-fI-lbA"/>
                     </connections>
                 </button>
             </subviews>
@@ -43,6 +45,6 @@
         </view>
     </objects>
     <resources>
-        <image name="abelha.png" width="240" height="159"/>
+        <image name="abelha2.png" width="240" height="285"/>
     </resources>
 </document>
