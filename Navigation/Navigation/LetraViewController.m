@@ -45,10 +45,12 @@ static char letra = 65;
     //Coloca o botão para ir para próxima letra
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem = next;
+    if (letra == 90) next.enabled = false;
     
     //Coloca o botão para voltar para letra anterior
     UIBarButtonItem *butaum = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(voltar:)];
     self.navigationItem.leftBarButtonItem = butaum;
+    if (letra == 65) butaum.enabled = false;
     
     //Adiciona o botão com a palavra referente a letra
     [_button setTitle: [[[Dicionario sharedInstance] getDicionario] valueForKey:[[NSString alloc] initWithFormat:@"%c",letra]] forState:UIControlStateNormal];
@@ -64,22 +66,16 @@ static char letra = 65;
 
 -(IBAction)next:(id)sender
 {
-    if (letra != 90)
-    {
-        letra++;
-        LetraViewController *prox = [[LetraViewController alloc] initWithNibName:@"Letra_View" bundle:nil];
-        [[self navigationController] pushViewController:prox animated:YES];
-    }
+    letra++;
+    LetraViewController *prox = [[LetraViewController alloc] initWithNibName:@"Letra_View" bundle:nil];
+    [[self navigationController] pushViewController:prox animated:YES];
     
 }
 
 -(IBAction)voltar:(id)sender
 {
-    if (letra != 65)
-    {
-        letra--;
-        [[self navigationController] popViewControllerAnimated:YES];
-    }
+    letra--;
+    [[self navigationController] popViewControllerAnimated:YES];
 }
 
 - (IBAction)startSpeak:(id)sender
