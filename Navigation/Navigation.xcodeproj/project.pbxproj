@@ -23,8 +23,34 @@
 		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 		7532701918BD175300F6C605 /* LetrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532701818BD175300F6C605 /* LetrasViewController.m */; };
 		7532701C18BD1DE700F6C605 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532701B18BD1DE700F6C605 /* Dicionario.m */; };
-		7532701E18BD264100F6C605 /* dicionario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7532701D18BD264100F6C605 /* dicionario.jpg */; };
 		7532702118BD2C2B00F6C605 /* Palavra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532702018BD2C2B00F6C605 /* Palavra.m */; };
+		75A24AA018BFB6DC00435A27 /* arvore.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8618BFB6DC00435A27 /* arvore.png */; };
+		75A24AA118BFB6DC00435A27 /* button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8718BFB6DC00435A27 /* button.jpeg */; };
+		75A24AA218BFB6DC00435A27 /* casa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8818BFB6DC00435A27 /* casa.jpg */; };
+		75A24AA318BFB6DC00435A27 /* dados.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8918BFB6DC00435A27 /* dados.jpg */; };
+		75A24AA418BFB6DC00435A27 /* dicionario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8A18BFB6DC00435A27 /* dicionario.jpg */; };
+		75A24AA518BFB6DC00435A27 /* elefante.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8B18BFB6DC00435A27 /* elefante.jpg */; };
+		75A24AA618BFB6DC00435A27 /* familia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8C18BFB6DC00435A27 /* familia.jpg */; };
+		75A24AA718BFB6DC00435A27 /* gato.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8D18BFB6DC00435A27 /* gato.jpeg */; };
+		75A24AA818BFB6DC00435A27 /* helicoptero.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8E18BFB6DC00435A27 /* helicoptero.jpeg */; };
+		75A24AA918BFB6DC00435A27 /* igreja.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8F18BFB6DC00435A27 /* igreja.jpeg */; };
+		75A24AAA18BFB6DC00435A27 /* jacare.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9018BFB6DC00435A27 /* jacare.jpeg */; };
+		75A24AAB18BFB6DC00435A27 /* kiwi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9118BFB6DC00435A27 /* kiwi.jpeg */; };
+		75A24AAC18BFB6DC00435A27 /* lua.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9218BFB6DC00435A27 /* lua.jpeg */; };
+		75A24AAD18BFB6DC00435A27 /* melancia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9318BFB6DC00435A27 /* melancia.jpeg */; };
+		75A24AAE18BFB6DC00435A27 /* navio.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9418BFB6DC00435A27 /* navio.jpeg */; };
+		75A24AAF18BFB6DC00435A27 /* ovo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9518BFB6DC00435A27 /* ovo.jpeg */; };
+		75A24AB018BFB6DC00435A27 /* pintinho.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9618BFB6DC00435A27 /* pintinho.jpeg */; };
+		75A24AB118BFB6DC00435A27 /* queijo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9718BFB6DC00435A27 /* queijo.jpeg */; };
+		75A24AB218BFB6DC00435A27 /* rato.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9818BFB6DC00435A27 /* rato.jpeg */; };
+		75A24AB318BFB6DC00435A27 /* sol.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9918BFB6DC00435A27 /* sol.jpeg */; };
+		75A24AB418BFB6DC00435A27 /* trem.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9A18BFB6DC00435A27 /* trem.jpeg */; };
+		75A24AB518BFB6DC00435A27 /* uva.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9B18BFB6DC00435A27 /* uva.jpeg */; };
+		75A24AB618BFB6DC00435A27 /* vo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9C18BFB6DC00435A27 /* vo.jpeg */; };
+		75A24AB718BFB6DC00435A27 /* xicara.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9D18BFB6DC00435A27 /* xicara.jpeg */; };
+		75A24AB818BFB6DC00435A27 /* yingyang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9E18BFB6DC00435A27 /* yingyang.jpeg */; };
+		75A24AB918BFB6DC00435A27 /* zebra.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A9F18BFB6DC00435A27 /* zebra.jpeg */; };
+		75AAD49818BE632300F9F410 /* dicionario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75AAD49718BE632300F9F410 /* dicionario.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +88,35 @@
 		7532701818BD175300F6C605 /* LetrasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetrasViewController.m; sourceTree = "<group>"; };
 		7532701A18BD1DE700F6C605 /* Dicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dicionario.h; sourceTree = "<group>"; };
 		7532701B18BD1DE700F6C605 /* Dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicionario.m; sourceTree = "<group>"; };
-		7532701D18BD264100F6C605 /* dicionario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dicionario.jpg; path = ../../../Desktop/dicionario.jpg; sourceTree = "<group>"; };
 		7532701F18BD2C2B00F6C605 /* Palavra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palavra.h; sourceTree = "<group>"; };
 		7532702018BD2C2B00F6C605 /* Palavra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavra.m; sourceTree = "<group>"; };
+		75A24A8618BFB6DC00435A27 /* arvore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arvore.png; path = Imagens/arvore.png; sourceTree = SOURCE_ROOT; };
+		75A24A8718BFB6DC00435A27 /* button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = button.jpeg; path = Imagens/button.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A8818BFB6DC00435A27 /* casa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casa.jpg; path = Imagens/casa.jpg; sourceTree = SOURCE_ROOT; };
+		75A24A8918BFB6DC00435A27 /* dados.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dados.jpg; path = Imagens/dados.jpg; sourceTree = SOURCE_ROOT; };
+		75A24A8A18BFB6DC00435A27 /* dicionario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dicionario.jpg; path = Imagens/dicionario.jpg; sourceTree = SOURCE_ROOT; };
+		75A24A8B18BFB6DC00435A27 /* elefante.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = elefante.jpg; path = Imagens/elefante.jpg; sourceTree = SOURCE_ROOT; };
+		75A24A8C18BFB6DC00435A27 /* familia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = familia.jpg; path = Imagens/familia.jpg; sourceTree = SOURCE_ROOT; };
+		75A24A8D18BFB6DC00435A27 /* gato.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gato.jpeg; path = Imagens/gato.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A8E18BFB6DC00435A27 /* helicoptero.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = helicoptero.jpeg; path = Imagens/helicoptero.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A8F18BFB6DC00435A27 /* igreja.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = igreja.jpeg; path = Imagens/igreja.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9018BFB6DC00435A27 /* jacare.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jacare.jpeg; path = Imagens/jacare.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9118BFB6DC00435A27 /* kiwi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kiwi.jpeg; path = Imagens/kiwi.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9218BFB6DC00435A27 /* lua.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lua.jpeg; path = Imagens/lua.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9318BFB6DC00435A27 /* melancia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = melancia.jpeg; path = Imagens/melancia.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9418BFB6DC00435A27 /* navio.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = navio.jpeg; path = Imagens/navio.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9518BFB6DC00435A27 /* ovo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ovo.jpeg; path = Imagens/ovo.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9618BFB6DC00435A27 /* pintinho.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pintinho.jpeg; path = Imagens/pintinho.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9718BFB6DC00435A27 /* queijo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = queijo.jpeg; path = Imagens/queijo.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9818BFB6DC00435A27 /* rato.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rato.jpeg; path = Imagens/rato.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9918BFB6DC00435A27 /* sol.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sol.jpeg; path = Imagens/sol.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9A18BFB6DC00435A27 /* trem.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = trem.jpeg; path = Imagens/trem.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9B18BFB6DC00435A27 /* uva.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = uva.jpeg; path = Imagens/uva.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9C18BFB6DC00435A27 /* vo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vo.jpeg; path = Imagens/vo.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9D18BFB6DC00435A27 /* xicara.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xicara.jpeg; path = Imagens/xicara.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9E18BFB6DC00435A27 /* yingyang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yingyang.jpeg; path = Imagens/yingyang.jpeg; sourceTree = SOURCE_ROOT; };
+		75A24A9F18BFB6DC00435A27 /* zebra.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zebra.jpeg; path = Imagens/zebra.jpeg; sourceTree = SOURCE_ROOT; };
+		75AAD49718BE632300F9F410 /* dicionario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dicionario.jpg; path = Imagens/dicionario.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +176,6 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				7532701D18BD264100F6C605 /* dicionario.jpg */,
 				7532701A18BD1DE700F6C605 /* Dicionario.h */,
 				7532701B18BD1DE700F6C605 /* Dicionario.m */,
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
@@ -139,6 +190,7 @@
 				7532701818BD175300F6C605 /* LetrasViewController.m */,
 				7532701F18BD2C2B00F6C605 /* Palavra.h */,
 				7532702018BD2C2B00F6C605 /* Palavra.m */,
+				75AAD49618BE62CC00F9F410 /* Imagens */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -170,6 +222,40 @@
 				27156F6E18B76AF50053A99C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75AAD49618BE62CC00F9F410 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				75AAD49718BE632300F9F410 /* dicionario.jpg */,
+				75A24A8618BFB6DC00435A27 /* arvore.png */,
+				75A24A8718BFB6DC00435A27 /* button.jpeg */,
+				75A24A8818BFB6DC00435A27 /* casa.jpg */,
+				75A24A8918BFB6DC00435A27 /* dados.jpg */,
+				75A24A8A18BFB6DC00435A27 /* dicionario.jpg */,
+				75A24A8B18BFB6DC00435A27 /* elefante.jpg */,
+				75A24A8C18BFB6DC00435A27 /* familia.jpg */,
+				75A24A8D18BFB6DC00435A27 /* gato.jpeg */,
+				75A24A8E18BFB6DC00435A27 /* helicoptero.jpeg */,
+				75A24A8F18BFB6DC00435A27 /* igreja.jpeg */,
+				75A24A9018BFB6DC00435A27 /* jacare.jpeg */,
+				75A24A9118BFB6DC00435A27 /* kiwi.jpeg */,
+				75A24A9218BFB6DC00435A27 /* lua.jpeg */,
+				75A24A9318BFB6DC00435A27 /* melancia.jpeg */,
+				75A24A9418BFB6DC00435A27 /* navio.jpeg */,
+				75A24A9518BFB6DC00435A27 /* ovo.jpeg */,
+				75A24A9618BFB6DC00435A27 /* pintinho.jpeg */,
+				75A24A9718BFB6DC00435A27 /* queijo.jpeg */,
+				75A24A9818BFB6DC00435A27 /* rato.jpeg */,
+				75A24A9918BFB6DC00435A27 /* sol.jpeg */,
+				75A24A9A18BFB6DC00435A27 /* trem.jpeg */,
+				75A24A9B18BFB6DC00435A27 /* uva.jpeg */,
+				75A24A9C18BFB6DC00435A27 /* vo.jpeg */,
+				75A24A9D18BFB6DC00435A27 /* xicara.jpeg */,
+				75A24A9E18BFB6DC00435A27 /* yingyang.jpeg */,
+				75A24A9F18BFB6DC00435A27 /* zebra.jpeg */,
+			);
+			name = Imagens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +334,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A24AA018BFB6DC00435A27 /* arvore.png in Resources */,
+				75A24AA618BFB6DC00435A27 /* familia.jpg in Resources */,
+				75A24AA218BFB6DC00435A27 /* casa.jpg in Resources */,
+				75A24AB818BFB6DC00435A27 /* yingyang.jpeg in Resources */,
+				75A24AA718BFB6DC00435A27 /* gato.jpeg in Resources */,
+				75A24AAF18BFB6DC00435A27 /* ovo.jpeg in Resources */,
+				75A24AB418BFB6DC00435A27 /* trem.jpeg in Resources */,
+				75A24AAB18BFB6DC00435A27 /* kiwi.jpeg in Resources */,
+				75AAD49818BE632300F9F410 /* dicionario.jpg in Resources */,
+				75A24AA318BFB6DC00435A27 /* dados.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
-				7532701E18BD264100F6C605 /* dicionario.jpg in Resources */,
+				75A24AA918BFB6DC00435A27 /* igreja.jpeg in Resources */,
+				75A24AAD18BFB6DC00435A27 /* melancia.jpeg in Resources */,
+				75A24AB718BFB6DC00435A27 /* xicara.jpeg in Resources */,
+				75A24AB618BFB6DC00435A27 /* vo.jpeg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
+				75A24AB118BFB6DC00435A27 /* queijo.jpeg in Resources */,
+				75A24AB918BFB6DC00435A27 /* zebra.jpeg in Resources */,
+				75A24AAE18BFB6DC00435A27 /* navio.jpeg in Resources */,
+				75A24AB518BFB6DC00435A27 /* uva.jpeg in Resources */,
+				75A24AA418BFB6DC00435A27 /* dicionario.jpg in Resources */,
+				75A24AB218BFB6DC00435A27 /* rato.jpeg in Resources */,
+				75A24AB018BFB6DC00435A27 /* pintinho.jpeg in Resources */,
+				75A24AA118BFB6DC00435A27 /* button.jpeg in Resources */,
+				75A24AAA18BFB6DC00435A27 /* jacare.jpeg in Resources */,
+				75A24AB318BFB6DC00435A27 /* sol.jpeg in Resources */,
+				75A24AA818BFB6DC00435A27 /* helicoptero.jpeg in Resources */,
+				75A24AAC18BFB6DC00435A27 /* lua.jpeg in Resources */,
+				75A24AA518BFB6DC00435A27 /* elefante.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,16 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetrasViewController.h"
-#import "Dicionario.h"
+
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     Palavra *p = [[[Dicionario sharedInstancia] palavras] firstObject];
+    
     LetrasViewController *viewController = [[LetrasViewController alloc]initWithPalavra: p];
-    self.navigationController = [[UINavigationController alloc]
-                                 initWithRootViewController:viewController];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -9,6 +9,7 @@
 #import "LetrasViewController.h"
 #import "Palavra.h"
 #import "Dicionario.h"
+#import "LetraBViewController.h"
 
 @interface LetrasViewController ()
 
@@ -61,10 +62,10 @@
 }
 
 -(void)next:(id)sender {
-    LetrasViewController *proximo = [[LetrasViewController alloc]initWithPalavra:[_palavra ]];
-    [self.navigationController pushViewController:proximo
-                                         animated:YES];
-    
+
+    LetrasViewController *proximo = [[LetrasViewController allocWithZone:Nil]initWithPalavra:_palavra];
+    [self.navigationController pushViewController:proximo animated:YES];
+
 }
 
 

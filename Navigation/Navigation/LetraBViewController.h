@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Palavra;
 
 @interface LetraBViewController : UIViewController
+
+@property (nonatomic, strong) UIImageView *myImage;
+@property (nonatomic, strong) Palavra *palavra;
+
+-(id) initWithPalavra:(Palavra *)palavra;
+
 
 @end
