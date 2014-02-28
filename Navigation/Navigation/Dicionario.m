@@ -17,6 +17,7 @@ static Dicionario *sharedInstance = nil;
 + (id)sharedInstancia {
     if (sharedInstance == nil) {
         sharedInstance = [[super allocWithZone:Nil] initSecreto];
+        
     }
     
     return sharedInstance;
@@ -33,21 +34,18 @@ static Dicionario *sharedInstance = nil;
         [p setLetra:@"Menu"];
         [p setPalavra:@"Dicionario Infantil"];
         [p setImagem:@"dicionario.jpg"];
-        [p setIndice1:0];
         [[self palavras] addObject:p];
 
         p = [[Palavra alloc] init];
         [p setLetra:@"A"];
         [p setPalavra:@"Arvore"];
         [p setImagem:@"arvore.png"];
-        [p setIndice1:1];
         [[self palavras] addObject:p];
         
         p = [[Palavra alloc] init];
         [p setLetra:@"B"];
         [p setPalavra:@"Botao"];
         [p setImagem:@"button.jpeg"];
-        [p setIndice1:2];
         [[self palavras] addObject:p];
         
         p = [[Palavra alloc] init];
@@ -58,7 +56,7 @@ static Dicionario *sharedInstance = nil;
         
         p = [[Palavra alloc] init];
         [p setLetra:@"D"];
-        [p setPalavra:@"dados"];
+        [p setPalavra:@"Dados"];
         [p setImagem:@"dados.jpg"];
         [[self palavras] addObject:p];
         
@@ -171,6 +169,12 @@ static Dicionario *sharedInstance = nil;
         [[self palavras] addObject:p];
         
         p = [[Palavra alloc] init];
+        [p setLetra:@"W"];
+        [p setPalavra:@"Wilson"];
+        [p setImagem:@"wilson.jpeg"];
+        [[self palavras] addObject:p];
+        
+        p = [[Palavra alloc] init];
         [p setLetra:@"X"];
         [p setPalavra:@"Xicara"];
         [p setImagem:@"xicara.jpeg"];
@@ -194,9 +198,11 @@ static Dicionario *sharedInstance = nil;
     return self;
 }
 
--(void)Atualizar{
-    [_palavras objectAtIndex:+1];
+-(Palavra *)Atualizar{
     
+    d++;
+    Palavra *p = [_palavras objectAtIndex:d];
+    return p;
 }
 
 + (id)allocWithZone:(NSZone*)zone {

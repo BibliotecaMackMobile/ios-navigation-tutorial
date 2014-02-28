@@ -9,7 +9,6 @@
 #import "LetrasViewController.h"
 #import "Palavra.h"
 #import "Dicionario.h"
-#import "LetraBViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface LetrasViewController ()
@@ -17,7 +16,7 @@
 @end
 
 @implementation LetrasViewController
-
+@synthesize botao;
 
 -(id) initWithPalavra:(Palavra *)palavra
 {
@@ -45,17 +44,20 @@
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
     
-    UIButton *botao = [UIButton
-                       buttonWithType:UIButtonTypeRoundedRect];
+    botao = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [botao
      setTitle:[_palavra palavra]
      forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
+
+
+    
+    
     
     [self.view addSubview:botao];
     
-    _myImage = [[UIImageView alloc] initWithFrame:CGRectMake(90, 90, 150, 150)];
+    _myImage = [[UIImageView alloc] initWithFrame:CGRectMake(60, 80, 200, 170)];
     
     _myImage.image = [UIImage imageNamed:[_palavra imagem]];
     
@@ -63,24 +65,23 @@
 }
 
 -(void)next:(id)sender {
-    [[Dicionario sharedInstancia]Atualizar];
     
-    LetrasViewController *proximo = [[LetrasViewController allocWithZone:Nil]initWithPalavra:_palavra];
+    LetrasViewController *proximo = [[LetrasViewController allocWithZone:Nil]initWithPalavra:[[Dicionario sharedInstancia]Atualizar]];
     
     [self.navigationController pushViewController:proximo animated:YES];
 }
 
-//-(IBAction)FalarAPalavra:(id)sender{
-//    
-//    
-//    AVSpeechSynthesisVoice * speechSynthesisVoice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
-//    AVSpeechUtterance * speechUtterance = [[AVSpeechUtterance alloc] initWithString: ** palavra ** ];
-//    [speechUtterance setRate:0.3];
-//    
-//    AVSpeechSynthesizer * speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
-//    [speechUtterance setVoice:speechSynthesisVoice];
-//    [speechSynthesizer speakUtterance:speechUtterance];
-//}
+-(IBAction)FalarApalavra:(id)sender{
+    
+    
+    AVSpeechSynthesisVoice * speechSynthesisVoice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+    AVSpeechUtterance * speechUtterance = [[AVSpeechUtterance alloc] initWithString: [_palavra palavra]];
+    [speechUtterance setRate:0.3];
+    
+    AVSpeechSynthesizer * speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    [speechUtterance setVoice:speechSynthesisVoice];
+    [speechSynthesizer speakUtterance:speechUtterance];
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -11,10 +11,11 @@
 
 @interface Dicionario : NSObject
 {
+    int d;
 }
 @property (nonatomic, strong) NSMutableArray *palavras;
 
 +(id)sharedInstancia;
 
--(void)Atualizar;
+-(Palavra *)Atualizar;
 @end

@@ -14,9 +14,10 @@
 
 @property (nonatomic, strong) UIImageView *myImage;
 @property (nonatomic, strong) Palavra *palavra;
+@property UIButton *botao;
 
 
-
+-(IBAction)FalarApalavra:(id)sender;
 
 -(id) initWithPalavra:(Palavra *)palavra;
 

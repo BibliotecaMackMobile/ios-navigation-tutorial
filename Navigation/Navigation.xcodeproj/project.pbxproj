@@ -19,13 +19,12 @@
 		27156F6818B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
-		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 		7532701918BD175300F6C605 /* LetrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532701818BD175300F6C605 /* LetrasViewController.m */; };
 		7532701C18BD1DE700F6C605 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532701B18BD1DE700F6C605 /* Dicionario.m */; };
 		7532702118BD2C2B00F6C605 /* Palavra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532702018BD2C2B00F6C605 /* Palavra.m */; };
 		753B404118C0FD59004A4F55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753B404018C0FD59004A4F55 /* AVFoundation.framework */; };
 		753B404318C0FE7D004A4F55 /* libAXSpeechManager.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 753B404218C0FE7D004A4F55 /* libAXSpeechManager.dylib */; };
+		753B404518C105E1004A4F55 /* wilson.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 753B404418C105E1004A4F55 /* wilson.jpeg */; };
 		75A24AA018BFB6DC00435A27 /* arvore.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8618BFB6DC00435A27 /* arvore.png */; };
 		75A24AA118BFB6DC00435A27 /* button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8718BFB6DC00435A27 /* button.jpeg */; };
 		75A24AA218BFB6DC00435A27 /* casa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8818BFB6DC00435A27 /* casa.jpg */; };
@@ -82,10 +81,6 @@
 		27156F6D18B76AF50053A99C /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
 		27156F6F18B76AF50053A99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
-		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
-		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
 		7532701718BD175300F6C605 /* LetrasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetrasViewController.h; sourceTree = "<group>"; };
 		7532701818BD175300F6C605 /* LetrasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetrasViewController.m; sourceTree = "<group>"; };
 		7532701A18BD1DE700F6C605 /* Dicionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dicionario.h; sourceTree = "<group>"; };
@@ -94,6 +89,7 @@
 		7532702018BD2C2B00F6C605 /* Palavra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavra.m; sourceTree = "<group>"; };
 		753B404018C0FD59004A4F55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		753B404218C0FE7D004A4F55 /* libAXSpeechManager.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAXSpeechManager.dylib; path = usr/lib/libAXSpeechManager.dylib; sourceTree = SDKROOT; };
+		753B404418C105E1004A4F55 /* wilson.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wilson.jpeg; path = Imagens/wilson.jpeg; sourceTree = SOURCE_ROOT; };
 		75A24A8618BFB6DC00435A27 /* arvore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arvore.png; path = Imagens/arvore.png; sourceTree = SOURCE_ROOT; };
 		75A24A8718BFB6DC00435A27 /* button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = button.jpeg; path = Imagens/button.jpeg; sourceTree = SOURCE_ROOT; };
 		75A24A8818BFB6DC00435A27 /* casa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casa.jpg; path = Imagens/casa.jpg; sourceTree = SOURCE_ROOT; };
@@ -192,10 +188,6 @@
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
-				27156F7B18BA89430053A99C /* LetraAViewController.h */,
-				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 				7532701718BD175300F6C605 /* LetrasViewController.h */,
 				7532701818BD175300F6C605 /* LetrasViewController.m */,
 				75AAD49618BE62CC00F9F410 /* Imagens */,
@@ -235,6 +227,7 @@
 		75AAD49618BE62CC00F9F410 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				753B404418C105E1004A4F55 /* wilson.jpeg */,
 				75AAD49718BE632300F9F410 /* dicionario.jpg */,
 				75A24A8618BFB6DC00435A27 /* arvore.png */,
 				75A24A8718BFB6DC00435A27 /* button.jpeg */,
@@ -357,6 +350,7 @@
 				75A24AAD18BFB6DC00435A27 /* melancia.jpeg in Resources */,
 				75A24AB718BFB6DC00435A27 /* xicara.jpeg in Resources */,
 				75A24AB618BFB6DC00435A27 /* vo.jpeg in Resources */,
+				753B404518C105E1004A4F55 /* wilson.jpeg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 				75A24AB118BFB6DC00435A27 /* queijo.jpeg in Resources */,
 				75A24AB918BFB6DC00435A27 /* zebra.jpeg in Resources */,
@@ -390,11 +384,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
-				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				7532702118BD2C2B00F6C605 /* Palavra.m in Sources */,
 				7532701918BD175300F6C605 /* LetrasViewController.m in Sources */,
 				7532701C18BD1DE700F6C605 /* Dicionario.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

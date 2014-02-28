@@ -10,7 +10,6 @@
 
 @interface Palavra : NSObject
 
-@property int indice1;
 @property (strong, nonatomic) NSString *letra;
 @property (strong, nonatomic) NSString *palavra;
 @property (strong, nonatomic) NSString *imagem;
