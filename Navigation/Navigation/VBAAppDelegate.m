@@ -1,32 +1,19 @@
 //
-//  MackenzieAppDelegate.m
-//  Navigation
+//  VBAAppDelegate.m
+//  gerenciar_contatos
 //
-//  Created by Vinicius Miana on 2/21/14.
-//  Copyright (c) 2014 Vinicius Miana. All rights reserved.
+//  Created by Victor Bozelli Alvarez on 20/02/14.
+//  Copyright (c) 2014 Victor Bozelli Alvarez. All rights reserved.
 //
 
-#import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "VBAAppDelegate.h"
 
-@implementation MackenzieAppDelegate
+@implementation VBAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
-    
-    
-    self.navigationController = [[UINavigationController alloc]
-                                 initWithRootViewController:viewController];
-    self.window = [[UIWindow alloc]
-                   initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
-
-
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	LetraViewController * letraViewController = [[VBALetraViewController alloc] initWithNibName:@"letra" bundle:nil];
+	VBALetraViewController * letraViewController = [[VBALetraViewController alloc] initWithNibName:@"letra" bundle:nil];
     [letraViewController setLetra:'A'];
 	UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:letraViewController];
     [_window setRootViewController:navigationController];
@@ -35,12 +22,7 @@
 	letraViewController = nil;
 	navigationController = nil;
     return YES;
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    
-    return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
