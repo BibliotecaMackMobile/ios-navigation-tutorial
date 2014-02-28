@@ -7,15 +7,20 @@
 //
 
 #import "MackenzieAppDelegate.h"
-#import "LetraAViewController.h"
+#import "LetraViewController.h"
+#import "DataSingleton.h"
 
 @implementation MackenzieAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
+    DataSingleton *dados = [DataSingleton sharedData];
+    NSString *title = [[dados.dataLetters objectAtIndex:dados.currentIndex] title];
+    NSString *content = [[dados.dataLetters objectAtIndex:dados.currentIndex] word];
+    UIImage *image = [[dados.dataLetters objectAtIndex:dados.currentIndex] myImage];
+    LetraViewController *viewController = [[LetraViewController alloc]
                                            initWithNibName:nil
-                                           bundle:nil];
+                                           bundle:nil andTitle:title andContent:content andImage:image];
     
     
     self.navigationController = [[UINavigationController alloc]
