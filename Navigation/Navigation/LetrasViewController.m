@@ -45,19 +45,20 @@
     self.navigationItem.rightBarButtonItem=next;
     
     botao = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [botao
-     setTitle:[_palavra palavra]
-     forState:UIControlStateNormal];
+    //botao = [[UIButton alloc] initWithFrame:CGRectMake(280, 0, 160, 30)];
+    [botao setTitle:[_palavra palavra] forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
-
+    //[botao action:@selector(FalarApalavra)];
+    [botao addTarget:self action:@selector(FalarApalavra:) forControlEvents:UIControlEventTouchUpInside];
+    
 
     
     
     
     [self.view addSubview:botao];
     
-    _myImage = [[UIImageView alloc] initWithFrame:CGRectMake(60, 80, 200, 170)];
+    _myImage = [[UIImageView alloc] initWithFrame:CGRectMake(90, 80, 150, 150)];
     
     _myImage.image = [UIImage imageNamed:[_palavra imagem]];
     
