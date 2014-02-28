@@ -14,7 +14,7 @@
 @end
 
 @implementation LetraViewController
-@synthesize imageView, botPalavra;
+@synthesize imageView, botPalavra, letra;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,8 +45,13 @@
     self.title= l;
     
     if (![l isEqualToString:@"A"]){ //na primeira letra não aparece o botão voltar
-        UIBarButtonItem *back= [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemUndo target:self action:@selector(backView:)];
+        UIBarButtonItem *back= [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(backView:)];
         self.navigationItem.leftBarButtonItem= back;
+    } else { //se for A coloca um botao nulo
+        //Gambi!!!!!!
+        UIBarButtonItem *teste = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+        
+        [self.navigationItem setLeftBarButtonItem:teste];
     }
     
     if (![l isEqualToString:@"Z"]){ //na última letra nao aparece o botao next
@@ -74,10 +79,17 @@
 }
 
 -(void)backView:(id)sender{
-    letra--;
+//    letra--;
     
-    LetraViewController *anterior= [[LetraViewController alloc]initWithLetra:letra];
-    [self.navigationController pushViewController:anterior animated:YES];
+    NSArray *viewControllers = [self.navigationController viewControllers]; //array com todas as views abertas
+    LetraViewController *anterior = nil;
+    
+    //if ([viewControllers count]>1) { //se tiver mais de uma view aberta
+        anterior = [viewControllers objectAtIndex:[viewControllers count]-2]; //-2 é a view anterior
+        anterior.letra--;
+    //}
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)botPalavra:(id)sender {

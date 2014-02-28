@@ -11,8 +11,9 @@
 
 @interface LetraViewController : UIViewController
 {
-    char letra;
+    
 }
+@property char letra;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property IBOutlet UIButton *botPalavra;
 
