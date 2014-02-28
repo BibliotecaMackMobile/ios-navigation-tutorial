@@ -9,6 +9,7 @@
 #import "Dicionario.h"
 #import "Palavra.h"
 
+
 @implementation Dicionario
 
 static Dicionario *sharedInstance = nil;
@@ -27,8 +28,6 @@ static Dicionario *sharedInstance = nil;
     
     if (self) {
         _palavras = [[NSMutableArray alloc] init];
-        
-        
         
         Palavra *p = [[Palavra alloc] init];
         [p setLetra:@"Menu"];

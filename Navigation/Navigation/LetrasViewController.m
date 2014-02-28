@@ -10,6 +10,7 @@
 #import "Palavra.h"
 #import "Dicionario.h"
 #import "LetraBViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface LetrasViewController ()
 
@@ -69,7 +70,17 @@
     [self.navigationController pushViewController:proximo animated:YES];
 }
 
-
+//-(IBAction)FalarAPalavra:(id)sender{
+//    
+//    
+//    AVSpeechSynthesisVoice * speechSynthesisVoice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+//    AVSpeechUtterance * speechUtterance = [[AVSpeechUtterance alloc] initWithString: ** palavra ** ];
+//    [speechUtterance setRate:0.3];
+//    
+//    AVSpeechSynthesizer * speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+//    [speechUtterance setVoice:speechSynthesisVoice];
+//    [speechSynthesizer speakUtterance:speechUtterance];
+//}
 
 - (void)didReceiveMemoryWarning
 {

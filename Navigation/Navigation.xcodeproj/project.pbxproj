@@ -24,6 +24,8 @@
 		7532701918BD175300F6C605 /* LetrasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532701818BD175300F6C605 /* LetrasViewController.m */; };
 		7532701C18BD1DE700F6C605 /* Dicionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532701B18BD1DE700F6C605 /* Dicionario.m */; };
 		7532702118BD2C2B00F6C605 /* Palavra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532702018BD2C2B00F6C605 /* Palavra.m */; };
+		753B404118C0FD59004A4F55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753B404018C0FD59004A4F55 /* AVFoundation.framework */; };
+		753B404318C0FE7D004A4F55 /* libAXSpeechManager.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 753B404218C0FE7D004A4F55 /* libAXSpeechManager.dylib */; };
 		75A24AA018BFB6DC00435A27 /* arvore.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8618BFB6DC00435A27 /* arvore.png */; };
 		75A24AA118BFB6DC00435A27 /* button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8718BFB6DC00435A27 /* button.jpeg */; };
 		75A24AA218BFB6DC00435A27 /* casa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A24A8818BFB6DC00435A27 /* casa.jpg */; };
@@ -90,6 +92,8 @@
 		7532701B18BD1DE700F6C605 /* Dicionario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicionario.m; sourceTree = "<group>"; };
 		7532701F18BD2C2B00F6C605 /* Palavra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palavra.h; sourceTree = "<group>"; };
 		7532702018BD2C2B00F6C605 /* Palavra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palavra.m; sourceTree = "<group>"; };
+		753B404018C0FD59004A4F55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		753B404218C0FE7D004A4F55 /* libAXSpeechManager.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAXSpeechManager.dylib; path = usr/lib/libAXSpeechManager.dylib; sourceTree = SDKROOT; };
 		75A24A8618BFB6DC00435A27 /* arvore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arvore.png; path = Imagens/arvore.png; sourceTree = SOURCE_ROOT; };
 		75A24A8718BFB6DC00435A27 /* button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = button.jpeg; path = Imagens/button.jpeg; sourceTree = SOURCE_ROOT; };
 		75A24A8818BFB6DC00435A27 /* casa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casa.jpg; path = Imagens/casa.jpg; sourceTree = SOURCE_ROOT; };
@@ -124,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753B404318C0FE7D004A4F55 /* libAXSpeechManager.dylib in Frameworks */,
+				753B404118C0FD59004A4F55 /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -165,6 +171,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				753B404218C0FE7D004A4F55 /* libAXSpeechManager.dylib */,
+				753B404018C0FD59004A4F55 /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
