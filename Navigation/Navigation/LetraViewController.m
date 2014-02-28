@@ -76,7 +76,6 @@ static char letra = 65;
     letra++;
     LetraViewController *prox = [[LetraViewController alloc] initWithNibName:@"Letra_View" bundle:nil];
     [[self navigationController] pushViewController:prox animated:YES];
-    
 }
 
 -(IBAction)voltar:(id)sender
@@ -107,34 +106,4 @@ static char letra = 65;
     _syn = [[AVSpeechSynthesizer alloc] init];
     [_syn speakUtterance:_utt];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @end
