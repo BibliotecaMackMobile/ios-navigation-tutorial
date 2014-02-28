@@ -37,6 +37,9 @@
 		024B15D618C104C50093BC09 /* VBAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B15D118C104C50093BC09 /* VBAAppDelegate.m */; };
 		024B15D718C104C50093BC09 /* VBALetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B15D318C104C50093BC09 /* VBALetraViewController.m */; };
 		024B15D818C104C50093BC09 /* VBAPalavrasStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B15D518C104C50093BC09 /* VBAPalavrasStore.m */; };
+		024B15DF18C10D5B0093BC09 /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B15DA18C10D5B0093BC09 /* LetraAViewController.m */; };
+		024B15E018C10D5B0093BC09 /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B15DC18C10D5B0093BC09 /* LetraBViewController.m */; };
+		024B15E118C10D5B0093BC09 /* MackenzieAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 024B15DE18C10D5B0093BC09 /* MackenzieAppDelegate.m */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -94,6 +97,12 @@
 		024B15D318C104C50093BC09 /* VBALetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBALetraViewController.m; sourceTree = "<group>"; };
 		024B15D418C104C50093BC09 /* VBAPalavrasStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBAPalavrasStore.h; sourceTree = "<group>"; };
 		024B15D518C104C50093BC09 /* VBAPalavrasStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBAPalavrasStore.m; sourceTree = "<group>"; };
+		024B15D918C10D5B0093BC09 /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
+		024B15DA18C10D5B0093BC09 /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
+		024B15DB18C10D5B0093BC09 /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
+		024B15DC18C10D5B0093BC09 /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
+		024B15DD18C10D5B0093BC09 /* MackenzieAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MackenzieAppDelegate.h; sourceTree = "<group>"; };
+		024B15DE18C10D5B0093BC09 /* MackenzieAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MackenzieAppDelegate.m; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,6 +176,12 @@
 		27156F5218B76AF50053A99C /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				024B15D918C10D5B0093BC09 /* LetraAViewController.h */,
+				024B15DA18C10D5B0093BC09 /* LetraAViewController.m */,
+				024B15DB18C10D5B0093BC09 /* LetraBViewController.h */,
+				024B15DC18C10D5B0093BC09 /* LetraBViewController.m */,
+				024B15DD18C10D5B0093BC09 /* MackenzieAppDelegate.h */,
+				024B15DE18C10D5B0093BC09 /* MackenzieAppDelegate.m */,
 				024B15D018C104C50093BC09 /* VBAAppDelegate.h */,
 				024B15D118C104C50093BC09 /* VBAAppDelegate.m */,
 				024B15D218C104C50093BC09 /* VBALetraViewController.h */,
@@ -358,9 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024B15E118C10D5B0093BC09 /* MackenzieAppDelegate.m in Sources */,
 				024B15D818C104C50093BC09 /* VBAPalavrasStore.m in Sources */,
 				024B15D618C104C50093BC09 /* VBAAppDelegate.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
+				024B15DF18C10D5B0093BC09 /* LetraAViewController.m in Sources */,
+				024B15E018C10D5B0093BC09 /* LetraBViewController.m in Sources */,
 				024B15D718C104C50093BC09 /* VBALetraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
