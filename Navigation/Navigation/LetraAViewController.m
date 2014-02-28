@@ -15,6 +15,9 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
     
+    //setando o fundo como da cor branca
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     //iniciando medidas de centro de tela
     int widthMed = (self.view.frame.size.width/2);
     int heightMed = (self.view.frame.size.height/2);
@@ -22,7 +25,7 @@
     //inicia a variavel singleton com a instancia da classe Singleton(desnecessário)
     singleton = [Singleton getInstancia];
     
-    //atribui à variavel p(produto) o produto que atual da navegação
+    //atribui à variavel p(produto) o produto atual da navegação
     p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
     
     //aloca os elementos gráficos e desenha da tela
@@ -43,6 +46,16 @@
     [gesto setNumberOfTapsRequired:1];
     [imgView addGestureRecognizer:gesto];
     [imgView setUserInteractionEnabled:YES];
+    
+    //criando gestos de passagem de tela
+    UISwipeGestureRecognizer *swipeNext = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(next:)];
+    swipeNext.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeNext setNumberOfTouchesRequired:1];
+    UISwipeGestureRecognizer *swipeBack = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(back:)];
+    swipeBack.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeBack setNumberOfTouchesRequired:1];
+    [self.view addGestureRecognizer:swipeNext];
+    [self.view addGestureRecognizer:swipeBack];
 
     //criando os botoes
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
