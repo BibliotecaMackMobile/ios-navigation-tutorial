@@ -8,6 +8,8 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetraAViewController.h"
+#import "Pagina.h"
+#import "Singleton.h"
 
 @implementation MackenzieAppDelegate
 
@@ -16,6 +18,12 @@
     LetraAViewController *viewController = [[LetraAViewController alloc]
                                            initWithNibName:nil
                                            bundle:nil];
+    Singleton *singleton = [Singleton getInstancia];
+    Pagina *p = [singleton.dictionary objectForKey:[singleton.array objectAtIndex:singleton.cont]];
+    viewController.ttitle = p.title;
+    viewController.letter.text = p.title;
+//    viewController.word.text = p.word;
+//    singleton.cont++;
     
     
     self.navigationController = [[UINavigationController alloc]
