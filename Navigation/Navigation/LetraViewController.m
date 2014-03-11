@@ -48,7 +48,7 @@
         UIBarButtonItem *back= [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(backView:)];
         self.navigationItem.leftBarButtonItem= back;
     } else { //se for A coloca um botao nulo
-        //Gambi!!!!!!
+        //
         UIBarButtonItem *teste = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
         
         [self.navigationItem setLeftBarButtonItem:teste];
