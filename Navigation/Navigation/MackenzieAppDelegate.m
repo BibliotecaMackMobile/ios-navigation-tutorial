@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ViewController *vc = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    ViewController *vc = [[ViewController alloc] initWithNibName:@"DictionaryView" bundle:nil];
     
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];

@@ -36,7 +36,6 @@
         alphabet = [[NSMutableDictionary alloc] init];
         index = 0;
         [self criarLetter];
-
     }
     return self;
 }
@@ -104,6 +103,11 @@
 -(int) atualiza
 {
     return index++;
+}
+
+-(int) atualiza2
+{
+    return  index--;
 }
 
 

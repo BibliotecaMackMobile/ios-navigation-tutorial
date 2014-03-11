@@ -21,5 +21,6 @@
 
 -(void) criarLetter;
 -(int) atualiza;
+-(int) atualiza2;
 
 @end

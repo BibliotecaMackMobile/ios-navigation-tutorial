@@ -15,9 +15,8 @@
     NSArray  *sortedKeys;
 }
 
-@property (strong, nonatomic) IBOutlet UILabel *palavra1;
+@property (weak, nonatomic) IBOutlet UILabel *palavra1;
 @property (weak, nonatomic) IBOutlet UIImageView *imagem;
-@property (weak, nonatomic) IBOutlet UILabel *palavra11;
 
 -(void)proximaLetra;
 
